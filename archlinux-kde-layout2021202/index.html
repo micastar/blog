@@ -3,8 +3,7 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title class=pjax-title>ArchLinux Kde 配置 - 海客</title><meta name=keywords content="[海客]">
-<meta name=Description content="海客"><meta property="og:title" content="ArchLinux Kde 配置">
+<title class=pjax-title>ArchLinux Kde 配置 - 海客</title><meta name=Description content="海客"><meta property="og:title" content="ArchLinux Kde 配置">
 <meta property="og:description" content="ArchLinux安装参考链接 篝ノ雾枝的魔法学院 获取镜像列表 这条命令从官方镜像列表中获取3个最近同步过的源，并对这3个源">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.hikk.top/archlinux-kde-layout2021202/"><meta property="og:image" content="https://www.hikk.top"><meta property="article:section" content="posts">
@@ -18,7 +17,7 @@
 <meta name=apple-mobile-web-app-title content="海客">
 <meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical href=https://www.hikk.top/archlinux-kde-layout2021202/><link rel=prev href=https://www.hikk.top/tittletattle202171/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical href=https://www.hikk.top/archlinux-kde-layout2021202/><link rel=prev href=https://www.hikk.top/tittletattle202171/><link rel=next href=https://www.hikk.top/test2021245/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css>
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css>
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"ArchLinux Kde 配置","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.hikk.top\/archlinux-kde-layout2021202\/"},"genre":"posts","keywords":"Linux","wordcount":933,"url":"https:\/\/www.hikk.top\/archlinux-kde-layout2021202\/","datePublished":"2021-07-21T13:03:40+08:00","dateModified":"2021-07-21T13:03:40+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"海客"},"author":{"@type":"Person","name":"海客"},"description":""}</script></head>
 <body header-desktop=auto header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'light'==='light'||'light'==='dark'||'light'==='black'?(setTheme('light'),saveTheme('light')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let themeColorMeta=getMeta('theme-color');document.body.getAttribute('theme')!='light'&&(themeColorMeta.content='#000000')</script>
@@ -40,7 +39,9 @@
 <span class="search-button search-loading" id=search-loading-desktop>
 <i class="fas fa-spinner fa-fw fa-spin"></i>
 </span>
-</span></div>
+</span><a href=# onclick=return!1 class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
 </div>
 </div>
 </header><header class=mobile id=header-mobile>
@@ -69,7 +70,9 @@
 <a href=# onclick=return!1 class=search-cancel id=search-cancel-mobile>
 取消
 </a>
-</div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/me/ title>关于</a><a class=menu-item href=/friend/ title>友链</a><a class=menu-item href=https://github.com/xuandef title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw"></i></a></div>
+</div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/me/ title>关于</a><a class=menu-item href=/friend/ title>友链</a><a class=menu-item href=https://github.com/xuandef title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw"></i></a><a href=# onclick=return!1 class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
 </div>
 </header>
 <div class="search-dropdown desktop">
@@ -361,7 +364,8 @@ timedatectl set-local-rtc <span class=nb>true</span>
 <span><a href=# onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/tittletattle202171/ class=prev rel=prev title=摘录><i class="fas fa-angle-left fa-fw"></i>摘录</a></div>
+<div class=post-nav><a href=/tittletattle202171/ class=prev rel=prev title=摘录><i class="fas fa-angle-left fa-fw"></i>摘录</a>
+<a href=/test2021245/ class=next rel=next title=Test>Test<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
 </main><footer class=footer>
