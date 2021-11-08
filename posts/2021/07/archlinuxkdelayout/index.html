@@ -3,16 +3,16 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title class=pjax-title>ArchLinuxKde配置 - 海客</title><meta name=keywords content="[海客]">
-<meta name=Description content="海客"><meta property="og:title" content="ArchLinuxKde配置">
+<title class=pjax-title>ArchLinux配置 - 海客</title><meta name=keywords content="[海客]">
+<meta name=Description content="海客"><meta property="og:title" content="ArchLinux配置">
 <meta property="og:description" content="ArchLinux安装参考链接 篝ノ雾枝的魔法学院 获取镜像列表 这条命令从官方镜像列表中获取3个最近同步过的源，并对这3个源">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.hikk.top/posts/2021/07/archlinuxkdelayout/"><meta property="og:image" content="https://www.hikk.top"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-07-21T09:58:45+08:00">
-<meta property="article:modified_time" content="2021-11-06T10:47:07+08:00">
+<meta property="article:modified_time" content="2021-11-08T12:46:09+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://www.hikk.top">
-<meta name=twitter:title content="ArchLinuxKde配置">
+<meta name=twitter:title content="ArchLinux配置">
 <meta name=twitter:description content="ArchLinux安装参考链接 篝ノ雾枝的魔法学院 获取镜像列表 这条命令从官方镜像列表中获取3个最近同步过的源，并对这3个源">
 <meta name=application-name content="海客">
 <meta name=apple-mobile-web-app-title content="海客">
@@ -20,7 +20,7 @@
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical href=https://www.hikk.top/posts/2021/07/archlinuxkdelayout/><link rel=prev href=https://www.hikk.top/posts/2021/02/hugothemeinstall/><link rel=next href=https://www.hikk.top/posts/2021/09/tittletattle/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css>
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css>
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"ArchLinuxKde配置","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.hikk.top\/posts\/2021\/07\/archlinuxkdelayout\/"},"genre":"posts","keywords":"Linux","wordcount":3706,"url":"https:\/\/www.hikk.top\/posts\/2021\/07\/archlinuxkdelayout\/","datePublished":"2021-07-21T09:58:45+08:00","dateModified":"2021-11-06T10:47:07+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"海客"},"author":{"@type":"Person","name":"海客"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"ArchLinux配置","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.hikk.top\/posts\/2021\/07\/archlinuxkdelayout\/"},"genre":"posts","keywords":"Linux","wordcount":3881,"url":"https:\/\/www.hikk.top\/posts\/2021\/07\/archlinuxkdelayout\/","datePublished":"2021-07-21T09:58:45+08:00","dateModified":"2021-11-08T12:46:09+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"海客"},"author":{"@type":"Person","name":"海客"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'light'==='light'||'light'==='dark'||'light'==='black'?(setTheme('light'),saveTheme('light')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let metaColors={light:'#f8f8f8',dark:'#252627',black:'#000000'};getMeta('theme-color').content=metaColors[document.body.getAttribute('theme')]</script>
 <div id=back-to-top></div>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
@@ -82,12 +82,12 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目录</h2>
 <div class="toc-content always-active" id=toc-content-auto></div>
-</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ArchLinuxKde配置</h1><div class=post-meta>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ArchLinux配置</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=/ title=Author rel=author class=author>海客</a>
 </span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-07-21>2021-07-21</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-11-06>2021-11-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 3706 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 8 分钟&nbsp;<span id=/posts/2021/07/archlinuxkdelayout/ class=leancloud_visitors data-flag-title=ArchLinuxKde配置>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-07-21>2021-07-21</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-11-08>2021-11-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 3881 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 8 分钟&nbsp;<span id=/posts/2021/07/archlinuxkdelayout/ class=leancloud_visitors data-flag-title=ArchLinux配置>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -121,6 +121,7 @@
 <li><a href=#配置>配置</a></li>
 </ul>
 </li>
+<li><a href=#i3lock-color>i3lock-color</a></li>
 <li><a href=#obs-studio>obs-studio</a></li>
 <li><a href=#blob-emoji>Blob Emoji</a></li>
 </ul>
@@ -320,6 +321,7 @@ yay jdk8  <span class=c1>#选择 extra/jdk8-openjdk</span>
 </span><span class=lnt>19
 </span><span class=lnt>20
 </span><span class=lnt>21
+</span><span class=lnt>22
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1>#Yet another yogurt. Pacman wrapper and AUR helper written in go.</span>
@@ -332,6 +334,7 @@ yay -Rns package
 3.使用yay清除不需要的依赖项
 yay -Yc
 <span class=c1># The popular and trusted web browser by Google (Stable Channel)</span>
+<span class=c1>#此包command下是google-chrome-stable</span>
 sudo pacman -S google-chrome
 <span class=c1># Typora will give you a seamless experience as both a reader and a writer.</span>
 sudo pacman -S typora
@@ -776,14 +779,10 @@ sudo systemctl <span class=nb>enable</span> optimus-manager
 </code></pre></td></tr></table>
 </div>
 </div><h4 id=配置>配置</h4>
-<p>通过systemctl管理Clash的进程，对应<code>clash.service</code>文件。</p>
+<p>通过systemctl管理Clash的进程，对应<code>clash@.service</code>文件。</p>
 <p>通过两个脚本<code>start-clash.sh</code>和<code>stop-clash.sh</code>实现开启更新订阅。</p>
-<p><code>clash.service</code></p>
-<p>注意：</p>
-<ol>
-<li><code>"your home directory"</code>改为<code>从根目录开始的路径</code>。否则在启动<code>clash.service</code>单元文件时，会报错。</li>
-<li><code>%i</code>改为当前登录用户名(<code>whoami</code>查看当前用户)。</li>
-</ol>
+<p>这里的<code>%i</code>指当前用户。</p>
+<p><code>clash@.service</code></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -801,20 +800,22 @@ sudo systemctl <span class=nb>enable</span> optimus-manager
 </span><span class=lnt>13
 </span><span class=lnt>14
 </span><span class=lnt>15
+</span><span class=lnt>16
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># edit and save this file to /usr/lib/systemd/system/clash.service</span>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># edit and save this file to /usr/lib/systemd/system/clash@.service</span>
 <span class=o>[</span>Unit<span class=o>]</span>
 <span class=nv>Description</span><span class=o>=</span>A rule based proxy in Go <span class=k>for</span> %i.
-<span class=nv>After</span><span class=o>=</span>network.target
+<span class=nv>Wants</span><span class=o>=</span>network-online.target
+<span class=nv>After</span><span class=o>=</span>network-online.target
 
 <span class=o>[</span>Service<span class=o>]</span>
-<span class=nv>WorkingDirectory</span><span class=o>=</span><span class=s2>&#34;your home directory&#34;</span>/.config/clash
+<span class=nv>WorkingDirectory</span><span class=o>=</span>/home/%i/.config/clash
 <span class=nv>Type</span><span class=o>=</span>simple
 <span class=nv>User</span><span class=o>=</span>%i
 <span class=nv>Restart</span><span class=o>=</span>on-abort
-<span class=nv>ExecStart</span><span class=o>=</span><span class=s2>&#34;your home directory&#34;</span>/.config/clash/start-clash.sh
-<span class=nv>ExecStop</span><span class=o>=</span><span class=s2>&#34;your home directory&#34;</span>/.config/clash/stop-clash.sh
+<span class=nv>ExecStart</span><span class=o>=</span>/home/%i/.config/clash/start-clash.sh
+<span class=nv>ExecStop</span><span class=o>=</span>/home/%i/.config/clash/stop-clash.sh
 
 <span class=o>[</span>Install<span class=o>]</span>
 <span class=nv>WantedBy</span><span class=o>=</span>multi-user.target
@@ -896,22 +897,148 @@ trash-put <span class=si>${</span><span class=nv>HOME</span><span class=si>}</sp
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>chmod +x stop-clash.sh
-chmod +x start-clash.sh
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>chmod +x stop-clash.sh start-clash.sh
 </code></pre></td></tr></table>
 </div>
 </div><p>使用<code>systemctl</code>管理</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo systemctl <span class=nb>enable</span> clash
-sudo systemctl start clash
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo systemctl <span class=nb>enable</span> --now clash@%i
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=i3lock-color>i3lock-color</h3>
+<blockquote>
+<p>参考链接：</p>
+<p><a href=https://kewth.github.io/2019/10/01/i3lock target=_blank rel="noopener noreffer">i3lock各个衍生介绍</a></p>
+<p><a href=https://github.com/Raymo111/i3lock-color/blob/master/examples/lock.sh target=_blank rel="noopener noreffer">美化链接</a></p>
+<p><a href=https://github.com/Raymo111/i3lock-color/issues/174#issuecomment-687149213 target=_blank rel="noopener noreffer">加入系统服务</a></p>
+</blockquote>
+<p>美化配置文件</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/sh
+</span><span class=cp></span>
+<span class=nv>BLANK</span><span class=o>=</span><span class=s1>&#39;#EAEAEF&#39;</span>
+<span class=nv>CLEAR</span><span class=o>=</span><span class=s1>&#39;#1e90ff&#39;</span>
+<span class=nv>DEFAULT</span><span class=o>=</span><span class=s1>&#39;#1e90ff&#39;</span>
+<span class=nv>TEXT</span><span class=o>=</span><span class=s1>&#39;#483d8b&#39;</span>
+<span class=nv>WRONG</span><span class=o>=</span><span class=s1>&#39;#ffa500&#39;</span>
+<span class=nv>VERIFYING</span><span class=o>=</span><span class=s1>&#39;#B5E6B5&#39;</span>
+
+i3lock <span class=se>\
+</span><span class=se></span>--insidever-color<span class=o>=</span><span class=nv>$CLEAR</span>     <span class=se>\
+</span><span class=se></span>--ringver-color<span class=o>=</span><span class=nv>$VERIFYING</span>   <span class=se>\
+</span><span class=se>\
+</span><span class=se></span>--insidewrong-color<span class=o>=</span><span class=nv>$CLEAR</span>   <span class=se>\
+</span><span class=se></span>--ringwrong-color<span class=o>=</span><span class=nv>$WRONG</span>     <span class=se>\
+</span><span class=se>\
+</span><span class=se></span>--inside-color<span class=o>=</span><span class=nv>$BLANK</span>        <span class=se>\
+</span><span class=se></span>--ring-color<span class=o>=</span><span class=nv>$DEFAULT</span>        <span class=se>\
+</span><span class=se></span>--line-color<span class=o>=</span><span class=nv>$BLANK</span>          <span class=se>\
+</span><span class=se></span>--separator-color<span class=o>=</span><span class=nv>$DEFAULT</span>   <span class=se>\
+</span><span class=se>\
+</span><span class=se></span>--verif-color<span class=o>=</span><span class=nv>$TEXT</span>          <span class=se>\
+</span><span class=se></span>--wrong-color<span class=o>=</span><span class=nv>$TEXT</span>          <span class=se>\
+</span><span class=se></span>--time-color<span class=o>=</span><span class=nv>$TEXT</span>           <span class=se>\
+</span><span class=se></span>--date-color<span class=o>=</span><span class=nv>$TEXT</span>           <span class=se>\
+</span><span class=se></span>--layout-color<span class=o>=</span><span class=nv>$TEXT</span>         <span class=se>\
+</span><span class=se></span>--keyhl-color<span class=o>=</span><span class=nv>$WRONG</span>         <span class=se>\
+</span><span class=se></span>--bshl-color<span class=o>=</span><span class=nv>$WRONG</span>          <span class=se>\
+</span><span class=se>\
+</span><span class=se></span>--screen <span class=m>1</span>                   <span class=se>\
+</span><span class=se></span>--blur <span class=m>5</span>                     <span class=se>\
+</span><span class=se></span>--clock                      <span class=se>\
+</span><span class=se></span>--indicator                  <span class=se>\
+</span><span class=se></span>--time-str<span class=o>=</span><span class=s2>&#34;%H:%M:%S&#34;</span>        <span class=se>\
+</span><span class=se></span>--date-str<span class=o>=</span><span class=s2>&#34;%A, %m %Y&#34;</span>       <span class=se>\
+</span><span class=se></span>--keylayout <span class=m>1</span>                <span class=se>\
+</span></code></pre></td></tr></table>
+</div>
+</div><p>加入系统服务，休眠开启后锁屏</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># edit and save this file to /usr/lib/systemd/system/lock@.service</span>
+<span class=o>[</span>Unit<span class=o>]</span>
+<span class=nv>Description</span><span class=o>=</span>Lock screen on <span class=nb>suspend</span> <span class=k>for</span> %i.
+<span class=nv>Before</span><span class=o>=</span>sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+<span class=o>[</span>Service<span class=o>]</span>
+<span class=nv>User</span><span class=o>=</span>%i
+<span class=nv>Environment</span><span class=o>=</span><span class=nv>DISPLAY</span><span class=o>=</span>:0
+<span class=nv>Type</span><span class=o>=</span>forking
+<span class=nv>ExecStart</span><span class=o>=</span>/home/%i/<span class=s2>&#34;文件路径&#34;</span>
+<span class=nv>ExecStartPost</span><span class=o>=</span>/usr/bin/sleep <span class=m>1</span>
+
+<span class=o>[</span>Install<span class=o>]</span>
+<span class=nv>WantedBy</span><span class=o>=</span>sleep.target suspend.target hibernate.target hybrid-sleep.target
+</code></pre></td></tr></table>
+</div>
+</div><p>自启动</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo systemctl <span class=nb>enable</span> lock@%i
 </code></pre></td></tr></table>
 </div>
 </div><h3 id=obs-studio>obs-studio</h3>
@@ -936,7 +1063,6 @@ load-module module-echo-cancel
 </code></pre></td></tr></table>
 </div>
 </div><p>如果遇到在obs运行状态下，修改的以上配置文件，还需重启obs即可。</p>
-<hr>
 <h3 id=blob-emoji>Blob Emoji</h3>
 <p>参考链接：<a href=https://www.aloxaf.com/2018/10/linux_emoji target=_blank rel="noopener noreffer">在 Linux 下使用 Blob Emoji</a></p>
 <div class=highlight><div class=chroma>
@@ -1052,11 +1178,9 @@ pgrep -l 进程名字<span class=o>(</span><span class=s2>&#34;进程名字&#34;
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo systemctl <span class=nb>enable</span> fstrim.timer
-sudo systemctl start fstrim.timer
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo systemctl <span class=nb>enable</span> --now fstrim.timer
 </code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -1064,7 +1188,7 @@ sudo systemctl start fstrim.timer
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新于 2021-11-06</span>
+<span>更新于 2021-11-08</span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -1088,7 +1212,7 @@ sudo systemctl start fstrim.timer
 Please enable JavaScript to view the comments powered by <a href=https://waline.js.org/>Waline</a>.
 </noscript></div></article></div>
 </main><footer class=footer>
-<div class=footer-container><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.89.1">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
+<div class=footer-container><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.89.1">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
 </div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021</span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div></footer></div>
 <div id=fixed-buttons><a href=#back-to-top id=back-to-top-button class=fixed-button title=回到顶部>
@@ -1096,7 +1220,7 @@ Please enable JavaScript to view the comments powered by <a href=https://waline.
 </a><a href=# id=view-comments class=fixed-button title=查看评论>
 <i class="fas fa-comment fa-fw"></i>
 </a>
-</div><div class=assets><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.0/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/topbar@1.0.1/topbar.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/@sliphua/pjax@0.13.0/dist/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
-<div class=pjax-assets><script type=text/javascript src=https://cdn.jsdelivr.net/npm/@waline/client@1.3.9/dist/Waline.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:10},comment:{waline:{copyright:!0,dark:"body[theme='dark'], body[theme='black']",el:"#waline",highlight:!0,lang:"zh-cn",login:"force",meta:["nick","mail","link"],pageSize:10,serverURL:"https://xuanm-9g7nkrb237b3a79a-1257389278.ap-shanghai.app.tcloudbase.com",visitor:!0}},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"没有找到结果",snippetLength:50,threshold:.3,type:"fuse",useExtendedSearch:!1}}</script></div>
+</div><div class=assets><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.0/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/topbar@1.0.1/topbar.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/@sliphua/pjax@2.4.0/dist/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
+<div class=pjax-assets><script type=text/javascript src=https://cdn.jsdelivr.net/npm/@waline/client@1.5.1/dist/Waline.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:10},comment:{waline:{copyright:!0,dark:"body[theme='dark'], body[theme='black']",el:"#waline",highlight:!0,lang:"zh-cn",login:"force",meta:["nick","mail","link"],pageSize:10,serverURL:"https://xuanm-9g7nkrb237b3a79a-1257389278.ap-shanghai.app.tcloudbase.com",visitor:!0}},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"没有找到结果",snippetLength:50,threshold:.3,type:"fuse",useExtendedSearch:!1}}</script></div>
 </body>
 </html>
