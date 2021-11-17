@@ -3,24 +3,24 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title class=pjax-title>ArchLinux配置 - 海客</title><meta name=keywords content="[海客]">
-<meta name=Description content="海客"><meta property="og:title" content="ArchLinux配置">
+<title class=pjax-title>ArchLinux-i3-配置 - 海客</title><meta name=keywords content="[海客]">
+<meta name=Description content="海客"><meta property="og:title" content="ArchLinux-i3-配置">
 <meta property="og:description" content="ArchLinux安装参考链接 篝ノ雾枝的魔法学院 获取镜像列表 这条命令从官方镜像列表中获取3个最近同步过的源，并对这3个源">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://www.hikk.top/posts/2021/07/archlinuxkdelayout/"><meta property="og:image" content="https://www.hikk.top"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://www.hikk.top/posts/2021/07/archlinuxi3layout/"><meta property="og:image" content="https://www.hikk.top"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-07-21T09:58:45+08:00">
-<meta property="article:modified_time" content="2021-11-08T12:46:09+08:00">
+<meta property="article:modified_time" content="2021-07-21T09:58:45+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://www.hikk.top">
-<meta name=twitter:title content="ArchLinux配置">
+<meta name=twitter:title content="ArchLinux-i3-配置">
 <meta name=twitter:description content="ArchLinux安装参考链接 篝ノ雾枝的魔法学院 获取镜像列表 这条命令从官方镜像列表中获取3个最近同步过的源，并对这3个源">
 <meta name=application-name content="海客">
 <meta name=apple-mobile-web-app-title content="海客">
 <meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical href=https://www.hikk.top/posts/2021/07/archlinuxkdelayout/><link rel=prev href=https://www.hikk.top/posts/2021/02/hugothemeinstall/><link rel=next href=https://www.hikk.top/posts/2021/09/tittletattle/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical href=https://www.hikk.top/posts/2021/07/archlinuxi3layout/><link rel=prev href=https://www.hikk.top/posts/2021/02/hugothemeinstall/><link rel=next href=https://www.hikk.top/posts/2021/09/tittletattle/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css>
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css>
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"ArchLinux配置","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.hikk.top\/posts\/2021\/07\/archlinuxkdelayout\/"},"genre":"posts","keywords":"Linux","wordcount":3881,"url":"https:\/\/www.hikk.top\/posts\/2021\/07\/archlinuxkdelayout\/","datePublished":"2021-07-21T09:58:45+08:00","dateModified":"2021-11-08T12:46:09+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"海客"},"author":{"@type":"Person","name":"海客"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"ArchLinux-i3-配置","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.hikk.top\/posts\/2021\/07\/archlinuxi3layout\/"},"genre":"posts","keywords":"Linux","wordcount":4079,"url":"https:\/\/www.hikk.top\/posts\/2021\/07\/archlinuxi3layout\/","datePublished":"2021-07-21T09:58:45+08:00","dateModified":"2021-07-21T09:58:45+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"海客"},"author":{"@type":"Person","name":"海客"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'light'==='light'||'light'==='dark'||'light'==='black'?(setTheme('light'),saveTheme('light')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let metaColors={light:'#f8f8f8',dark:'#252627',black:'#000000'};getMeta('theme-color').content=metaColors[document.body.getAttribute('theme')]</script>
 <div id=back-to-top></div>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
@@ -82,12 +82,12 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目录</h2>
 <div class="toc-content always-active" id=toc-content-auto></div>
-</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ArchLinux配置</h1><div class=post-meta>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ArchLinux-i3-配置</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=/ title=Author rel=author class=author>海客</a>
 </span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-07-21>2021-07-21</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-11-08>2021-11-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 3881 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 8 分钟&nbsp;<span id=/posts/2021/07/archlinuxkdelayout/ class=leancloud_visitors data-flag-title=ArchLinux配置>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-07-21>2021-07-21</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-07-21>2021-07-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 4079 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 9 分钟&nbsp;<span id=/posts/2021/07/archlinuxi3layout/ class=leancloud_visitors data-flag-title=ArchLinux-i3-配置>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -110,11 +110,7 @@
 <ul>
 <li><a href=#trash-cli>Trash-cli</a></li>
 <li><a href=#spacemacs>Spacemacs</a></li>
-<li><a href=#striken卡安装strike><strike>N卡安装</strike></a>
-<ul>
-<li><a href=#第二种>第二种</a></li>
-</ul>
-</li>
+<li><a href=#n卡安装>N卡安装</a></li>
 <li><a href=#strikeclash自动更新订阅strike><strike>clash自动更新订阅</strike></a>
 <ul>
 <li><a href=#安装>安装</a></li>
@@ -130,7 +126,15 @@
 <li><a href=#ssd配置>SSD配置</a></li>
 </ul>
 </nav></div>
-</div><div class=content id=content><h2 id=archlinux安装参考链接>ArchLinux安装参考链接</h2>
+</div><div class=content id=content><div class="details admonition note open">
+<div class="details-summary admonition-title">
+<i class="icon fas fa-pencil-alt fa-fwnote"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+</div>
+<div class=details-content>
+<div class=admonition-content>
+本文最后更新于 <span class=timeago datetime="  2021-07-21 " title=" 2021-07-21">2021-07-21</span>，内容或许过时，仔细甄别！</div>
+</div>
+</div><h2 id=archlinux安装参考链接>ArchLinux安装参考链接</h2>
 <ul>
 <li><a href=https://archlinuxstudio.github.io target=_blank rel="noopener noreffer">篝ノ雾枝的魔法学院</a></li>
 </ul>
@@ -662,108 +666,137 @@ M-k
 <li>撤销(UNDO)</li>
 </ol>
 <hr>
-<h3 id=striken卡安装strike><strike>N卡安装</strike></h3>
-<p>笔记本显卡是1050Ti</p>
-<ol>
-<li>安装显卡</li>
-</ol>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>yay -S nvidia-390xx-dkms nvidia-settings lib32-nvidia-390xx-utils
-</code></pre></td></tr></table>
-</div>
-</div><ol start=2>
-<li>确定本机内核及安装相应包</li>
-</ol>
+<h3 id=n卡安装>N卡安装</h3>
+<p>参考链接</p>
+<ul>
+<li><a href=https://litterhougelangley.life/blog/2021/05/21/gentoo target=_blank rel="noopener noreffer">打开ctrl+f搜索nvidia就能找到</a></li>
+</ul>
+<p>注：以下均在root模式下进行(用户模式下也得获取管理员权限)</p>
+<p>安装最新版的nvidia驱动后，先禁用窗口登陆器的自启动，打开<code>/etc/X11/xorg.conf</code>，注释以下内容</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1>#这个命令可以显示出当前arch的内核，我的是“5.13.13-arch1-1”</span>
-uname -r
-<span class=c1>#安装3个linux-headers acpi_call-dkms xorg-xrandr，&#34;xf86-video-intel&#34;这个在arch中是不用安装的，后面的git在配好机器前若没有安装，还是需要安装的，之后有涉及到使用git命令</span>
-sudo pacman -S linux-headers acpi_call-dkms xorg-xrandr
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1>#Section &#34;Device&#34;</span>
+<span class=c1>#    Identifier     &#34;Device0&#34;</span>
+<span class=c1>#    Driver         &#34;nvidia&#34;</span>
+<span class=c1>#    VendorName     &#34;NVIDIA Corporation&#34;</span>
+<span class=c1>#    BusID          &#34;PCI:1:0:0&#34;</span>
+<span class=c1>#EndSection</span>
 </code></pre></td></tr></table>
 </div>
-</div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1>#启用插件</span>
-sudo modprobe acpi_call
-</code></pre></td></tr></table>
-</div>
-</div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>git clone https://github.com/dglt1/optimus-switch-sddm.git
-<span class=nb>cd</span> ~/optimus-switch-sddm
-chmod +x install.sh
-sudo ./install.sh
-</code></pre></td></tr></table>
-</div>
-</div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo set-nvidia.sh
-reboot
-</code></pre></td></tr></table>
-</div>
-</div><p>重启后就已经进入N卡状态了。</p>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1>#查看显卡相关信息</span>
-nvidia-settings
-</code></pre></td></tr></table>
-</div>
-</div><h4 id=第二种>第二种</h4>
-<p><a href=https://eonun.com/posts/4aa02744 target=_blank rel="noopener noreffer">Nvidia独显驱动安装</a></p>
+</div><p>在<code>grub</code>下的<code>linux</code>启动选项中添加<code>modprobe.blacklist=nouveau</code>，完成后，<code>grub-mkconfig -o /boot/grub/grub.cfg</code>刷新下。</p>
+<p>之后，生成一个默认的<code>nvidia xorg</code>配置文件，</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>paru -S nvidia nvidia-settings lib32-nvidia-utils
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>nvidia-xconfig --prime
 </code></pre></td></tr></table>
 </div>
-</div><div class=highlight><div class=chroma>
+</div><p>运行成功，文件将生成在<code>/etgc/X11</code>目录下<code>xorg.conf</code>文件</p>
+<p>编辑<code>xorg.conf</code>文件，实现 offload 功能（就是混合模式）。</p>
+<p>[更多窗口管理器，看上方参考链接]</p>
+<p>我用的lightdm，所以在配置文件<code>/etc/lighdm/lightdm.conf</code>下的[LightDM]增添以下一行内容</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nv>DisplayCommand</span><span class=o>=</span>/etc/lightdm/scripts/Xsetup
+</code></pre></td></tr></table>
+</div>
+</div><p>创建脚本目录</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>mkdir -p /etc/sddm/scripts
+</code></pre></td></tr></table>
+</div>
+</div><p>创建脚本文件</p>
+<div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>paru -S optimus-manager optimus-manager-qt
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/sh
+</span><span class=cp></span>xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+</code></pre></td></tr></table>
+</div>
+</div><p>最后，赋予执行权限</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>chmod a+x /etc/sddm/scripts/Xsetup
+</code></pre></td></tr></table>
+</div>
+</div><p>将以下内容复制粘贴进去(或者修改原文件的内容，与下方一致)</p>
+<p>注：BusID可以不用修改</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>Section	<span class=s2>&#34;ServerLayout&#34;</span>
+	Identifier	<span class=s2>&#34;layout&#34;</span>
+	Screen 0	<span class=s2>&#34;iGPU&#34;</span>
+	Option	<span class=s2>&#34;AllowNVIDIAGPUScreens&#34;</span>
+EndSection
 
-sudo systemctl <span class=nb>enable</span> optimus-manager
+Section	<span class=s2>&#34;Device&#34;</span>
+	Identifier	<span class=s2>&#34;iGPU&#34;</span>
+	Driver	<span class=s2>&#34;modesetting&#34;</span>
+	BusID	<span class=s2>&#34;PCI:0:2:0&#34;</span>
+EndSection
+
+Section	<span class=s2>&#34;Screen&#34;</span>
+	Identifier	<span class=s2>&#34;iGPU&#34;</span>
+	Device	<span class=s2>&#34;iGPU&#34;</span>
+EndSection
+
+Section	<span class=s2>&#34;Device&#34;</span>
+	Identifier	<span class=s2>&#34;nvidia&#34;</span>
+	Driver	<span class=s2>&#34;nvidia&#34;</span>
+	BusID	<span class=s2>&#34;PCI:1:0:0&#34;</span>
+EndSection
 </code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p>bbswitch对本电脑不行</p>
-<p>在grub下添加acpi_osi="Windows 2015" pcie_port_pm=off</p>
-</blockquote>
-<h3 id=strikeclash自动更新订阅strike><strike>clash自动更新订阅</strike></h3>
+</div><h3 id=strikeclash自动更新订阅strike><strike>clash自动更新订阅</strike></h3>
 <p>参考链接：</p>
 <ul>
 <li><a href=https://akillcool.github.io/post/clash-with-auto-update-config target=_blank rel="noopener noreffer">Clash自动更新订阅配置</a></li>
@@ -1188,7 +1221,7 @@ pgrep -l 进程名字<span class=o>(</span><span class=s2>&#34;进程名字&#34;
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新于 2021-11-08</span>
+<span>更新于 2021-07-21</span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
