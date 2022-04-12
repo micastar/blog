@@ -2,13 +2,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.hikk.top/me/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/friend/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/arch-linux-i3-layout/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/tags/linux/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/posts/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/tags/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/tags/tattle/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/hugo-theme-install/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.hikk.top/tittle-tattle/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
+            <loc>https://www.hikk.top/me/</loc><lastmod>2022-02-13T22:35:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/friend/</loc><lastmod>2022-02-14T21:46:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/posts/3/</loc><lastmod>2022-02-13T16:04:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/tags/linux/</loc><lastmod>2022-02-13T16:04:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/posts/</loc><lastmod>2022-02-13T16:04:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/tags/</loc><lastmod>2022-02-13T16:04:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/</loc><lastmod>2022-02-13T16:04:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/tags/tattle/</loc><lastmod>2022-02-13T16:03:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/posts/2/</loc><lastmod>2022-02-13T16:03:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.hikk.top/posts/1/</loc><lastmod>2022-02-13T16:02:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
