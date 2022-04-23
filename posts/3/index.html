@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.hikk.top/posts/3/" /><meta property="og:image" content="https://www.hikk.top"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-13T16:04:00+08:00" />
-<meta property="article:modified_time" content="2022-02-13T16:04:00+08:00" /><meta property="og:site_name" content="海客" />
+<meta property="article:modified_time" content="2022-04-12T18:38:54+08:00" /><meta property="og:site_name" content="海客" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.hikk.top"/>
@@ -33,8 +33,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.hikk.top\/posts\/3\/"
-        },"genre": "posts","keywords": "linux","wordcount":  4971 ,
-        "url": "https:\/\/www.hikk.top\/posts\/3\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-02-13T16:04:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"genre": "posts","keywords": "linux","wordcount":  5072 ,
+        "url": "https:\/\/www.hikk.top\/posts\/3\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-04-12T18:38:54+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "海客"},"author": {
                 "@type": "Person",
@@ -149,14 +149,15 @@
     <li><a href="#archlinux-tips">ArchLinux-Tips</a></li>
     <li><a href="#ssd配置">SSD配置</a></li>
     <li><a href="#i3-networkmanager-dmenu-git-connection-8021x">i3-networkmanager-dmenu-git-connection-802.1x</a></li>
+    <li><a href="#触控板">触控板</a></li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">archLinux-i3-配置</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">海客</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;4971 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;10 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-04-12">2022-04-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5072 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;11 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -201,6 +202,7 @@
     <li><a href="#archlinux-tips">ArchLinux-Tips</a></li>
     <li><a href="#ssd配置">SSD配置</a></li>
     <li><a href="#i3-networkmanager-dmenu-git-connection-8021x">i3-networkmanager-dmenu-git-connection-802.1x</a></li>
+    <li><a href="#触控板">触控板</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="archlinux安装参考链接" class="headerLink">
@@ -227,10 +229,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#注意：在--sort rate中，有些镜像无法进行评分，会在命令行下弹出警号（WARNING）</span>
-
-sudo reflector --country China --age <span class="m">6</span> --latest <span class="m">6</span> --fastest <span class="m">6</span> --threads <span class="m">6</span> --sort rate --protocol https --save /etc/pacman.d/mirrorlist
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#注意：在--sort rate中，有些镜像无法进行评分，会在命令行下弹出警号（WARNING）</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo reflector --country China --age <span class="m">6</span> --latest <span class="m">6</span> --fastest <span class="m">6</span> --threads <span class="m">6</span> --sort rate --protocol https --save /etc/pacman.d/mirrorlist
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>镜像下好之后，删除tuna源(好几次下载失败，用的人太多了），用bfsu或opentuna等其他镜像源。</p>
@@ -247,10 +249,10 @@ sudo reflector --country China --age <span class="m">6</span> --latest <span cla
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S java-runtime-common java-environment-common
-
-yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S java-runtime-common java-environment-common
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用 archlinux-java 命令来管理 Java 环境</p>
 <p>列举 Java 环境：</p>
@@ -259,8 +261,8 @@ yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">archlinux-java status
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">archlinux-java status
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>选择 Java 环境：</p>
 <div class="highlight"><div class="chroma">
@@ -268,8 +270,8 @@ yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo archlinux-java <span class="nb">set</span> java-8-openjdk
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo archlinux-java <span class="nb">set</span> java-8-openjdk
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <h3 id="go" class="headerLink">
@@ -280,8 +282,8 @@ yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S go go-tools
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S go go-tools
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>第二种方法是 <code>gcc-go</code>。</p>
@@ -308,14 +310,14 @@ yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim ~/.zshrc <span class="c1"># OR ~/.bashrc OR ~/.profile</span>
-
-
-
-<span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span>~/go
-
-<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$GOPATH</span>/bin
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim ~/.zshrc <span class="c1"># OR ~/.bashrc OR ~/.profile</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span>~/go
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$GOPATH</span>/bin
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>由于某些特殊的原因，国内无法很好地拉取 Go 相关的软件包。建议使用 goproxy/<a href="https://goproxy.cn" target="_blank" rel="noopener noreffer">goproxy.cn</a> ，只需在拉取前输入：</p>
 <div class="highlight"><div class="chroma">
@@ -323,8 +325,8 @@ yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">GOPROXY</span><span class="o">=</span>https://goproxy.cn
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOPROXY</span><span class="o">=</span>https://goproxy.cn
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <h2 id="修改引导程序" class="headerLink">
@@ -339,8 +341,8 @@ yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim /etc/default/grub
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim /etc/default/grub
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后生成 GRUB 所需的配置文件</p>
 <div class="highlight"><div class="chroma">
@@ -348,8 +350,8 @@ yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">grub-mkconfig -o /boot/grub/grub.cfg
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <h2 id="提升makepkg编译速度" class="headerLink">
@@ -375,20 +377,20 @@ yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#install pigz pbzip2</span>
-
-paru -S pigz pbzip2
-
-<span class="c1">#edit /etc/makepkg.conf</span>
-
-<span class="nv">COMPRESSXZ</span><span class="o">=(</span>xz -c -z - --threads<span class="o">=</span>0<span class="o">)</span>
-
-<span class="nv">COMPRESSGZ</span><span class="o">=(</span>pigz -c -f -n<span class="o">)</span>
-
-<span class="nv">COMPRESSBZ2</span><span class="o">=(</span>pbzip2 -c -f<span class="o">)</span>
-
-<span class="nv">COMPRESSZST</span><span class="o">=(</span>zstd -c -z -q - --threads<span class="o">=</span>0<span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#install pigz pbzip2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">paru -S pigz pbzip2
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#edit /etc/makepkg.conf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSXZ</span><span class="o">=(</span>xz -c -z - --threads<span class="o">=</span>0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSGZ</span><span class="o">=(</span>pigz -c -f -n<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSBZ2</span><span class="o">=(</span>pbzip2 -c -f<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSZST</span><span class="o">=(</span>zstd -c -z -q - --threads<span class="o">=</span>0<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <h2 id="去除vscode窗口标题栏" class="headerLink">
@@ -445,52 +447,52 @@ paru -S pigz pbzip2
 </span><span class="lnt">45
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Feature packed AUR helper</span>
-
-sudo pacman -S paru
-
-<span class="c1">#paru使用技巧</span>
-
-1.使用选项-S使用paru从AUR安装软件包
-
-paru -S package
-
-2.使用paru删除包
-
-paru -Rs package
-
-3.使用yay清除不需要的依赖项
-
-paru -Yc
-
-<span class="c1"># The popular and trusted web browser by Google (Stable Channel)</span>
-
-<span class="c1">#此包command下是google-chrome-stable</span>
-
-sudo pacman -S google-chrome
-
-<span class="c1"># Typora will give you a seamless experience as both a reader and a writer.</span>
-
-sudo pacman -S typora
-
-<span class="c1">#Visual Studio Code (vscode): Editor for building and debugging modern web and cloud applications (official binary version)</span>
-
-sudo pacman -S visual-studio-code-bin
-
-<span class="c1">#A CLI system information tool written in BASH that supports displaying images.</span>
-
-sudo pacman -S neofetch
-
-<span class="c1">#字体</span>
-
-<span class="c1">#weather-icons解决polybar的天气控件图标问题</span>
-
-sudo pacman -S noto-fonts noto-fonts-cjk ttf-sarasa-gothic ttf-font-awesome ttf-twemoji ttf-weather-icons
-
-<span class="c1">#解决双系统时间不同步问题</span>
-
-timedatectl set-local-rtc <span class="nb">true</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#Feature packed AUR helper</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S paru
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#paru使用技巧</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1.使用选项-S使用paru从AUR安装软件包
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">paru -S package
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2.使用paru删除包
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">paru -Rs package
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">3.使用yay清除不需要的依赖项
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">paru -Yc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># The popular and trusted web browser by Google (Stable Channel)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#此包command下是google-chrome-stable</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S google-chrome
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Typora will give you a seamless experience as both a reader and a writer.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S typora
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Visual Studio Code (vscode): Editor for building and debugging modern web and cloud applications (official binary version)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S visual-studio-code-bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#A CLI system information tool written in BASH that supports displaying images.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S neofetch
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#字体</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#weather-icons解决polybar的天气控件图标问题</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S noto-fonts noto-fonts-cjk ttf-sarasa-gothic ttf-font-awesome ttf-twemoji ttf-weather-icons
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#解决双系统时间不同步问题</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">timedatectl set-local-rtc <span class="nb">true</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="trash-cli" class="headerLink">
     <a href="#trash-cli" class="header-mark"></a>Trash-cli</h3><p><a href="https://linux.cn/article-10029-1.html" target="_blank" rel="noopener noreffer">Trash-cli中文非官方教程</a></p>
@@ -501,10 +503,10 @@ timedatectl set-local-rtc <span class="nb">true</span>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#比rm -rf保险的删除文件夹，删除文件到回收站里</span>
-
-sudo pacman -S trash-cli
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#比rm -rf保险的删除文件夹，删除文件到回收站里</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S trash-cli
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -519,16 +521,16 @@ sudo pacman -S trash-cli
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">trash-put： 删除文件和目录（仅放入回收站中）
-
-trash-list ：列出被删除了的文件和目录
-
-trash-restore：从回收站中恢复文件或目录 trash.
-
-trash-rm：删除回收站中的文件
-
-trash-empty：清空回收站
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">trash-put： 删除文件和目录（仅放入回收站中）
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">trash-list ：列出被删除了的文件和目录
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">trash-restore：从回收站中恢复文件或目录 trash.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">trash-rm：删除回收站中的文件
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">trash-empty：清空回收站
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="spacemacs" class="headerLink">
     <a href="#spacemacs" class="header-mark"></a>Spacemacs</h3><p><a href="https://www.spacemacs.org" target="_blank" rel="noopener noreffer">SPacemacs官网</a></p>
@@ -540,8 +542,8 @@ trash-empty：清空回收站
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ctrl + h + t
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ctrl + h + t
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>用于切换vim和emacs的模式（可视化的标识是左下角的蓝标（Emacs）和黄标（Vim））</li>
@@ -551,8 +553,8 @@ trash-empty：清空回收站
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ctrl + z
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ctrl + z
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>C-表示当按字符时按住CONTROL键。因此c-f就表示：按住CONTROL键再按f。</p>
@@ -568,8 +570,8 @@ trash-empty：清空回收站
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">C-x C-c （两个连续的组合键）
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">C-x C-c （两个连续的组合键）
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>退出一个正在运行中的命令</li>
@@ -579,8 +581,8 @@ trash-empty：清空回收站
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">C-g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">C-g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>向前移动一屏</li>
@@ -590,8 +592,8 @@ trash-empty：清空回收站
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">C-v
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">C-v
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>向后移动一屏</li>
@@ -601,8 +603,8 @@ trash-empty：清空回收站
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">M<span class="o">(</span>EDIT or ALT<span class="o">)</span>-v
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">M<span class="o">(</span>EDIT or ALT<span class="o">)</span>-v
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>重绘屏幕，并将光标所在行置于屏幕的中央</li>
@@ -614,10 +616,10 @@ trash-empty：清空回收站
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#CONTROL-L</span>
-
-C-l
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#CONTROL-L</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-l
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>找到光标，留意其附近的文字，然后按<code>C-l</code>。此时会发现其光标附近的文字与之前相同，位置却变为屏幕的中心。如果再次按<code>C-l</code>，附近的文字将移动到屏幕的顶端。再次按住<code>C-l</code>，文字将移动到低端</p>
 <p>PageUp和PageDn在emacs和vim下都可以使用</p>
@@ -643,22 +645,22 @@ C-l
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#上一行——previous(上一行)</span>
-
-C-p
-
-<span class="c1">#下一行——next(下一行)</span>
-
-C-n
-
-<span class="c1">#向左移——backward(回退)</span>
-
-C-b
-
-<span class="c1">#向右移——forward(前进)</span>
-
-C-f
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#上一行——previous(上一行)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#下一行——next(下一行)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-n
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#向左移——backward(回退)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-b
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#向右移——forward(前进)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-f
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>常用命令</li>
@@ -728,68 +730,68 @@ C-f
 </span><span class="lnt">61
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#移动到该词末尾(词：英文以英文单词为准，中文以下一个标点符号为准)</span>
-
-<span class="c1">#如果光标处于词与词的空白处，M-f会移动到下一个词的末尾</span>
-
-M-f
-
-<span class="c1">#和M-f一样，方向相反</span>
-
-M-b
-
-<span class="c1">#向右移动一个字符</span>
-
-C-f
-
-<span class="c1">#向左移动一个字符</span>
-
-C-b
-
-<span class="c1">#向右移动一个词【对中文是移动到下一个标点符号】</span>
-
-M-f
-
-<span class="c1">#向左移动一个词【对中文是移动到上一个标点符号】</span>
-
-M-b
-
-<span class="c1">#移动到下一行</span>
-
-C-n
-
-<span class="c1">#移动到上一行</span>
-
-C-p
-
-<span class="c1">#移动到行首</span>
-
-C-a
-
-<span class="c1">#移动到行尾</span>
-
-C-e
-
-<span class="c1">#移动到(每句)句首</span>
-
-M-a
-
-<span class="c1">#移动到(每句)句尾</span>
-
-M-e
-
-<span class="c1">#移动到所有文字的最开头(需要辅以shift)</span>
-
-<span class="c1">#M==Alt or EDIT</span>
-
-M-&lt;
-
-<span class="c1">#移动到所有文字的最末尾(需要辅以shift)</span>
-
-<span class="c1">#M==Alt or EDIT</span>
-
-M-&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#移动到该词末尾(词：英文以英文单词为准，中文以下一个标点符号为准)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#如果光标处于词与词的空白处，M-f会移动到下一个词的末尾</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-f
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#和M-f一样，方向相反</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-b
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#向右移动一个字符</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-f
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#向左移动一个字符</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-b
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#向右移动一个词【对中文是移动到下一个标点符号】</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-f
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#向左移动一个词【对中文是移动到上一个标点符号】</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-b
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移动到下一行</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-n
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移动到上一行</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移动到行首</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-a
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移动到行尾</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-e
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移动到(每句)句首</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-a
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移动到(每句)句尾</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-e
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移动到所有文字的最开头(需要辅以shift)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#M==Alt or EDIT</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-&lt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移动到所有文字的最末尾(需要辅以shift)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#M==Alt or EDIT</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>命令参数</li>
@@ -807,16 +809,16 @@ M-&gt;
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#C-u数字参数，为一个命令指定数字参数</span>
-
-<span class="c1">#数字参数(前缀参数)：这个参数是先于使用它的命令而输入的</span>
-
-<span class="c1">#先输入C-u，然后输入数字作为参数，最后再输入命令(推荐)</span>
-
-<span class="c1">#另一种方式，按住META(或EDIT或ALAT)键，然后输入数字</span>
-
-C-u + 数字 + 命令
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#C-u数字参数，为一个命令指定数字参数</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#数字参数(前缀参数)：这个参数是先于使用它的命令而输入的</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#先输入C-u，然后输入数字作为参数，最后再输入命令(推荐)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#另一种方式，按住META(或EDIT或ALAT)键，然后输入数字</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-u + 数字 + 命令
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>终止命令</li>
@@ -834,16 +836,16 @@ C-u + 数字 + 命令
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#安全地终止这条命令</span>
-
-<span class="c1">#终止一条执行过久的命令</span>
-
-<span class="c1">#取消数字参数和只输入到一半的命令</span>
-
-C-g
-
-<span class="c1">#取消&lt;ESC&gt;，再连按两次&lt;ESC&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#安全地终止这条命令</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#终止一条执行过久的命令</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#取消数字参数和只输入到一半的命令</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-g
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#取消&lt;ESC&gt;，再连按两次&lt;ESC&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>被禁用的命令(DISABLED COMMANDS)</li>
@@ -855,10 +857,10 @@ C-g
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#在用到了Emacs被禁用的命令，Emacs会显示提示信息，告知此命令的用处</span>
-
-<span class="c1">#“n” -&gt; 拒绝使用</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#在用到了Emacs被禁用的命令，Emacs会显示提示信息，告知此命令的用处</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#“n” -&gt; 拒绝使用</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>窗格(WINDOWS)</li>
@@ -872,12 +874,12 @@ C-g
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#只保留一个窗格(关掉其它所有窗格)</span>
-
-<span class="c1">#保留光标所在的窗格，将其扩大到整个屏幕，同时关掉所有其它窗格</span>
-
-C-x <span class="m">1</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#只保留一个窗格(关掉其它所有窗格)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#保留光标所在的窗格，将其扩大到整个屏幕，同时关掉所有其它窗格</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-x <span class="m">1</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>插入与删除(INSERTING AND DELETING)</li>
@@ -909,37 +911,37 @@ C-x <span class="m">1</span>
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#删除光标前的一个字符</span>
-
-&lt;DEL&gt;
-
-<span class="c1">#删除光标后的一个字符</span>
-
-c-d
-
-<span class="c1">#移除光标前的一个词</span>
-
-M-&lt;DEL&gt;
-
-<span class="c1">#移除光标后的一个词</span>
-
-M-d
-
-<span class="c1">#移除从光标到“行尾”间的字符</span>
-
-C-k
-
-<span class="c1">#移除从光标到“句尾”间的字符</span>
-
-M-k
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#删除光标前的一个字符</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;DEL&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#删除光标后的一个字符</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">c-d
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移除光标前的一个词</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-&lt;DEL&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移除光标后的一个词</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-d
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移除从光标到“行尾”间的字符</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">C-k
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#移除从光标到“句尾”间的字符</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">M-k
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>撤销(UNDO)</li>
 </ol>
 <hr>
 <h3 id="n卡安装" class="headerLink">
-    <a href="#n%e5%8d%a1%e5%ae%89%e8%a3%85" class="header-mark"></a>N卡安装</h3><p>参考链接</p>
+    <a href="#n%e5%8d%a1%e5%ae%89%e8%a3%85" class="header-mark"></a><del>N卡安装</del></h3><p>参考链接</p>
 <ul>
 <li><a href="https://litterhougelangley.life/blog/2021/05/21/gentoo" target="_blank" rel="noopener noreffer">打开ctrl+f搜索nvidia就能找到</a></li>
 </ul>
@@ -960,18 +962,18 @@ M-k
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#Section &#34;Device&#34;</span>
-
-<span class="c1"># Identifier &#34;Device0&#34;</span>
-
-<span class="c1"># Driver &#34;nvidia&#34;</span>
-
-<span class="c1"># VendorName &#34;NVIDIA Corporation&#34;</span>
-
-<span class="c1"># BusID &#34;PCI:1:0:0&#34;</span>
-
-<span class="c1">#EndSection</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#Section &#34;Device&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Identifier &#34;Device0&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Driver &#34;nvidia&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># VendorName &#34;NVIDIA Corporation&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># BusID &#34;PCI:1:0:0&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#EndSection</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在<code>grub</code>下的<code>linux</code>启动选项中添加<code>modprobe.blacklist=nouveau</code>，完成后，<code>grub-mkconfig -o /boot/grub/grub.cfg</code>刷新下。</p>
 <p>之后，生成一个默认的<code>nvidia xorg</code>配置文件，</p>
@@ -980,8 +982,8 @@ M-k
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">nvidia-xconfig --prime
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvidia-xconfig --prime
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行成功，文件将生成在<code>/etgc/X11</code>目录下<code>xorg.conf</code>文件</p>
 <p>编辑<code>xorg.conf</code>文件，实现 offload 功能（就是混合模式）。</p>
@@ -1036,50 +1038,50 @@ M-k
 </span><span class="lnt">43
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Section <span class="s2">&#34;ServerLayout&#34;</span>
-
-Identifier <span class="s2">&#34;layout&#34;</span>
-
-Screen <span class="m">0</span> <span class="s2">&#34;iGPU&#34;</span>
-
-Option <span class="s2">&#34;AllowNVIDIAGPUScreens&#34;</span>
-
-EndSection
-
-
-
-Section <span class="s2">&#34;Device&#34;</span>
-
-Identifier <span class="s2">&#34;iGPU&#34;</span>
-
-Driver <span class="s2">&#34;modesetting&#34;</span>
-
-BusID <span class="s2">&#34;PCI:0:2:0&#34;</span>
-
-EndSection
-
-
-
-Section <span class="s2">&#34;Screen&#34;</span>
-
-Identifier <span class="s2">&#34;iGPU&#34;</span>
-
-Device <span class="s2">&#34;iGPU&#34;</span>
-
-EndSection
-
-
-
-Section <span class="s2">&#34;Device&#34;</span>
-
-Identifier <span class="s2">&#34;nvidia&#34;</span>
-
-Driver <span class="s2">&#34;nvidia&#34;</span>
-
-BusID <span class="s2">&#34;PCI:1:0:0&#34;</span>
-
-EndSection
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Section <span class="s2">&#34;ServerLayout&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Identifier <span class="s2">&#34;layout&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Screen <span class="m">0</span> <span class="s2">&#34;iGPU&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Option <span class="s2">&#34;AllowNVIDIAGPUScreens&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">EndSection
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Section <span class="s2">&#34;Device&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Identifier <span class="s2">&#34;iGPU&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Driver <span class="s2">&#34;modesetting&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">BusID <span class="s2">&#34;PCI:0:2:0&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">EndSection
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Section <span class="s2">&#34;Screen&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Identifier <span class="s2">&#34;iGPU&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Device <span class="s2">&#34;iGPU&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">EndSection
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Section <span class="s2">&#34;Device&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Identifier <span class="s2">&#34;nvidia&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Driver <span class="s2">&#34;nvidia&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">BusID <span class="s2">&#34;PCI:1:0:0&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">EndSection
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <h3 id="docker配置v2raya" class="headerLink">
@@ -1111,24 +1113,24 @@ EndSection
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 检查宿主机的ip_forward</span>
-
-cat /proc/sys/net/ipv4/ip_forward
-
-<span class="c1"># 编辑或修改/etc/sysctl.conf</span>
-
-net.ipv4.ip_forward<span class="o">=</span><span class="m">1</span>
-
-<span class="c1"># 查看当前的ip_forward</span>
-
-sudo sysctl -p
-
-<span class="c1"># 重启NetworkManager和docker服务</span>
-
-sudo systemctl restart NetworkManager
-
-sudo systemctl restart docker
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 检查宿主机的ip_forward</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cat /proc/sys/net/ipv4/ip_forward
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 编辑或修改/etc/sysctl.conf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">net.ipv4.ip_forward<span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看当前的ip_forward</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo sysctl -p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 重启NetworkManager和docker服务</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo systemctl restart NetworkManager
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo systemctl restart docker
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <p>修改之后，进行官方镜像的配置</p>
@@ -1153,24 +1155,24 @@ sudo systemctl restart docker
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># run v2raya</span>
-
-docker run -d <span class="se">\
-</span><span class="se"></span>
---restart<span class="o">=</span>always <span class="se">\
-</span><span class="se"></span>
---privileged <span class="se">\
-</span><span class="se"></span>
---network<span class="o">=</span>host <span class="se">\
-</span><span class="se"></span>
---name v2raya <span class="se">\
-</span><span class="se"></span>
--v /lib/modules:/lib/modules <span class="se">\
-</span><span class="se"></span>
--v /etc/v2raya:/etc/v2raya <span class="se">\
-</span><span class="se"></span>
-mzz2017/v2raya
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># run v2raya</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -d <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--restart<span class="o">=</span>always <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--privileged <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--network<span class="o">=</span>host <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--name v2raya <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">-v /lib/modules:/lib/modules <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">-v /etc/v2raya:/etc/v2raya <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">mzz2017/v2raya
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <p>安装镜像后，v2raya默认地址是0.0.0.0:2017。</p>
@@ -1218,43 +1220,43 @@ mzz2017/v2raya
 </span><span class="lnt">33
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hp<span class="o">()</span> <span class="o">{</span>
-
-<span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://127.0.0.1:20171
-
-<span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://127.0.0.1:20171
-
-<span class="nb">export</span> <span class="nv">all_proxy</span><span class="o">=</span>http://127.0.0.1:20171
-
-<span class="nb">echo</span> <span class="s2">&#34;https_proxy&#34;</span><span class="o">=</span><span class="nv">$https_proxy</span>
-
-<span class="nb">echo</span> <span class="s2">&#34;http_proxy&#34;</span><span class="o">=</span><span class="nv">$http_proxy</span>
-
-<span class="nb">echo</span> <span class="s2">&#34;all_proxy&#34;</span><span class="o">=</span><span class="nv">$all_proxy</span>
-
-<span class="o">}</span>
-
-
-
-np<span class="o">()</span> <span class="o">{</span>
-
-<span class="nb">unset</span> https_proxy
-
-<span class="nb">unset</span> http_proxy
-
-<span class="nb">unset</span> all_proxy
-
-<span class="nb">echo</span> <span class="s2">&#34;https_proxy&#34;</span>
-
-<span class="nb">echo</span> <span class="s2">&#34;http_proxy&#34;</span>
-
-<span class="nb">echo</span> <span class="s2">&#34;all_proxy&#34;</span>
-
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hp<span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://127.0.0.1:20171
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://127.0.0.1:20171
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">all_proxy</span><span class="o">=</span>http://127.0.0.1:20171
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;https_proxy&#34;</span><span class="o">=</span><span class="nv">$https_proxy</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;http_proxy&#34;</span><span class="o">=</span><span class="nv">$http_proxy</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;all_proxy&#34;</span><span class="o">=</span><span class="nv">$all_proxy</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">np<span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> https_proxy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> http_proxy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> all_proxy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;https_proxy&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;http_proxy&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;all_proxy&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="clash自动更新订阅" class="headerLink">
-    <a href="#clash%e8%87%aa%e5%8a%a8%e6%9b%b4%e6%96%b0%e8%ae%a2%e9%98%85" class="header-mark"></a>clash自动更新订阅</h3><p>参考链接：</p>
+    <a href="#clash%e8%87%aa%e5%8a%a8%e6%9b%b4%e6%96%b0%e8%ae%a2%e9%98%85" class="header-mark"></a><del>clash自动更新订阅</del></h3><p>参考链接：</p>
 <ul>
 <li>
 <p><a href="https://akillcool.github.io/post/clash-with-auto-update-config" target="_blank" rel="noopener noreffer">Clash自动更新订阅配置</a></p>
@@ -1269,8 +1271,8 @@ np<span class="o">()</span> <span class="o">{</span>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S clash
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S clash
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="配置" class="headerLink">
     <a href="#%e9%85%8d%e7%bd%ae" class="header-mark"></a>配置</h4><p>通过systemctl管理Clash的进程，对应<code>clash@.service</code>文件。</p>
@@ -1312,38 +1314,38 @@ np<span class="o">()</span> <span class="o">{</span>
 </span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># edit and save this file to /usr/lib/systemd/system/clash@.service</span>
-
-<span class="o">[</span>Unit<span class="o">]</span>
-
-<span class="nv">Description</span><span class="o">=</span>A rule based proxy in Go <span class="k">for</span> %i.
-
-<span class="nv">Wants</span><span class="o">=</span>network-online.target
-
-<span class="nv">After</span><span class="o">=</span>network-online.target
-
-
-
-<span class="o">[</span>Service<span class="o">]</span>
-
-<span class="nv">WorkingDirectory</span><span class="o">=</span>/home/%i/.config/clash
-
-<span class="nv">Type</span><span class="o">=</span>simple
-
-<span class="nv">User</span><span class="o">=</span>%i
-
-<span class="nv">Restart</span><span class="o">=</span>on-abort
-
-<span class="nv">ExecStart</span><span class="o">=</span>/home/%i/.config/clash/start-clash.sh
-
-<span class="nv">ExecStop</span><span class="o">=</span>/home/%i/.config/clash/stop-clash.sh
-
-
-
-<span class="o">[</span>Install<span class="o">]</span>
-
-<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># edit and save this file to /usr/lib/systemd/system/clash@.service</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">Description</span><span class="o">=</span>A rule based proxy in Go <span class="k">for</span> %i.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">Wants</span><span class="o">=</span>network-online.target
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">After</span><span class="o">=</span>network-online.target
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Service<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">WorkingDirectory</span><span class="o">=</span>/home/%i/.config/clash
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">Type</span><span class="o">=</span>simple
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">User</span><span class="o">=</span>%i
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">Restart</span><span class="o">=</span>on-abort
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStart</span><span class="o">=</span>/home/%i/.config/clash/start-clash.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStop</span><span class="o">=</span>/home/%i/.config/clash/stop-clash.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Install<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>start-clash.sh</code></p>
 <div class="highlight"><div class="chroma">
@@ -1387,44 +1389,44 @@ np<span class="o">()</span> <span class="o">{</span>
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span>
-
-
-<span class="c1">#保存PID文件</span>
-
-<span class="nb">echo</span> <span class="nv">$$</span> &gt; <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid
-
-
-
-<span class="c1"># 订阅链接下载地址</span>
-
-<span class="nv">CLASH_URL</span><span class="o">=</span><span class="s2">&#34;你的订阅链接&#34;</span>
-
-
-
-<span class="c1"># 对比新的文件和旧的文件有什么不同</span>
-
-diff <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/config.yaml &lt;<span class="o">(</span>curl -s <span class="si">${</span><span class="nv">CLASH_URL</span><span class="si">}</span><span class="o">)</span>
-
-
-
-<span class="c1">#如果两个文件一致，就直接开启clash，如果不一致就覆盖原文件</span>
-
-<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$?</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="m">0</span> <span class="o">]</span>
-
-<span class="k">then</span>
-
-/usr/bin/clash
-
-<span class="k">else</span>
-
-curl -L -o <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/config.yaml <span class="si">${</span><span class="nv">CLASH_URL</span><span class="si">}</span>
-
-/usr/bin/clash
-
-<span class="k">fi</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#保存PID文件</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$$</span> &gt; <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 订阅链接下载地址</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">CLASH_URL</span><span class="o">=</span><span class="s2">&#34;你的订阅链接&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 对比新的文件和旧的文件有什么不同</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">diff <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/config.yaml &lt;<span class="o">(</span>curl -s <span class="si">${</span><span class="nv">CLASH_URL</span><span class="si">}</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#如果两个文件一致，就直接开启clash，如果不一致就覆盖原文件</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$?</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="m">0</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/usr/bin/clash
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">curl -L -o <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/config.yaml <span class="si">${</span><span class="nv">CLASH_URL</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/usr/bin/clash
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>stop-clash.sh</code></p>
 <p>注意：</p>
@@ -1448,20 +1450,20 @@ curl -L -o <span class="si">${</span><span class="nv">HOME</span><span class="si
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span>
-
-
-<span class="nv">PID</span><span class="o">=</span><span class="sb">`</span>cat <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid<span class="sb">`</span>
-
-
-
-<span class="nb">kill</span> -9 <span class="si">${</span><span class="nv">PID</span><span class="si">}</span>
-
-
-
-trash-put <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">PID</span><span class="o">=</span><span class="sb">`</span>cat <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid<span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">kill</span> -9 <span class="si">${</span><span class="nv">PID</span><span class="si">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">trash-put <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>写好后，给<code>start-clash.sh</code>和<code>stop-clash.sh</code>赋予执行权限</p>
 <div class="highlight"><div class="chroma">
@@ -1469,8 +1471,8 @@ trash-put <span class="si">${</span><span class="nv">HOME</span><span class="si"
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">chmod +x stop-clash.sh start-clash.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x stop-clash.sh start-clash.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用<code>systemctl</code>管理</p>
 <div class="highlight"><div class="chroma">
@@ -1478,27 +1480,15 @@ trash-put <span class="si">${</span><span class="nv">HOME</span><span class="si"
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo systemctl <span class="nb">enable</span> --now clash@%i
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now clash@%i
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="i3lock-color" class="headerLink">
     <a href="#i3lock-color" class="header-mark"></a>i3lock-color</h3><blockquote>
-<p>参考链接：</p>
-</blockquote>
-<blockquote>
-</blockquote>
-<blockquote>
-<p><a href="https://kewth.github.io/2019/10/01/i3lock" target="_blank" rel="noopener noreffer">i3lock各个衍生介绍</a></p>
-</blockquote>
-<blockquote>
-</blockquote>
-<blockquote>
-<p><a href="https://github.com/Raymo111/i3lock-color/blob/master/examples/lock.sh" target="_blank" rel="noopener noreffer">美化链接</a></p>
-</blockquote>
-<blockquote>
-</blockquote>
-<blockquote>
-<p><a href="https://github.com/Raymo111/i3lock-color/issues/174#issuecomment-687149213" target="_blank" rel="noopener noreffer">加入系统服务</a></p>
+<p>参考链接：
+<a href="https://kewth.github.io/2019/10/01/i3lock" target="_blank" rel="noopener noreffer">i3lock各个衍生介绍</a>
+<a href="https://github.com/Raymo111/i3lock-color/blob/master/examples/lock.sh" target="_blank" rel="noopener noreffer">美化链接</a>
+<a href="https://github.com/Raymo111/i3lock-color/issues/174#issuecomment-687149213" target="_blank" rel="noopener noreffer">加入系统服务</a></p>
 </blockquote>
 <p>美化配置文件</p>
 <div class="highlight"><div class="chroma">
@@ -1588,90 +1578,90 @@ trash-put <span class="si">${</span><span class="nv">HOME</span><span class="si"
 </span><span class="lnt">83
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
-</span><span class="cp"></span>
-
-
-<span class="c1"># Terminate already running bar instances</span>
-
-killall -q i3lock
-
-
-
-<span class="c1"># Wait until the processes have been shut down</span>
-
-<span class="k">while</span> pgrep -u <span class="nv">$UID</span> -x i3lock &gt;/dev/null<span class="p">;</span> <span class="k">do</span> sleep 1<span class="p">;</span> <span class="k">done</span>
-
-
-
-<span class="nv">BLANK</span><span class="o">=</span><span class="s1">&#39;#EAEAEF&#39;</span>
-
-<span class="nv">CLEAR</span><span class="o">=</span><span class="s1">&#39;#1e90ff&#39;</span>
-
-<span class="nv">DEFAULT</span><span class="o">=</span><span class="s1">&#39;#1e90ff&#39;</span>
-
-<span class="nv">TEXT</span><span class="o">=</span><span class="s1">&#39;#483d8b&#39;</span>
-
-<span class="nv">WRONG</span><span class="o">=</span><span class="s1">&#39;#ffa500&#39;</span>
-
-<span class="nv">VERIFYING</span><span class="o">=</span><span class="s1">&#39;#B5E6B5&#39;</span>
-
-
-
-i3lock <span class="se">\
-</span><span class="se"></span>
---insidever-color<span class="o">=</span><span class="nv">$CLEAR</span> <span class="se">\
-</span><span class="se"></span>
---ringver-color<span class="o">=</span><span class="nv">$VERIFYING</span> <span class="se">\
-</span><span class="se"></span>
-<span class="se">\
-</span><span class="se"></span>
---insidewrong-color<span class="o">=</span><span class="nv">$CLEAR</span> <span class="se">\
-</span><span class="se"></span>
---ringwrong-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
-</span><span class="se"></span>
-<span class="se">\
-</span><span class="se"></span>
---inside-color<span class="o">=</span><span class="nv">$BLANK</span> <span class="se">\
-</span><span class="se"></span>
---ring-color<span class="o">=</span><span class="nv">$DEFAULT</span> <span class="se">\
-</span><span class="se"></span>
---line-color<span class="o">=</span><span class="nv">$BLANK</span> <span class="se">\
-</span><span class="se"></span>
---separator-color<span class="o">=</span><span class="nv">$DEFAULT</span> <span class="se">\
-</span><span class="se"></span>
-<span class="se">\
-</span><span class="se"></span>
---verif-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span><span class="se"></span>
---wrong-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span><span class="se"></span>
---time-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span><span class="se"></span>
---date-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span><span class="se"></span>
---layout-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span><span class="se"></span>
---keyhl-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
-</span><span class="se"></span>
---bshl-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
-</span><span class="se"></span>
-<span class="se">\
-</span><span class="se"></span>
---screen <span class="m">1</span> <span class="se">\
-</span><span class="se"></span>
---blur <span class="m">5</span> <span class="se">\
-</span><span class="se"></span>
---clock <span class="se">\
-</span><span class="se"></span>
---indicator <span class="se">\
-</span><span class="se"></span>
---time-str<span class="o">=</span><span class="s2">&#34;%H:%M:%S&#34;</span> <span class="se">\
-</span><span class="se"></span>
---date-str<span class="o">=</span><span class="s2">&#34;%A, %m %Y&#34;</span> <span class="se">\
-</span><span class="se"></span>
---keylayout <span class="m">1</span> <span class="se">\
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Terminate already running bar instances</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">killall -q i3lock
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Wait until the processes have been shut down</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> pgrep -u <span class="nv">$UID</span> -x i3lock &gt;/dev/null<span class="p">;</span> <span class="k">do</span> sleep 1<span class="p">;</span> <span class="k">done</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">BLANK</span><span class="o">=</span><span class="s1">&#39;#EAEAEF&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">CLEAR</span><span class="o">=</span><span class="s1">&#39;#1e90ff&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">DEFAULT</span><span class="o">=</span><span class="s1">&#39;#1e90ff&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">TEXT</span><span class="o">=</span><span class="s1">&#39;#483d8b&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">WRONG</span><span class="o">=</span><span class="s1">&#39;#ffa500&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">VERIFYING</span><span class="o">=</span><span class="s1">&#39;#B5E6B5&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">i3lock <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--insidever-color<span class="o">=</span><span class="nv">$CLEAR</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--ringver-color<span class="o">=</span><span class="nv">$VERIFYING</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl"><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--insidewrong-color<span class="o">=</span><span class="nv">$CLEAR</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--ringwrong-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl"><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--inside-color<span class="o">=</span><span class="nv">$BLANK</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--ring-color<span class="o">=</span><span class="nv">$DEFAULT</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--line-color<span class="o">=</span><span class="nv">$BLANK</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--separator-color<span class="o">=</span><span class="nv">$DEFAULT</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl"><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--verif-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--wrong-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--time-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--date-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--layout-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--keyhl-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--bshl-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl"><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--screen <span class="m">1</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--blur <span class="m">5</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--clock <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--indicator <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--time-str<span class="o">=</span><span class="s2">&#34;%H:%M:%S&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--date-str<span class="o">=</span><span class="s2">&#34;%A, %m %Y&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>
+</span></span><span class="line"><span class="cl">--keylayout <span class="m">1</span> <span class="se">\
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>加入系统服务，休眠开启后锁屏</p>
 <div class="highlight"><div class="chroma">
@@ -1707,36 +1697,36 @@ i3lock <span class="se">\
 </span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># edit and save this file to /usr/lib/systemd/system/lock@.service</span>
-
-<span class="o">[</span>Unit<span class="o">]</span>
-
-<span class="nv">Description</span><span class="o">=</span>Lock screen on <span class="nb">suspend</span> <span class="k">for</span> %i
-
-<span class="nv">Before</span><span class="o">=</span>sleep.target suspend.target hibernate.target hybrid-sleep.target
-
-
-
-<span class="o">[</span>Service<span class="o">]</span>
-
-<span class="nv">User</span><span class="o">=</span>%i
-
-<span class="nv">Environment</span><span class="o">=</span><span class="nv">DISPLAY</span><span class="o">=</span>:0
-
-<span class="nv">Type</span><span class="o">=</span>forking
-
-<span class="nv">ExecStartPre</span><span class="o">=</span> -/usr/bin/pkill -u %u unison
-
-<span class="nv">ExecStart</span><span class="o">=</span>/home/%i/文件路径
-
-<span class="nv">ExecStartPost</span><span class="o">=</span>/usr/bin/sleep <span class="m">1</span>
-
-
-
-<span class="o">[</span>Install<span class="o">]</span>
-
-<span class="nv">WantedBy</span><span class="o">=</span>sleep.target suspend.target hibernate.target hybrid-sleep.target
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># edit and save this file to /usr/lib/systemd/system/lock@.service</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">Description</span><span class="o">=</span>Lock screen on <span class="nb">suspend</span> <span class="k">for</span> %i
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">Before</span><span class="o">=</span>sleep.target suspend.target hibernate.target hybrid-sleep.target
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Service<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">User</span><span class="o">=</span>%i
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">Environment</span><span class="o">=</span><span class="nv">DISPLAY</span><span class="o">=</span>:0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">Type</span><span class="o">=</span>forking
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStartPre</span><span class="o">=</span> -/usr/bin/pkill -u %u unison
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStart</span><span class="o">=</span>/home/%i/文件路径
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">ExecStartPost</span><span class="o">=</span>/usr/bin/sleep <span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Install<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">WantedBy</span><span class="o">=</span>sleep.target suspend.target hibernate.target hybrid-sleep.target
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>自启动</p>
 <div class="highlight"><div class="chroma">
@@ -1744,8 +1734,8 @@ i3lock <span class="se">\
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo systemctl <span class="nb">enable</span> lock@%i
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> lock@%i
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="obs-studio" class="headerLink">
     <a href="#obs-studio" class="header-mark"></a>obs-studio</h3><p>在arch kde下录制麦克风音频的时候，出现了即使上噪声抑制依旧无法屏蔽笔记本本身的噪音，这里给出解决办法以及来源</p>
@@ -1765,16 +1755,16 @@ i3lock <span class="se">\
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#编辑文件</span>
-
-sudo nano /etc/pulse/default.pa
-
-<span class="c1">#将下行加入到“Echo Cancellation”的地方</span>
-
-load-module module-echo-cancel
-
-<span class="c1">#重启PulseAudio (pulseaudio -k)就解决了</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#编辑文件</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo nano /etc/pulse/default.pa
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#将下行加入到“Echo Cancellation”的地方</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">load-module module-echo-cancel
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#重启PulseAudio (pulseaudio -k)就解决了</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果遇到在obs运行状态下，修改的以上配置文件，还需重启obs即可。</p>
 <h3 id="blob-emoji" class="headerLink">
@@ -1784,8 +1774,8 @@ load-module module-echo-cancel
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">noto-fonts-emoji-blob
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">noto-fonts-emoji-blob
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在~/.config/fontconfig/70-emojione-color.conf下写入</p>
 <div class="highlight"><div class="chroma">
@@ -1849,64 +1839,64 @@ load-module module-echo-cancel
 </span><span class="lnt">57
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">&#34;1.0&#34;</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">&#34;UTF-8&#34;</span>?&gt;
-
-&lt;!DOCTYPE fontconfig SYSTEM <span class="s2">&#34;fonts.dtd&#34;</span>&gt;
-
-
-
-&lt;fontconfig&gt;
-
-&lt;match&gt;
-
-&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;sans-serif&lt;/string&gt;&lt;/test&gt;
-
-&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
-
-&lt;string&gt;Blobmoji&lt;/string&gt;
-
-&lt;/edit&gt;
-
-&lt;/match&gt;
-
-&lt;match&gt;
-
-&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;serif&lt;/string&gt;&lt;/test&gt;
-
-&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
-
-&lt;string&gt;Blobmoji&lt;/string&gt;
-
-&lt;/edit&gt;
-
-&lt;/match&gt;
-
-&lt;match&gt;
-
-&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;monospace&lt;/string&gt;&lt;/test&gt;
-
-&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
-
-&lt;string&gt;Blobmoji&lt;/string&gt;
-
-&lt;/edit&gt;
-
-&lt;/match&gt;
-
-&lt;match&gt;
-
-&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;Apple Color Emoji&lt;/string&gt;&lt;/test&gt;
-
-&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
-
-&lt;string&gt;Blobmoji&lt;/string&gt;
-
-&lt;/edit&gt;
-
-&lt;/match&gt;
-
-&lt;/fontconfig&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">&#34;1.0&#34;</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">&#34;UTF-8&#34;</span>?&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;!DOCTYPE fontconfig SYSTEM <span class="s2">&#34;fonts.dtd&#34;</span>&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;fontconfig&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;match&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;sans-serif&lt;/string&gt;&lt;/test&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;string&gt;Blobmoji&lt;/string&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/edit&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/match&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;match&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;serif&lt;/string&gt;&lt;/test&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;string&gt;Blobmoji&lt;/string&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/edit&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/match&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;match&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;monospace&lt;/string&gt;&lt;/test&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;string&gt;Blobmoji&lt;/string&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/edit&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/match&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;match&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;Apple Color Emoji&lt;/string&gt;&lt;/test&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;string&gt;Blobmoji&lt;/string&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/edit&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/match&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/fontconfig&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>刷新字体缓存</p>
 <div class="highlight"><div class="chroma">
@@ -1914,22 +1904,87 @@ load-module module-echo-cancel
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">fc-cache -f -v
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">fc-cache -f -v
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="proxychains-ng" class="headerLink">
-    <a href="#proxychains-ng" class="header-mark"></a>proxychains-ng</h3><div class="highlight"><div class="chroma">
+    <a href="#proxychains-ng" class="header-mark"></a><del>proxychains-ng</del></h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">paru -S proxychains-ng
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">paru -S proxychains-ng
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在最后一行加上自己的socks5代理<code>socks5 127.0.0.1 port</code></p>
 <hr>
 <h2 id="archlinux-tips" class="headerLink">
     <a href="#archlinux-tips" class="header-mark"></a>ArchLinux-Tips</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">journalctl -p <span class="m">4</span> -b
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>-b选项可以筛选出本次boot直到当前的记录</p>
+<p>-p选项可以筛选出严重等级高于某一值的记录</p>
+<p>&ldquo;emerg&rdquo; (0), &ldquo;alert&rdquo; (1), &ldquo;crit&rdquo; (2), &ldquo;err&rdquo; (3), <strong>&ldquo;warning&rdquo; (4)</strong>, &ldquo;notice&rdquo; (5), &ldquo;info&rdquo; (6), &ldquo;debug&rdquo; (7)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pgrep -l 进程名字<span class="o">(</span><span class="s2">&#34;进程名字&#34;</span><span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo journalctl --disk-usage                <span class="c1">#查看日志大小</span>
+</span></span><span class="line"><span class="cl">sudo journalctl --vacuum-time<span class="o">=</span>5d            <span class="c1">#超过5天的自动删除</span>
+</span></span><span class="line"><span class="cl">sudo journalctl --vacuum-size<span class="o">=</span>500M          <span class="c1">#超过500M的自动删除</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="ssd配置" class="headerLink">
+    <a href="#ssd%e9%85%8d%e7%bd%ae" class="header-mark"></a>SSD配置</h2><p>如果安装在SSD上，可以选择以下命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now fstrim.timer
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="i3-networkmanager-dmenu-git-connection-8021x" class="headerLink">
+    <a href="#i3-networkmanager-dmenu-git-connection-8021x" class="header-mark"></a>i3-networkmanager-dmenu-git-connection-802.1x</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli connection add <span class="nb">type</span> wifi con-name NAME ifname wlan0 ssid SSID -- wifi-sec.key-mgmt wpa-eap 802-1x.eap ttls 802-1x.phase2-auth mschapv2 802-1x.identity USERNAME
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其中，<code>NAME</code>是自定义，<code>SSID</code>是链接的名称，<code>USERNAME</code>是用户名。</p>
+<p>其余不变。</p>
+<p>第一次登录需要额外使用<code>--ask</code>参数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli --ask connection up NAME
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="触控板" class="headerLink">
+    <a href="#%e8%a7%a6%e6%8e%a7%e6%9d%bf" class="header-mark"></a>触控板</h2><p>安装 <code>xf86-input-libinput</code> 包，然后在 <code>/etc/X11/xorg.conf.d</code> 里配置 <code>20-touchpad.conf</code> ，写入以下内容：</p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1942,55 +1997,27 @@ load-module module-echo-cancel
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">journalctl -p <span class="m">4</span> -b
-
-<span class="c1">#-b选项可以筛选出本次boot直到当前的记录</span>
-
-<span class="c1">#-p选项可以筛选出严重等级高于某一值的记录</span>
-
-<span class="c1">#&#34;emerg&#34; (0), &#34;alert&#34; (1), &#34;crit&#34; (2), &#34;err&#34; (3), **&#34;warning&#34; (4)**, &#34;notice&#34; (5), &#34;info&#34; (6), &#34;debug&#34; (7)</span>
-
-pgrep -l 进程名字<span class="o">(</span><span class="s2">&#34;进程名字&#34;</span><span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Section <span class="s2">&#34;InputClass&#34;</span>
+</span></span><span class="line"><span class="cl">    Identifier                  <span class="s2">&#34;libinput touchpad catchall&#34;</span>
+</span></span><span class="line"><span class="cl">    MatchIsTouchpad             <span class="s2">&#34;on&#34;</span>
+</span></span><span class="line"><span class="cl">    MatchDevicePath             <span class="s2">&#34;/dev/input/event*&#34;</span>
+</span></span><span class="line"><span class="cl">    Driver                      <span class="s2">&#34;libinput&#34;</span>
+</span></span><span class="line"><span class="cl">    Option <span class="s2">&#34;NaturalScrolling&#34;</span>   <span class="s2">&#34;on&#34;</span>
+</span></span><span class="line"><span class="cl">    Option <span class="s2">&#34;Tapping&#34;</span>            <span class="s2">&#34;on&#34;</span>
+</span></span><span class="line"><span class="cl">    Option <span class="s2">&#34;DisableWhileTyping&#34;</span> <span class="s2">&#34;on&#34;</span>
+</span></span><span class="line"><span class="cl">EndSection
+</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="ssd配置" class="headerLink">
-    <a href="#ssd%e9%85%8d%e7%bd%ae" class="header-mark"></a>SSD配置</h2><p>如果安装在SSD上，可以选择以下命令</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo systemctl <span class="nb">enable</span> --now fstrim.timer
-</code></pre></td></tr></table>
-</div>
-</div><hr>
-<h2 id="i3-networkmanager-dmenu-git-connection-8021x" class="headerLink">
-    <a href="#i3-networkmanager-dmenu-git-connection-8021x" class="header-mark"></a>i3-networkmanager-dmenu-git-connection-802.1x</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">nmcli connection add <span class="nb">type</span> wifi con-name NAME ifname wlan0 ssid SSID -- wifi-sec.key-mgmt wpa-eap 802-1x.eap ttls 802-1x.phase2-auth mschapv2 802-1x.identity USERNAME
-</code></pre></td></tr></table>
-</div>
-</div><p>其中，<code>NAME</code>是自定义，<code>SSID</code>是链接的名称，<code>USERNAME</code>是用户名。</p>
-<p>其余不变。</p>
-<p>第一次登录需要额外使用<code>--ask</code>参数</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">nmcli --ask connection up NAME
-</code></pre></td></tr></table>
-</div>
-</div><hr></div>
+</div><blockquote>
+<p>指导链接：<a href="https://blog.cubercsl.site/post/archlinux-in-laptop" target="_blank" rel="noopener noreffer">笔记本 ArchLinux 的一些折腾</a></p>
+</blockquote>
+<hr></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-02-13</span>
+                <span>Updated on 2022-04-12</span>
             </div>
             <div class="post-info-license"><span><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span></div>
         </div>
@@ -2014,7 +2041,7 @@ pgrep -l 进程名字<span class="o">(</span><span class="s2">&#34;进程名字&
 </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.96.0">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
