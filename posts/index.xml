@@ -4,6 +4,13 @@
         <link>https://www.hikk.top/posts/</link>
         <description>All Posts | 海客</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</lastBuildDate><atom:link href="https://www.hikk.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>archLinux-i3-配置</title>
+    <link>https://www.hikk.top/posts/3/</link>
+    <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
+        <name>海客</name>
+    </author><guid>https://www.hikk.top/posts/3/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>建站</title>
     <link>https://www.hikk.top/posts/1/</link>
     <pubDate>Sun, 13 Feb 2022 16:02:59 &#43;0800</pubDate><author>
@@ -16,13 +23,6 @@
     <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
         <name>海客</name>
     </author><guid>https://www.hikk.top/posts/2/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>archLinux-i3-配置</title>
-    <link>https://www.hikk.top/posts/3/</link>
-    <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
-        <name>海客</name>
-    </author><guid>https://www.hikk.top/posts/3/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
