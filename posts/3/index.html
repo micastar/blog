@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.hikk.top\/posts\/3\/"
-        },"genre": "posts","keywords": "linux","wordcount":  5096 ,
+        },"genre": "posts","keywords": "linux","wordcount":  5177 ,
         "url": "https:\/\/www.hikk.top\/posts\/3\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-05-03T09:46:34+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "海客"},"author": {
@@ -143,7 +143,7 @@
         <li><a href="#i3lock-color">i3lock-color</a></li>
         <li><a href="#obs-studio">obs-studio</a></li>
         <li><a href="#blob-emoji">Blob Emoji</a></li>
-        <li><a href="#del-proxychains-ng">del: proxychains-ng</a></li>
+        <li><a href="#zsh">zsh</a></li>
       </ul>
     </li>
     <li><a href="#archlinux-tips">ArchLinux-Tips</a></li>
@@ -156,7 +156,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">海客</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-05-03">2022-05-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5096 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-05-03">2022-05-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5177 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;11 minutes&nbsp;<span>
                         <i class="fas fa-balance-scale fa-fw"></i>&nbsp;<span><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank">CC BY-NC-SA 4.0</a></span>&nbsp;
                     </span>&nbsp;</div>
@@ -198,7 +198,7 @@
         <li><a href="#i3lock-color">i3lock-color</a></li>
         <li><a href="#obs-studio">obs-studio</a></li>
         <li><a href="#blob-emoji">Blob Emoji</a></li>
-        <li><a href="#del-proxychains-ng">del: proxychains-ng</a></li>
+        <li><a href="#zsh">zsh</a></li>
       </ul>
     </li>
     <li><a href="#archlinux-tips">ArchLinux-Tips</a></li>
@@ -231,7 +231,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#注意：在--sort rate中，有些镜像无法进行评分，会在命令行下弹出警号（WARNING）</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#注意：在--sort rate中，有些镜像无法进行评分，会在命令行下弹出警号（WARNING）</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sudo reflector --country China --age <span class="m">6</span> --latest <span class="m">6</span> --fastest <span class="m">6</span> --threads <span class="m">6</span> --sort rate --protocol https --save /etc/pacman.d/mirrorlist
 </span></span></code></pre></td></tr></table>
@@ -251,7 +251,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S java-runtime-common java-environment-common
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo pacman -S java-runtime-common java-environment-common
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">yay jdk8 <span class="c1">#选择 extra/jdk8-openjdk</span>
 </span></span></code></pre></td></tr></table>
@@ -263,7 +263,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">archlinux-java status
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">archlinux-java status
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>选择 Java 环境：</p>
@@ -272,7 +272,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo archlinux-java <span class="nb">set</span> java-8-openjdk
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo archlinux-java <span class="nb">set</span> java-8-openjdk
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -284,7 +284,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S go go-tools
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo pacman -S go go-tools
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
@@ -312,7 +312,7 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim ~/.zshrc <span class="c1"># OR ~/.bashrc OR ~/.profile</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">vim ~/.zshrc <span class="c1"># OR ~/.bashrc OR ~/.profile</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -327,7 +327,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOPROXY</span><span class="o">=</span>https://goproxy.cn
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOPROXY</span><span class="o">=</span>https://goproxy.cn
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -343,7 +343,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim /etc/default/grub
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">vim /etc/default/grub
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后生成 GRUB 所需的配置文件</p>
@@ -352,7 +352,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -379,7 +379,7 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#install pigz pbzip2</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#install pigz pbzip2</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">paru -S pigz pbzip2
 </span></span><span class="line"><span class="cl">
@@ -449,7 +449,7 @@
 </span><span class="lnt">45
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#Feature packed AUR helper</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#Feature packed AUR helper</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sudo pacman -S paru
 </span></span><span class="line"><span class="cl">
@@ -505,7 +505,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#比rm -rf保险的删除文件夹，删除文件到回收站里</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#比rm -rf保险的删除文件夹，删除文件到回收站里</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sudo pacman -S trash-cli
 </span></span></code></pre></td></tr></table>
@@ -523,7 +523,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">trash-put： 删除文件和目录（仅放入回收站中）
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">trash-put： 删除文件和目录（仅放入回收站中）
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">trash-list ：列出被删除了的文件和目录
 </span></span><span class="line"><span class="cl">
@@ -536,26 +536,26 @@
 </div>
 </div><h3 id="spacemacs" class="headerLink">
     <a href="#spacemacs" class="header-mark"></a>7.2 Spacemacs</h3><p><a href="https://www.spacemacs.org" target="_blank" rel="noopener noreffer">SPacemacs官网</a></p>
-<ol>
+<ul>
 <li>在Spacemacs中打开教程（按住CONTROL键再按h键后松开CONTROL键再按t键会进入中文教程）</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ctrl + h + t
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">ctrl + h + t
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>用于切换vim和emacs的模式（可视化的标识是左下角的蓝标（Emacs）和黄标（Vim））</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ctrl + z
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">ctrl + z
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
@@ -564,53 +564,53 @@
 <blockquote>
 <p>M-表示当按字符时按住META（或EDIT或ALT）键。如果键盘上没有META、EDIT或ALT键，用下述方法等效：先按一下ESC键然后松开，再按。用来表示ESC键。</p>
 </blockquote>
-<ol>
+<ul>
 <li>退出Emacs</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">C-x C-c （两个连续的组合键）
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">C-x C-c （两个连续的组合键）
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>退出一个正在运行中的命令</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">C-g
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">C-g
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>向前移动一屏</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">C-v
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">C-v
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>向后移动一屏</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">M<span class="o">(</span>EDIT or ALT<span class="o">)</span>-v
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">M<span class="o">(</span>EDIT or ALT<span class="o">)</span>-v
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>重绘屏幕，并将光标所在行置于屏幕的中央</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -618,16 +618,16 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#CONTROL-L</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#CONTROL-L</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">C-l
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>找到光标，留意其附近的文字，然后按<code>C-l</code>。此时会发现其光标附近的文字与之前相同，位置却变为屏幕的中心。如果再次按<code>C-l</code>，附近的文字将移动到屏幕的顶端。再次按住<code>C-l</code>，文字将移动到低端</p>
 <p>PageUp和PageDn在emacs和vim下都可以使用</p>
-<ol>
+<ul>
 <li>上下左右四个方向移动</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -647,7 +647,7 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#上一行——previous(上一行)</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#上一行——previous(上一行)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">C-p
 </span></span><span class="line"><span class="cl">
@@ -664,9 +664,9 @@
 </span></span><span class="line"><span class="cl">C-f
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>常用命令</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -732,7 +732,7 @@
 </span><span class="lnt">61
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#移动到该词末尾(词：英文以英文单词为准，中文以下一个标点符号为准)</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#移动到该词末尾(词：英文以英文单词为准，中文以下一个标点符号为准)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#如果光标处于词与词的空白处，M-f会移动到下一个词的末尾</span>
 </span></span><span class="line"><span class="cl">
@@ -795,9 +795,9 @@
 </span></span><span class="line"><span class="cl">M-&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>命令参数</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -811,7 +811,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#C-u数字参数，为一个命令指定数字参数</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#C-u数字参数，为一个命令指定数字参数</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#数字参数(前缀参数)：这个参数是先于使用它的命令而输入的</span>
 </span></span><span class="line"><span class="cl">
@@ -822,9 +822,9 @@
 </span></span><span class="line"><span class="cl">C-u + 数字 + 命令
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>终止命令</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -838,7 +838,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#安全地终止这条命令</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#安全地终止这条命令</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#终止一条执行过久的命令</span>
 </span></span><span class="line"><span class="cl">
@@ -849,9 +849,9 @@
 </span></span><span class="line"><span class="cl"><span class="c1">#取消&lt;ESC&gt;，再连按两次&lt;ESC&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>被禁用的命令(DISABLED COMMANDS)</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -859,14 +859,14 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#在用到了Emacs被禁用的命令，Emacs会显示提示信息，告知此命令的用处</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#在用到了Emacs被禁用的命令，Emacs会显示提示信息，告知此命令的用处</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#“n” -&gt; 拒绝使用</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>窗格(WINDOWS)</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -876,16 +876,16 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#只保留一个窗格(关掉其它所有窗格)</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#只保留一个窗格(关掉其它所有窗格)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#保留光标所在的窗格，将其扩大到整个屏幕，同时关掉所有其它窗格</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">C-x <span class="m">1</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>插入与删除(INSERTING AND DELETING)</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -913,7 +913,7 @@
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#删除光标前的一个字符</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#删除光标前的一个字符</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">&lt;DEL&gt;
 </span></span><span class="line"><span class="cl">
@@ -938,9 +938,9 @@
 </span></span><span class="line"><span class="cl">M-k
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ol>
+</div><ul>
 <li>撤销(UNDO)</li>
-</ol>
+</ul>
 <hr>
 <h3 id="del-n卡安装" class="headerLink">
     <a href="#del-n%e5%8d%a1%e5%ae%89%e8%a3%85" class="header-mark"></a>7.3 del: N卡安装</h3><p>参考链接</p>
@@ -964,7 +964,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#Section &#34;Device&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#Section &#34;Device&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Identifier &#34;Device0&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -984,7 +984,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvidia-xconfig --prime
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">nvidia-xconfig --prime
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行成功，文件将生成在<code>/etgc/X11</code>目录下<code>xorg.conf</code>文件</p>
@@ -1040,7 +1040,7 @@
 </span><span class="lnt">43
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Section <span class="s2">&#34;ServerLayout&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">Section <span class="s2">&#34;ServerLayout&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Identifier <span class="s2">&#34;layout&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -1115,7 +1115,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 检查宿主机的ip_forward</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 检查宿主机的ip_forward</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cat /proc/sys/net/ipv4/ip_forward
 </span></span><span class="line"><span class="cl">
@@ -1157,7 +1157,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># run v2raya</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># run v2raya</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">docker run -d <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>
@@ -1222,7 +1222,7 @@
 </span><span class="lnt">33
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hp<span class="o">()</span> <span class="o">{</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">hp<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://127.0.0.1:20171
 </span></span><span class="line"><span class="cl">
@@ -1273,7 +1273,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S clash
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo pacman -S clash
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="配置" class="headerLink">
@@ -1316,7 +1316,7 @@
 </span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># edit and save this file to /usr/lib/systemd/system/clash@.service</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># edit and save this file to /usr/lib/systemd/system/clash@.service</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
 </span></span><span class="line"><span class="cl">
@@ -1391,7 +1391,7 @@
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -1432,9 +1432,9 @@
 </div>
 </div><p><code>stop-clash.sh</code></p>
 <p>注意：</p>
-<ol>
+<ul>
 <li><code>rm</code>命令也可以删除，作者使用的是<code>trash-put</code>进行删除。</li>
-</ol>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1452,7 +1452,7 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -1473,7 +1473,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x stop-clash.sh start-clash.sh
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">chmod +x stop-clash.sh start-clash.sh
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用<code>systemctl</code>管理</p>
@@ -1482,7 +1482,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now clash@%i
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now clash@%i
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="i3lock-color" class="headerLink">
@@ -1580,7 +1580,7 @@
 </span><span class="lnt">83
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -1699,7 +1699,7 @@
 </span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># edit and save this file to /usr/lib/systemd/system/lock@.service</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># edit and save this file to /usr/lib/systemd/system/lock@.service</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
 </span></span><span class="line"><span class="cl">
@@ -1736,7 +1736,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> lock@%i
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> lock@%i
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="obs-studio" class="headerLink">
@@ -1757,7 +1757,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#编辑文件</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#编辑文件</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sudo nano /etc/pulse/default.pa
 </span></span><span class="line"><span class="cl">
@@ -1776,7 +1776,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">noto-fonts-emoji-blob
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">noto-fonts-emoji-blob
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>在~/.config/fontconfig/70-emojione-color.conf下写入</p>
@@ -1841,7 +1841,7 @@
 </span><span class="lnt">57
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">&#34;1.0&#34;</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">&#34;UTF-8&#34;</span>?&gt;
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">&#34;1.0&#34;</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">&#34;UTF-8&#34;</span>?&gt;
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">&lt;!DOCTYPE fontconfig SYSTEM <span class="s2">&#34;fonts.dtd&#34;</span>&gt;
 </span></span><span class="line"><span class="cl">
@@ -1906,27 +1906,88 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">fc-cache -f -v
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">fc-cache -f -v
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="del-proxychains-ng" class="headerLink">
-    <a href="#del-proxychains-ng" class="header-mark"></a>7.9 del: proxychains-ng</h3><div class="highlight"><div class="chroma">
+</div><h3 id="zsh" class="headerLink">
+    <a href="#zsh" class="header-mark"></a>7.9 zsh</h3><p><a href="https://wiki.archlinux.org/title/zsh" target="_blank" rel="noopener noreffer">arch-zsh-wiki</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 查看当前使用的shell</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$SHELL</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看安装了哪些 Shell</span>
+</span></span><span class="line"><span class="cl">chsh -l
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改当前账户的默认 Shell</span>
+</span></span><span class="line"><span class="cl">chsh -s /usr/bin/zsh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="https://github.com/zimfw/zimfw" target="_blank" rel="noopener noreffer">zimfw</a></p>
+<ol>
+<li>安装 zimfw。</li>
+</ol>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">paru -S proxychains-ng
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh <span class="p">|</span> zsh
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>在最后一行加上自己的socks5代理<code>socks5 127.0.0.1 port</code></p>
-<hr>
+</div><ol start="2">
+<li>编辑 zsh 配置文件 <code>~/.zimrc</code>。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">vim ~/.zimrc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>添加 <code>dracula</code> 模块。</li>
+</ol>
+<p><a href="https://github.com/dracula/zsh/issues/17" target="_blank" rel="noopener noreffer">dracula-zsh</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">zmodule dracula/zsh -n dracula
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>安装 <code>dracula</code> 模块。</li>
+</ol>
+<p>ps: 此处需要代理。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">zimfw install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
 <h2 id="archlinux-tips" class="headerLink">
     <a href="#archlinux-tips" class="header-mark"></a>8 ArchLinux-Tips</h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">journalctl -p <span class="m">4</span> -b
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">journalctl -p <span class="m">4</span> -b
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>-b选项可以筛选出本次boot直到当前的记录</p>
@@ -1937,7 +1998,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pgrep -l 进程名字<span class="o">(</span><span class="s2">&#34;进程名字&#34;</span><span class="o">)</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">pgrep -l 进程名字<span class="o">(</span><span class="s2">&#34;进程名字&#34;</span><span class="o">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -1947,7 +2008,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo journalctl --disk-usage                <span class="c1">#查看日志大小</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo journalctl --disk-usage                <span class="c1">#查看日志大小</span>
 </span></span><span class="line"><span class="cl">sudo journalctl --vacuum-time<span class="o">=</span>5d            <span class="c1">#超过5天的自动删除</span>
 </span></span><span class="line"><span class="cl">sudo journalctl --vacuum-size<span class="o">=</span>500M          <span class="c1">#超过500M的自动删除</span>
 </span></span></code></pre></td></tr></table>
@@ -1959,7 +2020,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now fstrim.timer
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now fstrim.timer
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -1969,7 +2030,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli connection add <span class="nb">type</span> wifi con-name NAME ifname wlan0 ssid SSID -- wifi-sec.key-mgmt wpa-eap 802-1x.eap ttls 802-1x.phase2-auth mschapv2 802-1x.identity USERNAME
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">nmcli connection add <span class="nb">type</span> wifi con-name NAME ifname wlan0 ssid SSID -- wifi-sec.key-mgmt wpa-eap 802-1x.eap ttls 802-1x.phase2-auth mschapv2 802-1x.identity USERNAME
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>其中，<code>NAME</code>是自定义，<code>SSID</code>是链接的名称，<code>USERNAME</code>是用户名。</p>
@@ -1980,7 +2041,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli --ask connection up NAME
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">nmcli --ask connection up NAME
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -1999,7 +2060,7 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Section <span class="s2">&#34;InputClass&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">Section <span class="s2">&#34;InputClass&#34;</span>
 </span></span><span class="line"><span class="cl">    Identifier                  <span class="s2">&#34;libinput touchpad catchall&#34;</span>
 </span></span><span class="line"><span class="cl">    MatchIsTouchpad             <span class="s2">&#34;on&#34;</span>
 </span></span><span class="line"><span class="cl">    MatchDevicePath             <span class="s2">&#34;/dev/input/event*&#34;</span>
