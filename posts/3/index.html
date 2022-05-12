@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.hikk.top\/posts\/3\/"
-        },"genre": "posts","keywords": "linux","wordcount":  5177 ,
+        },"genre": "posts","keywords": "linux","wordcount":  5214 ,
         "url": "https:\/\/www.hikk.top\/posts\/3\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-05-03T20:53:20+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Keanu"},"author": {
@@ -156,7 +156,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">Keanu</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-05-03">2022-05-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5177 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-05-03">2022-05-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5214 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;11 minutes&nbsp;<span>
                         <i class="fas fa-balance-scale fa-fw"></i>&nbsp;<span><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank">CC BY-NC-SA 4.0</a></span>&nbsp;
                     </span>&nbsp;</div>
@@ -1093,6 +1093,7 @@
 <p>WARNING: IPv4 forwarding is disabled. Networking will not work.</p>
 </blockquote>
 <p>参考：<a href="https://www.cnblogs.com/aerospace191/p/14062017.html" target="_blank" rel="noopener noreffer">Docker与Linux ip_forward数据包转发</a></p>
+<p>v2raya 中的 <code>ip 转发</code> 也可开启此选项</p>
 <p>解决方法：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1177,14 +1178,16 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<p>安装镜像后，v2raya默认地址是0.0.0.0:2017。</p>
-<p>因为已经打开了IP转发，面板设置里默认开启IP转发。之后，可根据个人喜好或官方建议进行配置。</p>
+<hr>
+<p><del>安装镜像后，v2raya默认地址是0.0.0.0:2017。</del></p>
+<p><del>因为已经打开了IP转发，面板设置里默认开启IP转发。之后，可根据个人喜好或官方建议进行配置。</del></p>
 <p>个人配置：</p>
-<p>透明代理：关闭</p>
+<p>透明代理：与规则所选端口一致</p>
 <p>IP转发和端口分享：关闭</p>
-<p>防止DNS污染：仅防止DNS劫持(快速)</p>
-<p>其他默认</p>
-<p>作者使用的是端口代理方式即</p>
+<p>规则端口分流模式：RountingA</p>
+<p>防止DNS污染：自定义高级设置</p>
+<p><del>其他默认</del></p>
+<p><del>作者使用的是端口代理方式即</del></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1220,9 +1223,11 @@
 </span><span class="lnt">31
 </span><span class="lnt">32
 </span><span class="lnt">33
+</span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">hp<span class="o">()</span> <span class="o">{</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 废弃</span>
+</span></span><span class="line"><span class="cl">hp<span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://127.0.0.1:20171
 </span></span><span class="line"><span class="cl">
