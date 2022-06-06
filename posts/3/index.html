@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.hikk.top\/posts\/3\/"
-        },"genre": "posts","keywords": "linux","wordcount":  5214 ,
+        },"genre": "posts","keywords": "linux","wordcount":  5052 ,
         "url": "https:\/\/www.hikk.top\/posts\/3\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-05-12T21:17:21+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Keanu"},"author": {
@@ -156,7 +156,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">Keanu</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-05-12">2022-05-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5214 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-05-12">2022-05-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5052 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;11 minutes&nbsp;<span>
                         <i class="fas fa-balance-scale fa-fw"></i>&nbsp;<span><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank">CC BY-NC-SA 4.0</a></span>&nbsp;
                     </span>&nbsp;</div>
@@ -1088,7 +1088,6 @@
 </div><hr>
 <h3 id="docker配置v2raya" class="headerLink">
     <a href="#docker%e9%85%8d%e7%bd%aev2raya" class="header-mark"></a>7.4 docker配置v2raya</h3><p><a href="https://v2raya.org/" target="_blank" rel="noopener noreffer">v2raya_wiki</a></p>
-<p>在下载v2raya官方docker镜像前，需要调整以下配置，否则会报以下错误：</p>
 <blockquote>
 <p>WARNING: IPv4 forwarding is disabled. Networking will not work.</p>
 </blockquote>
@@ -1136,7 +1135,6 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<p>修改之后，进行官方镜像的配置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1170,7 +1168,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>
 </span></span><span class="line"><span class="cl">--name v2raya <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">-v /lib/modules:/lib/modules <span class="se">\
+</span></span><span class="line"><span class="cl">-v /lib/modules:/lib/modules:ro <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>
 </span></span><span class="line"><span class="cl">-v /etc/v2raya:/etc/v2raya <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>
@@ -1178,16 +1176,10 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<hr>
-<p><del>安装镜像后，v2raya默认地址是0.0.0.0:2017。</del></p>
-<p><del>因为已经打开了IP转发，面板设置里默认开启IP转发。之后，可根据个人喜好或官方建议进行配置。</del></p>
 <p>个人配置：</p>
-<p>透明代理：与规则所选端口一致</p>
+<p>透明代理：与大陆白名单一致</p>
 <p>IP转发和端口分享：关闭</p>
 <p>规则端口分流模式：RountingA</p>
-<p>防止DNS污染：自定义高级设置</p>
-<p><del>其他默认</del></p>
-<p><del>作者使用的是端口代理方式即</del></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
