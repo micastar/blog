@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.hikk.top\/posts\/3\/"
-        },"genre": "posts","keywords": "linux","wordcount":  1799 ,
+        },"genre": "posts","keywords": "linux","wordcount":  1815 ,
         "url": "https:\/\/www.hikk.top\/posts\/3\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-06-30T17:30:07+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Keanu"},"author": {
@@ -157,7 +157,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">Keanu</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-06-30">2022-06-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1799 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-06-30">2022-06-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1815 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;9 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -333,10 +333,19 @@
 </div><hr>
 <h2 id="修改引导程序" class="headerLink">
     <a href="#%e4%bf%ae%e6%94%b9%e5%bc%95%e5%af%bc%e7%a8%8b%e5%ba%8f" class="header-mark"></a>4 修改引导程序</h2><p><a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/rookie/basic_install?id=_18%e5%ae%89%e8%a3%85%e5%bc%95%e5%af%bc%e7%a8%8b%e5%ba%8f" target="_blank" rel="noopener noreffer">安装引导程序</a></p>
-<p>编辑/etc/default/grub 文件。加入<code>quiet splash nowatchdog modprobe.blacklist=nouveau nmi_watchdog=0 pcie_aspm=force barrier=0</code>参数。</p>
-<p>nowatchdog：提升开机速度</p>
-<p>modprobe.blacklist=nouveau：显卡方面</p>
-<p>nvidia-drm.modeset=1：DRM kernel mode setting</p>
+<p>编辑/etc/default/grub 文件。</p>
+<p><code>quiet splash nowatchdog modprobe.blacklist=nouveau nmi_watchdog=0 pcie_aspm=force barrier=0</code></p>
+<p><a href="https://wiki.archlinux.org/title/Keyboard_shortcuts" target="_blank" rel="noopener noreffer">Standard shortcuts</a></p>
+<p>sysrq_always_enabled=1</p>
+<p><a href="https://wiki.archlinux.org/title/fstab" target="_blank" rel="noopener noreffer">atime options</a></p>
+<p>noatime</p>
+<p><a href="https://wiki.archlinux.org/title/improving_performance" target="_blank" rel="noopener noreffer">Watchdogs</a></p>
+<p>nowatchdog</p>
+<p><a href="https://wiki.archlinux.org/title/nouveau" target="_blank" rel="noopener noreffer">Flat Panel Table Invalid</a></p>
+<p>modprobe.blacklist=nouveau</p>
+<p><a href="https://wiki.archlinux.org/title/NVIDIA" target="_blank" rel="noopener noreffer">DRM kernel mode setting</a></p>
+<p>nvidia-drm.modeset=1</p>
+<p><a href="https://wiki.archlinux.org/title/ext4" target="_blank" rel="noopener noreffer">Turning barriers off</a></p>
 <p>barrier=0</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
