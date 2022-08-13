@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">git study - keunghin</title><meta name="Description" content="keunghin 琐碎话"><meta property="og:title" content="git study" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.keunghin.cyou/posts/6/" /><meta property="og:image" content="https://www.keunghin.cyou"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-19T10:07:14+08:00" />
+<meta property="article:modified_time" content="2022-07-19T10:22:45+08:00" /><meta property="og:site_name" content="keunghin" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.keunghin.cyou"/>
+
+<meta name="twitter:title" content="git study"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="keunghin">
+<meta name="apple-mobile-web-app-title" content="keunghin">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://www.keunghin.cyou/posts/6/" /><link rel="prev" href="https://www.keunghin.cyou/posts/5/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "git study",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.keunghin.cyou\/posts\/6\/"
+        },"genre": "posts","keywords": "git","wordcount":  943 ,
+        "url": "https:\/\/www.keunghin.cyou\/posts\/6\/","datePublished": "2022-07-19T10:07:14+08:00","dateModified": "2022-07-19T10:22:45+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "keunghin"},"author": {
+                "@type": "Person",
+                "name": "keunghin"
+            },"description": ""
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('light' === 'light' || 'light' === 'dark' || 'light' === 'black') setTheme('light'), saveTheme('light'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="keunghin">keunghin</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/me/"> About </a><a class="menu-item" href="/friend/"> Friend </a><a class="menu-item" href="https://github.com/xuandef" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="keunghin">keunghin</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/me/" title="">About</a><a class="menu-item" href="/friend/" title="">Friend</a><a class="menu-item" href="https://github.com/xuandef" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#branch">branch</a>
+      <ul>
+        <li><a href="#方法1">方法1</a></li>
+        <li><a href="#方法2">方法2</a></li>
+        <li><a href="#添加内容并push">添加内容并push</a></li>
+      </ul>
+    </li>
+    <li><a href="#commit">commit</a>
+      <ul>
+        <li><a href="#已经-push">已经 push</a></li>
+        <li><a href="#撤销-commit">撤销 commit</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#背景">背景</a></li>
+                <li><a href="#操作">操作</a>
+                  <ul>
+                    <li><a href="#找出提交历史记录">找出提交历史记录</a></li>
+                    <li><a href="#执行-reset-命令">执行 reset 命令</a></li>
+                    <li><a href="#执行强制的-push-命令">执行强制的 push 命令</a></li>
+                    <li><a href="#处理受保护分支">处理受保护分支</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#合并-commit">合并 commit</a>
+          <ul>
+            <li><a href="#第一种">第一种</a></li>
+            <li><a href="#第二种">第二种</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#merge">merge</a>
+      <ul>
+        <li><a href="#背景-1">背景</a></li>
+        <li><a href="#操作过程">操作过程</a>
+          <ul>
+            <li><a href="#同步代码">同步代码</a></li>
+            <li><a href="#同步tag">同步tag</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#tag">tag</a>
+      <ul>
+        <li><a href="#列出已有-tag">列出已有 tag</a></li>
+        <li><a href="#添加-tag">添加 tag</a></li>
+        <li><a href="#删除-tag">删除 tag</a></li>
+      </ul>
+    </li>
+    <li><a href="#remote">remote</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">git study</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">keunghin</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-07-19">2022-07-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-07-19">2022-07-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;943 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#branch">branch</a>
+      <ul>
+        <li><a href="#方法1">方法1</a></li>
+        <li><a href="#方法2">方法2</a></li>
+        <li><a href="#添加内容并push">添加内容并push</a></li>
+      </ul>
+    </li>
+    <li><a href="#commit">commit</a>
+      <ul>
+        <li><a href="#已经-push">已经 push</a></li>
+        <li><a href="#撤销-commit">撤销 commit</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#背景">背景</a></li>
+                <li><a href="#操作">操作</a>
+                  <ul>
+                    <li><a href="#找出提交历史记录">找出提交历史记录</a></li>
+                    <li><a href="#执行-reset-命令">执行 reset 命令</a></li>
+                    <li><a href="#执行强制的-push-命令">执行强制的 push 命令</a></li>
+                    <li><a href="#处理受保护分支">处理受保护分支</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#合并-commit">合并 commit</a>
+          <ul>
+            <li><a href="#第一种">第一种</a></li>
+            <li><a href="#第二种">第二种</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#merge">merge</a>
+      <ul>
+        <li><a href="#背景-1">背景</a></li>
+        <li><a href="#操作过程">操作过程</a>
+          <ul>
+            <li><a href="#同步代码">同步代码</a></li>
+            <li><a href="#同步tag">同步tag</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#tag">tag</a>
+      <ul>
+        <li><a href="#列出已有-tag">列出已有 tag</a></li>
+        <li><a href="#添加-tag">添加 tag</a></li>
+        <li><a href="#删除-tag">删除 tag</a></li>
+      </ul>
+    </li>
+    <li><a href="#remote">remote</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="branch" class="headerLink">
+    <a href="#branch" class="header-mark"></a>1 branch</h2><p>在偶尔的情况下，可能会想要保留那些与你的代码没有共同祖先的分支。例如在这些分支上保留生成的文档或者其他一些东西。</p>
+<p>如果需要创建一个不使用当前代码库作为父提交的分支，可以用如下的方法创建一个空分支。</p>
+<h3 id="方法1" class="headerLink">
+    <a href="#%e6%96%b9%e6%b3%951" class="header-mark"></a>1.1 方法1</h3><p>执行以下git命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git symbolic-ref HEAD refs/heads/newbranch
+</span></span><span class="line"><span class="cl">rm .git/index
+</span></span><span class="line"><span class="cl">git clean -fdx
+</span></span><span class="line"><span class="cl">&lt;<span class="k">do</span> work&gt;
+</span></span><span class="line"><span class="cl">git add your files
+</span></span><span class="line"><span class="cl">git commit -m <span class="s1">&#39;Initial commit&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="方法2" class="headerLink">
+    <a href="#%e6%96%b9%e6%b3%952" class="header-mark"></a>1.2 方法2</h3><p>这里以github的操作为例，下面试图创建一个名为gh-pages的空分支：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">cd</span> repo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ git checkout --orphan gh-pages
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建一个orphan的分支，这个分支是独立的</span>
+</span></span><span class="line"><span class="cl">Switched to a new branch <span class="s1">&#39;gh-pages&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ git rm -rf .
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除原来代码树下的所有文件</span>
+</span></span><span class="line"><span class="cl">rm ......
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="添加内容并push" class="headerLink">
+    <a href="#%e6%b7%bb%e5%8a%a0%e5%86%85%e5%ae%b9%e5%b9%b6push" class="header-mark"></a>1.3 添加内容并push</h3><p>注意这个时候用git branch命令是看不见当前分支的名字的，除非进行了第一次commit。</p>
+<p>下面我们开始添加一些代码文件，例如这里新增了一个index.html:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="se">\&#34;</span>My GitHub Page<span class="se">\&#34;</span> &gt; index.html
+</span></span><span class="line"><span class="cl">$ git add .
+</span></span><span class="line"><span class="cl">$ git commit -a -m <span class="se">\&#34;</span>First pages commit<span class="se">\&#34;</span>
+</span></span><span class="line"><span class="cl">$ git push origin gh-pages
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在commit操作之后，你就可以用git branch命令看到新分支的名字了，然后push到远程仓库。</p>
+<hr>
+<h2 id="commit" class="headerLink">
+    <a href="#commit" class="header-mark"></a>2 commit</h2><p>在commit之后修改注释</p>
+<h3 id="已经-push" class="headerLink">
+    <a href="#%e5%b7%b2%e7%bb%8f-push" class="header-mark"></a>2.1 已经 push</h3><p>对于已经提交并已经 push 到远程仓库中的需要通过 <code>git rebase</code> 才能完成。</p>
+<p>首先要 <code>git rebase</code> 到需要修改的那个 commit 的前1个 commit。假设 commit id 是 32e0a87f，运行下面的 <code>git rebase</code> 命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git rebase -i 32e0a87f
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 git bash 中运行上面的命令后，会弹出编辑框，在编辑框中会分行依次显示以 pick 开头的这个 commit 之后的所有 commit message。</p>
+<p>将需要修改的commit message之前的&quot;pick&quot;改为&quot;reword&quot;，点击保存按钮，并关闭编辑框，这时会执行rebase操作。</p>
+<p>Rebasing (1/3)</p>
+<p>接着会再次弹出编辑框，这次编辑框中只有之前改为&quot;reword&quot;的那个commit message，此时修改commit message的内容，点击保存按钮并关闭编辑框，会继续执行rebase操作。</p>
+<p>如果操作成功，会出现如下的提示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">[</span>detached HEAD aa3b52c<span class="o">]</span> Add <span class="k">return</span> url
+</span></span><span class="line"><span class="cl"> <span class="m">2</span> files changed, <span class="m">1</span> insertion<span class="o">(</span>+<span class="o">)</span>, <span class="m">3</span> deletions<span class="o">(</span>-<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Successfully rebased and updated refs/heads/oss.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这样就完成了git commit message的修改，然后强制push一下就搞定了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git push --force
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="撤销-commit" class="headerLink">
+    <a href="#%e6%92%a4%e9%94%80-commit" class="header-mark"></a>2.2 撤销 commit</h3><p>在commit之后撤销已经提交的commit</p>
+<h5 id="背景" class="headerLink">
+    <a href="#%e8%83%8c%e6%99%af" class="header-mark"></a>2.2.0.1 背景</h5><ul>
+<li>
+<p>代码修改后已经执行了commit和push</p>
+</li>
+<li>
+<p>希望撤销这次commit，回到到这个commit之前的状态：包括本地和远程仓库</p>
+</li>
+</ul>
+<h5 id="操作" class="headerLink">
+    <a href="#%e6%93%8d%e4%bd%9c" class="header-mark"></a>2.2.0.2 操作</h5><h6 id="找出提交历史记录" class="headerLink">
+    <a href="#%e6%89%be%e5%87%ba%e6%8f%90%e4%ba%a4%e5%8e%86%e5%8f%b2%e8%ae%b0%e5%bd%95" class="header-mark"></a>2.2.0.2.1 找出提交历史记录</h6><p>先 <code>git log</code> 找出提交的历史记录</p>
+<p>比如下面有四个commit记录：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git log
+</span></span><span class="line"><span class="cl">commit 87dabb290ae1a4e620512b7cd81d2161747c6ec9
+</span></span><span class="line"><span class="cl">Author: Sky Ao &lt;aoxiaojian@gmail.com&gt;
+</span></span><span class="line"><span class="cl">Date:   Thu Jul <span class="m">21</span> 16:36:26 <span class="m">2016</span> +0800
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    add cliet builder and wrap native api<span class="p">;</span> setup integration test<span class="p">;</span> add first unit <span class="nb">test</span> <span class="k">case</span> and integration <span class="nb">test</span> <span class="k">case</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">commit 6899dd19dbe58da6ae65fd157a791151967c16b2
+</span></span><span class="line"><span class="cl">Author: Sky Ao &lt;aoxiaojian@gmail.com&gt;
+</span></span><span class="line"><span class="cl">Date:   Thu Jul <span class="m">21</span> 15:17:00 <span class="m">2016</span> +0800
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    rollback package name to etcdserverpb, otherwise etcd server will reject the request
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">commit 18d034b3a1e20e81ece3d2f6ba9919e8bdb3dfd4
+</span></span><span class="line"><span class="cl">Author: Sky Ao &lt;aoxiaojian@gmail.com&gt;
+</span></span><span class="line"><span class="cl">Date:   Thu Jul <span class="m">21</span> 14:37:19 <span class="m">2016</span> +0800
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    change java version to 1.7
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">commit 4beef3ce6557a41e657c2ee4e19c6156eabd759b
+</span></span><span class="line"><span class="cl">Author: Sky Ao &lt;aoxiaojian@gmail.com&gt;
+</span></span><span class="line"><span class="cl">Date:   Wed Jul <span class="m">20</span> 18:40:18 <span class="m">2016</span> +0800
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>现在需要撤销最新的这一次 <code>87dabb290ae1a4e620512b7cd81d2161747c6ec9</code> 提交， 回退到它的上一次 <code>6899dd19dbe58da6ae65fd157a791151967c16b2</code>。</p>
+<h6 id="执行-reset-命令" class="headerLink">
+    <a href="#%e6%89%a7%e8%a1%8c-reset-%e5%91%bd%e4%bb%a4" class="header-mark"></a>2.2.0.2.2 执行 reset 命令</h6><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git reset --hard 6899dd19dbe58da6ae65fd157a791151967c16b2
+</span></span><span class="line"><span class="cl">HEAD 现在位于 6899dd1 rollback package name to etcdserverpb, otherwise etcd server will reject the request
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意 commitid 是要撤销的commit的前一次commit的id，也就是说 reset 命令是将提交 <strong>重置</strong> 到要撤销的前一次。</p>
+<p>reset命令执行完成后，本地仓库就重置，相当于撤销了 6899dd1 之前的所有commit。</p>
+<p>其他 :</p>
+<p>根据<code>–mixed –soft –hard</code>，会对 working tree 和 index 和 HEAD 进行重置:</p>
+<p><code>git reset –mixed</code>：此为默认方式，不带任何参数的git reset，即这种方式，它回退到某个版本，只保留源码，回退 commit 和 index 信息</p>
+<p><code>git reset –soft</code>：回退到某个版本，只回退了 commit 的信息，不会恢复到 index file 一级。如果还要提交，直接 commit 即可</p>
+<p><code>git reset –hard</code>：彻底回退到某个版本，本地的源码也会变为上一个版本的内容</p>
+<p><code>HEAD &lt;sha1-commit-hash&gt;</code></p>
+<p><code>HEAD^</code> 上一次 &lt;commit_id&gt; 每次commit的SHA1值. 可以用 git log 看到,也可以在页面上 commit 标签页里找到.</p>
+<h6 id="执行强制的-push-命令" class="headerLink">
+    <a href="#%e6%89%a7%e8%a1%8c%e5%bc%ba%e5%88%b6%e7%9a%84-push-%e5%91%bd%e4%bb%a4" class="header-mark"></a>2.2.0.2.3 执行强制的 push 命令</h6><p>执行 push 命令，注意是需要增加 –force 来强制推送：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git push origin HEAD --force
+</span></span><span class="line"><span class="cl">Total <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">To git@github.com:skyao/jetcd.git
+</span></span><span class="line"><span class="cl">+ 87dabb2...6899dd1 HEAD -&gt; master <span class="o">(</span>forced update<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>push 命令执行完成，远程仓库也就重置了。此时从远程仓库上看，在这次 <code>6899dd19dbe58da6ae65fd157a791151967c16b2</code> 提交之后的所有commit已经消失，相当于 git 仓库回滚到这个提交了。</p>
+<p>如果不是master branch，则需要在HEAD后面指定远程分支的名字，如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git push origin HEAD:learning --force
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h6 id="处理受保护分支" class="headerLink">
+    <a href="#%e5%a4%84%e7%90%86%e5%8f%97%e4%bf%9d%e6%8a%a4%e5%88%86%e6%94%af" class="header-mark"></a>2.2.0.2.4 处理受保护分支</h6><p>如果当前分支是 protecded 的受保护分支，则 git 服务器会拒绝强制推送，报错如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git push origin HEAD --force
+</span></span><span class="line"><span class="cl">Total <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">remote: GitLab: You are not allowed to force push code to a protected branch on this project.
+</span></span><span class="line"><span class="cl">To basiccloud.net:foundation/foundation-etcd.git
+</span></span><span class="line"><span class="cl"> ! <span class="o">[</span>remote rejected<span class="o">]</span> HEAD -&gt; master <span class="o">(</span>pre-receive hook declined<span class="o">)</span>
+</span></span><span class="line"><span class="cl">error: 无法推送一些引用到 <span class="s1">&#39;git@basiccloud.net:foundation/foundation-etcd.git&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时，需要将当前分支的 Protected 属性暂时去掉。</p>
+<p>对于 gitlab，可以进入当前仓库的设置中的 “Protected branches” 一项，将当前 branch 的 protected 临时去掉，等这次 push 完成，再重新设置回 protected 。</p>
+<h3 id="合并-commit" class="headerLink">
+    <a href="#%e5%90%88%e5%b9%b6-commit" class="header-mark"></a>2.3 合并 commit</h3><p>有时 commit 太多，而且可能一个 commit 只是提交一个小 bug ，那么合并 commit 势在必行。</p>
+<h4 id="第一种" class="headerLink">
+    <a href="#%e7%ac%ac%e4%b8%80%e7%a7%8d" class="header-mark"></a>2.3.1 第一种</h4><p>提交最后一个修改的 commit 使用参数，之前的一个 commit 将会合并到这个即将提交的 commit 中来 :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git commit -a --amend -m <span class="s2">&#34;my message here&#34;</span>如果之前有一个提交，并且信息为:
+</span></span><span class="line"><span class="cl">git commit -a -m <span class="s2">&#34;my last commit message&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>则这个 commit message 将不存在。但该commit的信息已经合并到&quot;my message here&quot;中了。</p>
+<h4 id="第二种" class="headerLink">
+    <a href="#%e7%ac%ac%e4%ba%8c%e7%a7%8d" class="header-mark"></a>2.3.2 第二种</h4><p>如果提交了最后的修改 :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git reset --soft HEAD^ <span class="c1">#或HEAD^意为取消最后commit</span>
+</span></span><span class="line"><span class="cl">$ git commit --amend
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>把最后一个 commit 合并到前一个提交中去，例如（由上往下读）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git add b.text
+</span></span><span class="line"><span class="cl">git commit -a -m <span class="s2">&#34;my message here&#34;</span>
+</span></span><span class="line"><span class="cl">git add a.text
+</span></span><span class="line"><span class="cl">git commit -a -m <span class="s2">&#34;my last commit message&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后存在的将是&quot;my last commit message&quot;。也可后退 n 个，合并到前面第 n+1 个 commit 中去：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git reset --soft HEAD~n <span class="c1">#后退到第n，我也不清楚具体含义。</span>
+</span></span><span class="line"><span class="cl">$ git commit --amend <span class="o">[</span>-m <span class="s2">&#34;new message&#34;</span><span class="o">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最方便的是调用 reflog 查看操作历史，找到具体的 commit id ，然后直接 git reset &ndash;hard [commit_id] 就回到你要的版本！</p>
+<hr>
+<h2 id="merge" class="headerLink">
+    <a href="#merge" class="header-mark"></a>3 merge</h2><p>更新github上fork的仓库</p>
+<h3 id="背景-1" class="headerLink">
+    <a href="#%e8%83%8c%e6%99%af-1" class="header-mark"></a>3.1 背景</h3><ul>
+<li>
+<p>在github上fork了某项目</p>
+</li>
+<li>
+<p>原仓库有新的改动</p>
+</li>
+<li>
+<p>想将原仓库的改动更新到自己fork的仓库</p>
+</li>
+</ul>
+<h3 id="操作过程" class="headerLink">
+    <a href="#%e6%93%8d%e4%bd%9c%e8%bf%87%e7%a8%8b" class="header-mark"></a>3.2 操作过程</h3><h4 id="同步代码" class="headerLink">
+    <a href="#%e5%90%8c%e6%ad%a5%e4%bb%a3%e7%a0%81" class="header-mark"></a>3.2.1 同步代码</h4><p>以netty为例：</p>
+<ul>
+<li>
+<p>源地址：git@github.com:netty/netty.git</p>
+</li>
+<li>
+<p>我fork的： <a href="mailto:git@github.com" rel="">git@github.com</a>:skyao/netty.git</p>
+</li>
+</ul>
+<p>按照下面的步骤:</p>
+<ol>
+<li>为本地仓库增加一个remote, 命名为&quot;upstream&quot;:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git remote add upstream git://github.com/dapr/dapr.git
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者</span>
+</span></span><span class="line"><span class="cl">git remote add upstream git@github.com:dapr/dapr.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>也有人推荐下面的多了–track参数的的方式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git remote add --track master upstream git://github.com/dapr/dapr.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>fetch 这个upstream远程的所有分支到remote-tracking分支, 例如upstream/master</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git fetch upstream
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>确认当前分支是master分支, 如果不是checkout到master分支</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git branch
+</span></span><span class="line"><span class="cl">git checkout master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>同步upstream的修改到本地, 可以选择rebase或者merge</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git rebase upstream/master
+</span></span><span class="line"><span class="cl">git merge upstream/master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注: 推荐用merge.</p>
+<ol start="5">
+<li>将更新之后的版本推送到自己fork的仓库</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git push -f origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="同步tag" class="headerLink">
+    <a href="#%e5%90%8c%e6%ad%a5tag" class="header-mark"></a>3.2.2 同步tag</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git fetch upstream --tags
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git push --tags
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="tag" class="headerLink">
+    <a href="#tag" class="header-mark"></a>4 tag</h2><p>记录git中tag命令的用法。</p>
+<h3 id="列出已有-tag" class="headerLink">
+    <a href="#%e5%88%97%e5%87%ba%e5%b7%b2%e6%9c%89-tag" class="header-mark"></a>4.1 列出已有 tag</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git tag
+</span></span><span class="line"><span class="cl">git tag -l <span class="s1">&#39;v1.4.2.*&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="添加-tag" class="headerLink">
+    <a href="#%e6%b7%bb%e5%8a%a0-tag" class="header-mark"></a>4.2 添加 tag</h3><p>添加轻量级标签：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git tag -a v1.4
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>添加含附注类型的标签：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git tag -a v1.4 -m <span class="s1">&#39;my version 1.4&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>推送到远程：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git push origin v1.4
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>或者 –tags 推送全部：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git push --tags
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="删除-tag" class="headerLink">
+    <a href="#%e5%88%a0%e9%99%a4-tag" class="header-mark"></a>4.3 删除 tag</h3><p>删除本地 tag :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git tag -d v1.0.0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>删除远程指定 tag :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git push origin --delete v2.5
+</span></span><span class="line"><span class="cl">To git@github.com:username/project.git
+</span></span><span class="line"><span class="cl"> - <span class="o">[</span>deleted<span class="o">]</span>               v2.5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>删除远程所有 tag :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git ls-remote origin <span class="p">|</span> cut -f <span class="m">2</span> <span class="p">|</span> grep -iv head <span class="p">|</span> xargs git push --delete origin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="remote" class="headerLink">
+    <a href="#remote" class="header-mark"></a>5 remote</h2><p>通过set-url解决can’t push错误</p>
+<p>如果clone时 remote 的地址信息有问题，比如通过 <code>git clnoe git://github.com/skyao/learning-git.git</code> 的方式 clone 下来的仓库，在改动之后push时，会报错，错误信息如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git push
+</span></span><span class="line"><span class="cl">fatal: 远程错误：
+</span></span><span class="line"><span class="cl">  You can<span class="err">&#39;</span>t push to git://github.com/skyao/learning-git.git
+</span></span><span class="line"><span class="cl">  Use https://github.com/skyao/learning-git.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>事实上，在github 页面上，给出的clone地址是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git@github.com:skyao/learning-git.git
+</span></span><span class="line"><span class="cl">git@github.com/skyao/learning-git.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>和前面clone下来时使用的地址仅有一个字符的差异。</p>
+<p>解决问题的方法，可以重新用正确的地址再clone一遍。如果已经有commit，则可以使用 remote 的 set-url 子命令直接修改remote的地址：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git remote set-url origin git@github.com:skyao/learning-git.git
+</span></span><span class="line"><span class="cl">sky@B-47WAMD6R-0023 learning-git % git push
+</span></span><span class="line"><span class="cl">Connection to github.com port <span class="m">22</span> <span class="o">[</span>tcp/ssh<span class="o">]</span> succeeded!
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<blockquote>
+<p>参考资料</p>
+<p><a href="https://git-scm.com/docs" target="_blank" rel="noopener noreffer">git-docs</a></p>
+<p><a href="https://skyao.io/learning-git/docs.html" target="_blank" rel="noopener noreffer">Git学习笔记</a></p>
+<p><a href="https://gist.github.com/okunishinishi/9424779" target="_blank" rel="noopener noreffer">Remove all git tags</a></p>
+<p><a href="https://www.novicedev.com/blog/how-delete-git-tag-local-and-remote-examples" target="_blank" rel="noopener noreffer">How to delete local and remote git tags (WITH EXAMPLES)</a></p>
+<p><a href="https://devconnected.com/how-to-delete-local-and-remote-tags-on-git" target="_blank" rel="noopener noreffer">How To Delete Local and Remote Tags on Git</a></p>
+<p><a href="https://www.douban.com/note/189603387/?_i=63195758FGiQA_%2C8196473Gzkv4nN" target="_blank" rel="noopener noreffer">git 删除错误提交的commit</a></p>
+<p><a href="https://www.douban.com/note/318248317/?_i=8220014Gzkv4nN" target="_blank" rel="noopener noreffer">git commit 合并</a></p>
+<p><a href="https://www.delftstack.com/howto/git/git-remove-local-commit" target="_blank" rel="noopener noreffer">Delete Local Commits in Git</a></p>
+<p><a href="https://www.atlassian.com/git/tutorials" target="_blank" rel="noopener noreffer">Become a git guru.</a></p>
+<p><a href="https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely" target="_blank" rel="noopener noreffer">How to Delete a Git Branch Both Locally and Remotely</a></p>
+<p><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging" target="_blank" rel="noopener noreffer">2.6 Git Basics - Tagging</a></p>
+<p><a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE" target="_blank" rel="noopener noreffer">2.6 Git 基础 - 打标签</a></p>
+<p><a href="https://stackoverflow.com/questions/42735837/git-bash-remote-error-you-cant-push-to-git-github-com" target="_blank" rel="noopener noreffer">Git Bash: remote error: You can&rsquo;t push to git://github.com/</a></p>
+<p><a href="https://git-scm.com/docs/git-stash" target="_blank" rel="noopener noreffer">git-stash</a></p>
+</blockquote></div>
+
+        
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-07-19</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/git/">git</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/5/" class="prev" rel="prev" title="测速地址"><i class="fas fa-angle-left fa-fw"></i>测速地址</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.100.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/fuse/fuse.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":true,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":50,"threshold":0.1,"type":"fuse","useExtendedSearch":false},"table":{"sort":true}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script></div>
+</body>
+
+</html>

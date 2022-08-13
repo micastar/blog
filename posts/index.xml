@@ -1,28 +1,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - Keanu</title>
-        <link>https://www.hikk.top/posts/</link>
-        <description>All Posts | Keanu</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</lastBuildDate><atom:link href="https://www.hikk.top/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>archLinux-i3-配置</title>
-    <link>https://www.hikk.top/posts/3/</link>
+        <title>All Posts - keunghin</title>
+        <link>https://www.keunghin.cyou/posts/</link>
+        <description>All Posts | keunghin</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</lastBuildDate><atom:link href="https://www.keunghin.cyou/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>archLinux i3 配置</title>
+    <link>https://www.keunghin.cyou/posts/3/</link>
     <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
-        <name>Keanu</name>
-    </author><guid>https://www.hikk.top/posts/3/</guid>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/3/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>建站</title>
-    <link>https://www.hikk.top/posts/1/</link>
-    <pubDate>Sun, 13 Feb 2022 16:02:59 &#43;0800</pubDate><author>
-        <name>Keanu</name>
-    </author><guid>https://www.hikk.top/posts/1/</guid>
+    <title>测速地址</title>
+    <link>https://www.keunghin.cyou/posts/5/</link>
+    <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/5/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>摘录</title>
-    <link>https://www.hikk.top/posts/2/</link>
-    <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
-        <name>Keanu</name>
-    </author><guid>https://www.hikk.top/posts/2/</guid>
+    <title>git study</title>
+    <link>https://www.keunghin.cyou/posts/6/</link>
+    <pubDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/6/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
