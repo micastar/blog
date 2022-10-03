@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.keunghin.cyou/posts/6/" /><meta property="og:image" content="https://www.keunghin.cyou"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-07-19T10:07:14+08:00" />
-<meta property="article:modified_time" content="2022-08-13T20:49:35+08:00" /><meta property="og:site_name" content="keunghin" />
+<meta property="article:modified_time" content="2022-10-03T11:30:51+08:00" /><meta property="og:site_name" content="keunghin" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.keunghin.cyou"/>
@@ -33,8 +33,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.keunghin.cyou\/posts\/6\/"
-        },"genre": "posts","keywords": "git","wordcount":  943 ,
-        "url": "https:\/\/www.keunghin.cyou\/posts\/6\/","datePublished": "2022-07-19T10:07:14+08:00","dateModified": "2022-08-13T20:49:35+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"genre": "posts","keywords": "git","wordcount":  976 ,
+        "url": "https:\/\/www.keunghin.cyou\/posts\/6\/","datePublished": "2022-07-19T10:07:14+08:00","dateModified": "2022-10-03T11:30:51+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "keunghin"},"author": {
                 "@type": "Person",
@@ -166,13 +166,14 @@
       </ul>
     </li>
     <li><a href="#remote">remote</a></li>
+    <li><a href="#submodule">submodule</a></li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">git study</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">keunghin</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-07-19">2022-07-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-08-13">2022-08-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;943 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-07-19">2022-07-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-10-03">2022-10-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;976 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -235,10 +236,22 @@
       </ul>
     </li>
     <li><a href="#remote">remote</a></li>
+    <li><a href="#submodule">submodule</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="branch" class="headerLink">
-    <a href="#branch" class="header-mark"></a>1 branch</h2><p>在偶尔的情况下，可能会想要保留那些与你的代码没有共同祖先的分支。例如在这些分支上保留生成的文档或者其他一些东西。</p>
+            </div><div class="content" id="content"><blockquote>
+<p>参考链接</p>
+<p><a href="https://git-scm.com/docs" target="_blank" rel="noopener noreferrer">git-docs</a></p>
+<p><a href="https://skyao.io/learning-git/docs.html" target="_blank" rel="noopener noreferrer">Git学习笔记</a></p>
+<p><a href="https://www.atlassian.com/git/tutorials" target="_blank" rel="noopener noreferrer">Become a git guru.</a></p>
+<p><a href="https://git-scm.com/docs/git-stash" target="_blank" rel="noopener noreferrer">git-stash</a></p>
+</blockquote>
+<h2 id="branch" class="headerLink">
+    <a href="#branch" class="header-mark"></a>1 branch</h2><blockquote>
+<p>参考链接</p>
+<p><a href="https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely" target="_blank" rel="noopener noreferrer">How to Delete a Git Branch Both Locally and Remotely</a></p>
+</blockquote>
+<p>在偶尔的情况下，可能会想要保留那些与你的代码没有共同祖先的分支。例如在这些分支上保留生成的文档或者其他一些东西。</p>
 <p>如果需要创建一个不使用当前代码库作为父提交的分支，可以用如下的方法创建一个空分支。</p>
 <h3 id="方法1" class="headerLink">
     <a href="#%e6%96%b9%e6%b3%951" class="header-mark"></a>1.1 方法1</h3><p>执行以下git命令：</p>
@@ -306,7 +319,13 @@
 </div><p>在commit操作之后，你就可以用git branch命令看到新分支的名字了，然后push到远程仓库。</p>
 <hr>
 <h2 id="commit" class="headerLink">
-    <a href="#commit" class="header-mark"></a>2 commit</h2><p>在commit之后修改注释</p>
+    <a href="#commit" class="header-mark"></a>2 commit</h2><blockquote>
+<p>参考链接</p>
+<p><a href="https://www.douban.com/note/189603387/?_i=63195758FGiQA_%2C8196473Gzkv4nN" target="_blank" rel="noopener noreferrer">git 删除错误提交的commit</a></p>
+<p><a href="https://www.douban.com/note/318248317/?_i=8220014Gzkv4nN" target="_blank" rel="noopener noreferrer">git commit 合并</a></p>
+<p><a href="https://www.delftstack.com/howto/git/git-remove-local-commit" target="_blank" rel="noopener noreferrer">Delete Local Commits in Git</a></p>
+</blockquote>
+<p>在commit之后修改注释</p>
 <h3 id="已经-push" class="headerLink">
     <a href="#%e5%b7%b2%e7%bb%8f-push" class="header-mark"></a>2.1 已经 push</h3><p>对于已经提交并已经 push 到远程仓库中的需要通过 <code>git rebase</code> 才能完成。</p>
 <p>首先要 <code>git rebase</code> 到需要修改的那个 commit 的前1个 commit。假设 commit id 是 32e0a87f，运行下面的 <code>git rebase</code> 命令：</p>
@@ -647,7 +666,14 @@
 </div>
 </div><hr>
 <h2 id="tag" class="headerLink">
-    <a href="#tag" class="header-mark"></a>4 tag</h2><p>记录git中tag命令的用法。</p>
+    <a href="#tag" class="header-mark"></a>4 tag</h2><blockquote>
+<p>参考链接</p>
+<p><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging" target="_blank" rel="noopener noreferrer">2.6 Git Basics - Tagging</a></p>
+<p><a href="https://www.novicedev.com/blog/how-delete-git-tag-local-and-remote-examples" target="_blank" rel="noopener noreferrer">How to delete local and remote git tags (WITH EXAMPLES)</a></p>
+<p><a href="https://gist.github.com/okunishinishi/9424779" target="_blank" rel="noopener noreferrer">Remove all git tags</a></p>
+<p><a href="https://devconnected.com/how-to-delete-local-and-remote-tags-on-git" target="_blank" rel="noopener noreferrer">How To Delete Local and Remote Tags on Git</a></p>
+</blockquote>
+<p>记录git中tag命令的用法。</p>
 <h3 id="列出已有-tag" class="headerLink">
     <a href="#%e5%88%97%e5%87%ba%e5%b7%b2%e6%9c%89-tag" class="header-mark"></a>4.1 列出已有 tag</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -730,7 +756,11 @@
 </div>
 </div><hr>
 <h2 id="remote" class="headerLink">
-    <a href="#remote" class="header-mark"></a>5 remote</h2><p>通过set-url解决can’t push错误</p>
+    <a href="#remote" class="header-mark"></a>5 remote</h2><blockquote>
+<p>参考链接</p>
+<p><a href="https://stackoverflow.com/questions/42735837/git-bash-remote-error-you-cant-push-to-git-github-com" target="_blank" rel="noopener noreferrer">Git Bash: remote error: You can&rsquo;t push to git://github.com</a></p>
+</blockquote>
+<p>通过set-url解决can’t push错误</p>
 <p>如果clone时 remote 的地址信息有问题，比如通过 <code>git clnoe git://github.com/skyao/learning-git.git</code> 的方式 clone 下来的仓库，在改动之后push时，会报错，错误信息如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -772,29 +802,38 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<blockquote>
-<p>参考资料</p>
-<p><a href="https://git-scm.com/docs" target="_blank" rel="noopener noreferrer">git-docs</a></p>
-<p><a href="https://skyao.io/learning-git/docs.html" target="_blank" rel="noopener noreferrer">Git学习笔记</a></p>
-<p><a href="https://gist.github.com/okunishinishi/9424779" target="_blank" rel="noopener noreferrer">Remove all git tags</a></p>
-<p><a href="https://www.novicedev.com/blog/how-delete-git-tag-local-and-remote-examples" target="_blank" rel="noopener noreferrer">How to delete local and remote git tags (WITH EXAMPLES)</a></p>
-<p><a href="https://devconnected.com/how-to-delete-local-and-remote-tags-on-git" target="_blank" rel="noopener noreferrer">How To Delete Local and Remote Tags on Git</a></p>
-<p><a href="https://www.douban.com/note/189603387/?_i=63195758FGiQA_%2C8196473Gzkv4nN" target="_blank" rel="noopener noreferrer">git 删除错误提交的commit</a></p>
-<p><a href="https://www.douban.com/note/318248317/?_i=8220014Gzkv4nN" target="_blank" rel="noopener noreferrer">git commit 合并</a></p>
-<p><a href="https://www.delftstack.com/howto/git/git-remove-local-commit" target="_blank" rel="noopener noreferrer">Delete Local Commits in Git</a></p>
-<p><a href="https://www.atlassian.com/git/tutorials" target="_blank" rel="noopener noreferrer">Become a git guru.</a></p>
-<p><a href="https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely" target="_blank" rel="noopener noreferrer">How to Delete a Git Branch Both Locally and Remotely</a></p>
-<p><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging" target="_blank" rel="noopener noreferrer">2.6 Git Basics - Tagging</a></p>
-<p><a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE" target="_blank" rel="noopener noreferrer">2.6 Git 基础 - 打标签</a></p>
-<p><a href="https://stackoverflow.com/questions/42735837/git-bash-remote-error-you-cant-push-to-git-github-com" target="_blank" rel="noopener noreferrer">Git Bash: remote error: You can&rsquo;t push to git://github.com/</a></p>
-<p><a href="https://git-scm.com/docs/git-stash" target="_blank" rel="noopener noreferrer">git-stash</a></p>
-</blockquote></div>
+<h2 id="submodule" class="headerLink">
+    <a href="#submodule" class="header-mark"></a>6 submodule</h2><blockquote>
+<p>参考链接</p>
+<p><a href="https://www.git-scm.com/book/en/v2/Git-Tools-Submodules" target="_blank" rel="noopener noreferrer">Git-Tools-Submodules</a></p>
+</blockquote>
+<p>下载 Project 并初始化 submodule。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># --depth=1 仅限 Project 深度，对于 submodule 无效。</span>
+</span></span><span class="line"><span class="cl">git clone --recurse-submodules --depth<span class="o">=</span><span class="m">1</span> git@github.com:keunghin/blogdeploy.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更新 submodule。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git submodule update --remote --merge
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-08-13</span>
+                <span>Updated on 2022-10-03</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -818,7 +857,7 @@
 </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.102.1">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.104.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
