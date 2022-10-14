@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.keunghin.cyou\/posts\/3\/"
-        },"genre": "posts","keywords": "linux","wordcount":  1749 ,
+        },"genre": "posts","keywords": "linux","wordcount":  1616 ,
         "url": "https:\/\/www.keunghin.cyou\/posts\/3\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-09-23T09:54:51+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "keunghin"},"author": {
@@ -143,7 +143,6 @@
         </li>
         <li><a href="#i3lock-color">i3lock-color</a></li>
         <li><a href="#obs-studio">obs-studio</a></li>
-        <li><a href="#blob-emoji">Blob Emoji</a></li>
         <li><a href="#zsh">zsh</a></li>
       </ul>
     </li>
@@ -158,8 +157,8 @@
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">keunghin</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-09-23">2022-09-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1749 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;9 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-09-23">2022-09-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1616 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -198,7 +197,6 @@
         </li>
         <li><a href="#i3lock-color">i3lock-color</a></li>
         <li><a href="#obs-studio">obs-studio</a></li>
-        <li><a href="#blob-emoji">Blob Emoji</a></li>
         <li><a href="#zsh">zsh</a></li>
       </ul>
     </li>
@@ -235,7 +233,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#注意：在--sort rate中，有些镜像无法进行评分，会在命令行下弹出警号（WARNING）</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">sudo reflector --country China --age <span class="m">6</span> --latest <span class="m">6</span> --fastest <span class="m">6</span> --threads <span class="m">6</span> --sort rate --protocol https --save /etc/pacman.d/mirrorlist
+</span></span><span class="line"><span class="cl">sudo reflector --country China --age <span class="m">6</span> --latest <span class="m">6</span> --fastest <span class="m">6</span> --threads <span class="m">6</span> --sort rate --protocol http --save /etc/pacman.d/mirrorlist
 </span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
@@ -336,7 +334,7 @@
 <h2 id="修改引导程序" class="headerLink">
     <a href="#%e4%bf%ae%e6%94%b9%e5%bc%95%e5%af%bc%e7%a8%8b%e5%ba%8f" class="header-mark"></a>4 修改引导程序</h2><p><a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/rookie/basic_install?id=_18%e5%ae%89%e8%a3%85%e5%bc%95%e5%af%bc%e7%a8%8b%e5%ba%8f" target="_blank" rel="noopener noreferrer">安装引导程序</a></p>
 <p>编辑/etc/default/grub 文件。</p>
-<p><code>quiet splash nowatchdog modprobe.blacklist=nouveau nmi_watchdog=0 pcie_aspm=force barrier=0</code></p>
+<p><code>loglevel=3 nowatchdog sysrq_always_enabled=1</code></p>
 <p><a href="https://wiki.archlinux.org/title/Keyboard_shortcuts" target="_blank" rel="noopener noreferrer">Standard shortcuts</a></p>
 <p>sysrq_always_enabled=1</p>
 <p><a href="https://wiki.archlinux.org/title/fstab" target="_blank" rel="noopener noreferrer">atime options</a></p>
@@ -366,6 +364,19 @@
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
 </span></span></code></pre></td></tr></table>
 </div>
+</div><p>编辑 <code>/etc/modprobe.d/blacklist.conf</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">blacklist nouveau
+</span></span><span class="line"><span class="cl">options nouveau modeset=0
+</span></span><span class="line"><span class="cl">blacklist iTCO_wdt
+</span></span></code></pre></td></tr></table>
+</div>
 </div><hr>
 <h2 id="提升makepkg编译速度" class="headerLink">
     <a href="#%e6%8f%90%e5%8d%87makepkg%e7%bc%96%e8%af%91%e9%80%9f%e5%ba%a6" class="header-mark"></a>5 提升makepkg编译速度</h2><p>参考链接：<a href="https://www.limstash.com/articles/202004/1597" target="_blank" rel="noopener noreferrer">Archlinux 提升 makepkg 速度</a></p>
@@ -388,6 +399,8 @@
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#install pigz pbzip2</span>
@@ -396,13 +409,15 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#edit /etc/makepkg.conf</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSXZ</span><span class="o">=(</span>xz -c -z - --threads<span class="o">=</span>0<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">CFLAGS</span><span class="o">=</span><span class="s2">&#34;-march=native -O2 -pipe -fno-plt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">&#34;-march=native -O2 -pipe -fno-plt&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSGZ</span><span class="o">=(</span>pigz -c -f -n<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">MAKEFLAGS</span><span class="o">=</span><span class="s2">&#34;-j4&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSBZ2</span><span class="o">=(</span>pbzip2 -c -f<span class="o">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSZST</span><span class="o">=(</span>zstd -c -z -q - --threads<span class="o">=</span>0<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSGZ</span><span class="o">=(</span>pigz -c -f -n -p4<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSBZ2</span><span class="o">=(</span>pbzip2 -c -f -p4<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSXZ</span><span class="o">=(</span>xz -c -z --threads<span class="o">=</span><span class="m">0</span> -<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">COMPRESSZST</span><span class="o">=(</span>zstd -1 -c -z -q --threads<span class="o">=</span><span class="m">0</span> -<span class="o">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -1178,8 +1193,9 @@
 </div>
 </div><hr>
 <p>个人配置：</p>
-<p>透明代理：与大陆白名单一致</p>
-<p>IP转发和端口分享：关闭</p>
+<p>透明代理：与所选端口一致</p>
+<p>IP转发：开启</p>
+<p>端口分享：关闭</p>
 <p>规则端口分流模式：RountingA</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1484,7 +1500,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="i3lock-color" class="headerLink">
-    <a href="#i3lock-color" class="header-mark"></a>7.7 i3lock-color</h3><blockquote>
+    <a href="#i3lock-color" class="header-mark"></a>7.7 <del>i3lock-color</del></h3><blockquote>
 <p>参考链接：
 <a href="https://kewth.github.io/2019/10/01/i3lock" target="_blank" rel="noopener noreferrer">i3lock各个衍生介绍</a>
 <a href="https://github.com/Raymo111/i3lock-color/blob/master/examples/lock.sh" target="_blank" rel="noopener noreferrer">美化链接</a>
@@ -1738,7 +1754,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="obs-studio" class="headerLink">
-    <a href="#obs-studio" class="header-mark"></a>7.8 obs-studio</h3><p>在arch kde下录制麦克风音频的时候，出现了即使上噪声抑制依旧无法屏蔽笔记本本身的噪音，这里给出解决办法以及来源</p>
+    <a href="#obs-studio" class="header-mark"></a>7.8 <del>obs-studio</del></h3><p>在arch kde下录制麦克风音频的时候，出现了即使上噪声抑制依旧无法屏蔽笔记本本身的噪音，这里给出解决办法以及来源</p>
 <blockquote>
 <p>来源：<a href="https://yuehhua.github.io/2020/09/06/linux-system-noise-cancellation" target="_blank" rel="noopener noreferrer">Linux 系統降噪</a></p>
 </blockquote>
@@ -1767,148 +1783,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果遇到在obs运行状态下，修改的以上配置文件，还需重启obs即可。</p>
-<h3 id="blob-emoji" class="headerLink">
-    <a href="#blob-emoji" class="header-mark"></a>7.9 Blob Emoji</h3><p>参考链接：<a href="https://www.aloxaf.com/2018/10/linux_emoji" target="_blank" rel="noopener noreferrer">在 Linux 下使用 Blob Emoji</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">noto-fonts-emoji-blob
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>在~/.config/fontconfig/70-emojione-color.conf下写入</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
-</span><span class="lnt">55
-</span><span class="lnt">56
-</span><span class="lnt">57
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">&#34;1.0&#34;</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">&#34;UTF-8&#34;</span>?&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;!DOCTYPE fontconfig SYSTEM <span class="s2">&#34;fonts.dtd&#34;</span>&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;fontconfig&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;match&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;sans-serif&lt;/string&gt;&lt;/test&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;string&gt;Blobmoji&lt;/string&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/edit&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/match&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;match&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;serif&lt;/string&gt;&lt;/test&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;string&gt;Blobmoji&lt;/string&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/edit&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/match&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;match&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;monospace&lt;/string&gt;&lt;/test&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;string&gt;Blobmoji&lt;/string&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/edit&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/match&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;match&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;<span class="nb">test</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span>&gt;&lt;string&gt;Apple Color Emoji&lt;/string&gt;&lt;/test&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;edit <span class="nv">name</span><span class="o">=</span><span class="s2">&#34;family&#34;</span> <span class="nv">mode</span><span class="o">=</span><span class="s2">&#34;prepend&#34;</span> <span class="nv">binding</span><span class="o">=</span><span class="s2">&#34;strong&#34;</span>&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;string&gt;Blobmoji&lt;/string&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/edit&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/match&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;/fontconfig&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>刷新字体缓存</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">fc-cache -f -v
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="zsh" class="headerLink">
-    <a href="#zsh" class="header-mark"></a>7.10 zsh</h3><p><a href="https://wiki.archlinux.org/title/zsh" target="_blank" rel="noopener noreferrer">arch-zsh-wiki</a></p>
+<h3 id="zsh" class="headerLink">
+    <a href="#zsh" class="header-mark"></a>7.9 zsh</h3><p><a href="https://wiki.archlinux.org/title/zsh" target="_blank" rel="noopener noreferrer">arch-zsh-wiki</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1929,53 +1805,6 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 修改当前账户的默认 Shell</span>
 </span></span><span class="line"><span class="cl">chsh -s /usr/bin/zsh
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><a href="https://github.com/zimfw/zimfw" target="_blank" rel="noopener noreferrer">zimfw</a></p>
-<ol>
-<li>安装 zimfw。</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh <span class="p">|</span> zsh
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="2">
-<li>编辑 zsh 配置文件 <code>~/.zimrc</code>。</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">vim ~/.zimrc
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="3">
-<li>添加 <code>dracula</code> 模块。</li>
-</ol>
-<p><a href="https://github.com/dracula/zsh/issues/17" target="_blank" rel="noopener noreferrer">dracula-zsh</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">zmodule dracula/zsh -n dracula
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="4">
-<li>安装 <code>dracula</code> 模块。</li>
-</ol>
-<p>ps: 此处需要代理。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">zimfw install
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -2120,7 +1949,7 @@
 </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.104.2">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.104.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
