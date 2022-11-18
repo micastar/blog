@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.keunghin.cyou\/posts\/3\/"
-        },"genre": "posts","keywords": "linux","wordcount":  1616 ,
+        },"genre": "posts","keywords": "linux","wordcount":  1559 ,
         "url": "https:\/\/www.keunghin.cyou\/posts\/3\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-10-14T18:34:38+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "keunghin"},"author": {
@@ -134,14 +134,8 @@
         <li><a href="#spacemacs">Spacemacs</a></li>
         <li><a href="#n卡安装">N卡安装</a></li>
         <li><a href="#clash-for-windows-tun-模式">clash for windows tun 模式</a></li>
+        <li><a href="#docker-配置-clash-premium">docker 配置 clash-premium</a></li>
         <li><a href="#docker配置v2raya">docker配置v2raya</a></li>
-        <li><a href="#clash自动更新订阅">clash自动更新订阅</a>
-          <ul>
-            <li><a href="#安装">安装</a></li>
-            <li><a href="#配置">配置</a></li>
-          </ul>
-        </li>
-        <li><a href="#i3lock-color">i3lock-color</a></li>
         <li><a href="#obs-studio">obs-studio</a></li>
         <li><a href="#zsh">zsh</a></li>
       </ul>
@@ -157,7 +151,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">keunghin</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-10-14">2022-10-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1616 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-10-14">2022-10-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1559 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -188,14 +182,8 @@
         <li><a href="#spacemacs">Spacemacs</a></li>
         <li><a href="#n卡安装">N卡安装</a></li>
         <li><a href="#clash-for-windows-tun-模式">clash for windows tun 模式</a></li>
+        <li><a href="#docker-配置-clash-premium">docker 配置 clash-premium</a></li>
         <li><a href="#docker配置v2raya">docker配置v2raya</a></li>
-        <li><a href="#clash自动更新订阅">clash自动更新订阅</a>
-          <ul>
-            <li><a href="#安装">安装</a></li>
-            <li><a href="#配置">配置</a></li>
-          </ul>
-        </li>
-        <li><a href="#i3lock-color">i3lock-color</a></li>
         <li><a href="#obs-studio">obs-studio</a></li>
         <li><a href="#zsh">zsh</a></li>
       </ul>
@@ -242,8 +230,14 @@
 <hr>
 <h2 id="开发环境" class="headerLink">
     <a href="#%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83" class="header-mark"></a>3 开发环境</h2><h3 id="java" class="headerLink">
-    <a href="#java" class="header-mark"></a>3.1 Java</h3><p><a href="https://blog.triplez.cn/posts/manjaro-quick-start/#java" target="_blank" rel="noopener noreferrer">Java</a></p>
+    <a href="#java" class="header-mark"></a>3.1 Java</h3><ul>
+<li>
+<p><a href="https://blog.triplez.cn/posts/manjaro-quick-start/#java" target="_blank" rel="noopener noreferrer">Java</a></p>
+</li>
+<li>
 <p><a href="https://wiki.archlinux.org/title/Java" target="_blank" rel="noopener noreferrer">Java-ArchWiki</a></p>
+</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -277,8 +271,14 @@
 </div>
 </div><hr>
 <h3 id="go" class="headerLink">
-    <a href="#go" class="header-mark"></a>3.2 Go</h3><p><a href="https://blog.triplez.cn/posts/manjaro-quick-start/#go" target="_blank" rel="noopener noreferrer">Go</a></p>
+    <a href="#go" class="header-mark"></a>3.2 Go</h3><ul>
+<li>
+<p><a href="https://blog.triplez.cn/posts/manjaro-quick-start/#go" target="_blank" rel="noopener noreferrer">Go</a></p>
+</li>
+<li>
 <p><a href="https://wiki.archlinux.org/title/Go" target="_blank" rel="noopener noreferrer">Go-ArchWiki</a></p>
+</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -972,7 +972,9 @@
 </div><p>运行成功，文件将生成在<code>/etgc/X11</code>目录下<code>xorg.conf</code>文件</p>
 <p>编辑<code>xorg.conf</code>文件，实现 offload 功能（就是混合模式）。</p>
 <p>[更多窗口管理器，参考链接]</p>
-<p><a href="https://wiki.archlinux.org/title/NVIDIA_Optimus" target="_blank" rel="noopener noreferrer">NVIDIA_Optimus</a></p>
+<ul>
+<li><a href="https://wiki.archlinux.org/title/NVIDIA_Optimus" target="_blank" rel="noopener noreferrer">NVIDIA_Optimus</a></li>
+</ul>
 <p>将以下内容复制粘贴进去(或者修改原文件的内容，与下方一致)</p>
 <p>注：BusID可以不用修改</p>
 <div class="highlight"><div class="chroma">
@@ -1102,268 +1104,13 @@
 <li><a href="https://github.com/Dreamacro/clash/issues/642" target="_blank" rel="noopener noreferrer">[疑问]dns中fallback的作用</a></li>
 </ul>
 <hr>
-<h3 id="docker配置v2raya" class="headerLink">
-    <a href="#docker%e9%85%8d%e7%bd%aev2raya" class="header-mark"></a>7.5 <del>docker配置v2raya</del></h3><p><a href="https://v2raya.org/" target="_blank" rel="noopener noreferrer">v2raya_wiki</a></p>
-<blockquote>
-<p>WARNING: IPv4 forwarding is disabled. Networking will not work.</p>
-</blockquote>
-<p>参考：<a href="https://www.cnblogs.com/aerospace191/p/14062017.html" target="_blank" rel="noopener noreferrer">Docker与Linux ip_forward数据包转发</a></p>
-<p>v2raya 中的 <code>ip 转发</code> 也可开启此选项</p>
-<p>解决方法：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 检查宿主机的ip_forward</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">cat /proc/sys/net/ipv4/ip_forward
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 编辑或修改/etc/sysctl.conf</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">net.ipv4.ip_forward<span class="o">=</span><span class="m">1</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看当前的ip_forward</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">sudo sysctl -p
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 重启NetworkManager和docker服务</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">sudo systemctl restart NetworkManager
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">sudo systemctl restart docker
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># run v2raya</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">docker run -d <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--restart<span class="o">=</span>always <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--privileged <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--network<span class="o">=</span>host <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--name v2raya <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">-v /lib/modules:/lib/modules:ro <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">-v /etc/v2raya:/etc/v2raya <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">mzz2017/v2raya
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<p>个人配置：</p>
-<p>透明代理：与所选端口一致</p>
-<p>IP转发：开启</p>
-<p>端口分享：关闭</p>
-<p>规则端口分流模式：RountingA</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 废弃</span>
-</span></span><span class="line"><span class="cl">hp<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>http://127.0.0.1:20171
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://127.0.0.1:20171
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">all_proxy</span><span class="o">=</span>http://127.0.0.1:20171
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;https_proxy&#34;</span><span class="o">=</span><span class="nv">$https_proxy</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;http_proxy&#34;</span><span class="o">=</span><span class="nv">$http_proxy</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;all_proxy&#34;</span><span class="o">=</span><span class="nv">$all_proxy</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">np<span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">unset</span> https_proxy
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">unset</span> http_proxy
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">unset</span> all_proxy
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;https_proxy&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;http_proxy&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;all_proxy&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="clash自动更新订阅" class="headerLink">
-    <a href="#clash%e8%87%aa%e5%8a%a8%e6%9b%b4%e6%96%b0%e8%ae%a2%e9%98%85" class="header-mark"></a>7.6 <del>clash自动更新订阅</del></h3><p>参考链接：</p>
+<h3 id="docker-配置-clash-premium" class="headerLink">
+    <a href="#docker-%e9%85%8d%e7%bd%ae-clash-premium" class="header-mark"></a>7.5 docker 配置 clash-premium</h3><p>Source Link</p>
 <ul>
-<li>
-<p><a href="https://akillcool.github.io/post/clash-with-auto-update-config" target="_blank" rel="noopener noreferrer">Clash自动更新订阅配置</a></p>
-</li>
-<li>
-<p><a href="https://atsud0.me/2020/05/20/clash-arch%E8%87%AA%E5%90%AF%E6%9B%B4%E6%96%B0%E8%AE%A2%E9%98%85" target="_blank" rel="noopener noreferrer">clash-arch自启更新订阅</a></p>
-</li>
+<li><a href="https://github.com/Dreamacro/clash/wiki/configuration#proxy-providers" target="_blank" rel="noopener noreferrer">Proxy Providers</a></li>
+<li><a href="https://blog.hifool.cn/posts/f42b65b0/" target="_blank" rel="noopener noreferrer">clash更新订阅时保留自己的规则</a></li>
 </ul>
-<h4 id="安装" class="headerLink">
-    <a href="#%e5%ae%89%e8%a3%85" class="header-mark"></a>7.6.1 安装</h4><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo pacman -S clash
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="配置" class="headerLink">
-    <a href="#%e9%85%8d%e7%bd%ae" class="header-mark"></a>7.6.2 配置</h4><p>通过systemctl管理Clash的进程，对应<code>clash@.service</code>文件。</p>
-<p>通过两个脚本<code>start-clash.sh</code>和<code>stop-clash.sh</code>实现开启更新订阅。</p>
-<p>这里的<code>%i</code>指当前用户。</p>
-<p><code>clash@.service</code></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># edit and save this file to /usr/lib/systemd/system/clash@.service</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">Description</span><span class="o">=</span>A rule based proxy in Go <span class="k">for</span> %i.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">Wants</span><span class="o">=</span>network-online.target
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">After</span><span class="o">=</span>network-online.target
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>Service<span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">WorkingDirectory</span><span class="o">=</span>/home/%i/.config/clash
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">Type</span><span class="o">=</span>simple
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">User</span><span class="o">=</span>%i
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">Restart</span><span class="o">=</span>on-abort
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">ExecStart</span><span class="o">=</span>/home/%i/.config/clash/start-clash.sh
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">ExecStop</span><span class="o">=</span>/home/%i/.config/clash/stop-clash.sh
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>Install<span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><code>start-clash.sh</code></p>
+<p>docker-compose.yml</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1403,110 +1150,88 @@
 </span><span class="lnt">35
 </span><span class="lnt">36
 </span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#保存PID文件</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$$</span> &gt; <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 订阅链接下载地址</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">CLASH_URL</span><span class="o">=</span><span class="s2">&#34;你的订阅链接&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 对比新的文件和旧的文件有什么不同</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">diff <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/config.yaml &lt;<span class="o">(</span>curl -s <span class="si">${</span><span class="nv">CLASH_URL</span><span class="si">}</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#如果两个文件一致，就直接开启clash，如果不一致就覆盖原文件</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$?</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="m">0</span> <span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">then</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">/usr/bin/clash
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">else</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">curl -L -o <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/config.yaml <span class="si">${</span><span class="nv">CLASH_URL</span><span class="si">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">/usr/bin/clash
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">fi</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># docker compose版本</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3.7&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 服务列表</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># clash后台服务</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">clash</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># 设置image</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">dreamacro/clash-premium:latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">logging</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">options</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">max-size</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;10m&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">max-file</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># 将配置文件挂载到容器中</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./config.yaml:/root/.config/clash/config.yaml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./Country.mmdb:/root/.config/clash/Country.mmdb</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># https://github.com/haishanh/yacd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./ui:/root/.config/clash/ui</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">./profiles:/root/.config/clash/profiles</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">clash</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">TZ=Asia/Shanghai</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># TUN</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">cap_add</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">NET_ADMIN</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">devices</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/dev/net/tun</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">unless-stopped</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">network_mode</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;host&#34;</span><span class="w"> </span><span class="c"># or &#34;host&#34; on Linux</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><code>stop-clash.sh</code></p>
-<p>注意：</p>
-<ul>
-<li><code>rm</code>命令也可以删除，作者使用的是<code>trash-put</code>进行删除。</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">PID</span><span class="o">=</span><span class="sb">`</span>cat <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid<span class="sb">`</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">kill</span> -9 <span class="si">${</span><span class="nv">PID</span><span class="si">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">trash-put <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/.config/clash/clash.pid
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>写好后，给<code>start-clash.sh</code>和<code>stop-clash.sh</code>赋予执行权限</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">chmod +x stop-clash.sh start-clash.sh
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>使用<code>systemctl</code>管理</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now clash@%i
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="i3lock-color" class="headerLink">
-    <a href="#i3lock-color" class="header-mark"></a>7.7 <del>i3lock-color</del></h3><blockquote>
-<p>参考链接：
-<a href="https://kewth.github.io/2019/10/01/i3lock" target="_blank" rel="noopener noreferrer">i3lock各个衍生介绍</a>
-<a href="https://github.com/Raymo111/i3lock-color/blob/master/examples/lock.sh" target="_blank" rel="noopener noreferrer">美化链接</a>
-<a href="https://github.com/Raymo111/i3lock-color/issues/174#issuecomment-687149213" target="_blank" rel="noopener noreferrer">加入系统服务</a></p>
-</blockquote>
-<p>美化配置文件</p>
+</div><p>config.yaml</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1592,94 +1317,164 @@
 </span><span class="lnt">81
 </span><span class="lnt">82
 </span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Terminate already running bar instances</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">killall -q i3lock
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Wait until the processes have been shut down</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">while</span> pgrep -u <span class="nv">$UID</span> -x i3lock &gt;/dev/null<span class="p">;</span> <span class="k">do</span> sleep 1<span class="p">;</span> <span class="k">done</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">BLANK</span><span class="o">=</span><span class="s1">&#39;#EAEAEF&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">CLEAR</span><span class="o">=</span><span class="s1">&#39;#1e90ff&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">DEFAULT</span><span class="o">=</span><span class="s1">&#39;#1e90ff&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">TEXT</span><span class="o">=</span><span class="s1">&#39;#483d8b&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">WRONG</span><span class="o">=</span><span class="s1">&#39;#ffa500&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">VERIFYING</span><span class="o">=</span><span class="s1">&#39;#B5E6B5&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">i3lock <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--insidever-color<span class="o">=</span><span class="nv">$CLEAR</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--ringver-color<span class="o">=</span><span class="nv">$VERIFYING</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl"><span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--insidewrong-color<span class="o">=</span><span class="nv">$CLEAR</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--ringwrong-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl"><span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--inside-color<span class="o">=</span><span class="nv">$BLANK</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--ring-color<span class="o">=</span><span class="nv">$DEFAULT</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--line-color<span class="o">=</span><span class="nv">$BLANK</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--separator-color<span class="o">=</span><span class="nv">$DEFAULT</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl"><span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--verif-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--wrong-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--time-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--date-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--layout-color<span class="o">=</span><span class="nv">$TEXT</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--keyhl-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--bshl-color<span class="o">=</span><span class="nv">$WRONG</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl"><span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--screen <span class="m">1</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--blur <span class="m">5</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--clock <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--indicator <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--time-str<span class="o">=</span><span class="s2">&#34;%H:%M:%S&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--date-str<span class="o">=</span><span class="s2">&#34;%A, %m %Y&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>
-</span></span><span class="line"><span class="cl">--keylayout <span class="m">1</span> <span class="se">\
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">allow-lan</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">bind-address</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;*&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l">rule</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">log-level</span><span class="p">:</span><span class="w"> </span><span class="l">info</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">external-controller</span><span class="p">:</span><span class="w"> </span><span class="m">0.0.0.0</span><span class="p">:</span><span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">secret</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">external-ui</span><span class="p">:</span><span class="w"> </span><span class="l">ui/yacd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">dns</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ipv6</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">listen</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;0.0.0.0:53&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">fake-ip-range</span><span class="p">:</span><span class="w"> </span><span class="m">198.18.0.1</span><span class="l">/16</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enhanced-mode</span><span class="p">:</span><span class="w"> </span><span class="l">fake-ip</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">nameserver</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="m">223.5.5.5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="m">119.28.28.28</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">fallback</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="m">1.1.1.1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="m">8.8.8.8</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">fallback-filter</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">geoip</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ipcidr</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="m">240.0.0.0</span><span class="l">/4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="m">127.0.0.1</span><span class="l">/8</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="m">0.0.0.0</span><span class="l">/32</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">domain</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.google.com&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.facebook.com&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.twitter.com&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.youtube.com&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.xn--ngstr-lra8j.com&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.google.cn&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.googleapis.cn&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.googleapis.com&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;+.gvt1.com&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">tun</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">stack</span><span class="p">:</span><span class="w"> </span><span class="l">system</span><span class="w"> </span><span class="c"># gvisor or system</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">auto-route</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">auto-detect-interface</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">dns-hijack</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">any:53</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">proxy-groups</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">PROXY</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">select</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">proxies</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">DIRECT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">airport1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">airport2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">airport1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">select</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">use</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">airport1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">airport2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">select</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">use</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">airport2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">proxy-providers</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">airport1</span><span class="p">:</span><span class="w"> </span><span class="c"># provider的名称，后期会用到</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">http</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">./profiles/airport1.yaml</span><span class="w"> </span><span class="c"># 保存在本地文件的名字，可以随便取</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">url </span><span class="w"> </span><span class="c"># 机场给你的订阅链接</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="m">36000</span><span class="w"> </span><span class="c"># 每36000秒更新一次订阅</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">health-check</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">  </span><span class="c"># 是否自动进行latency-test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">http://cp.cloudflare.com/generate_204</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="m">36000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">lazy</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">airport2</span><span class="p">:</span><span class="w"> </span><span class="c"># 我们可以同时使用多个订阅链接获取多个proxies</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">http</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">./profiles/airport2.yaml</span><span class="w"> </span><span class="c"># 保存在本地文件的名字，可以随便取</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">url </span><span class="w"> </span><span class="c"># 机场给你的订阅链接</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="m">36000</span><span class="w"> </span><span class="c"># 每36000秒更新一次订阅</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">health-check</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">  </span><span class="c"># 是否自动进行latency-test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">http://cp.cloudflare.com/generate_204</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="m">36000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">lazy</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">rules</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">DOMAIN,clash.razord.top,DIRECT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">DOMAIN,yacd.haishan.me,DIRECT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">GEOIP,PRIVATE,DIRECT,no-resolve</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">GEOIP,CN,DIRECT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">MATCH,PROXY</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>加入系统服务，休眠开启后锁屏</p>
+</div><h3 id="docker配置v2raya" class="headerLink">
+    <a href="#docker%e9%85%8d%e7%bd%aev2raya" class="header-mark"></a>7.6 <del>docker配置v2raya</del></h3><p><a href="https://v2raya.org/" target="_blank" rel="noopener noreferrer">v2raya_wiki</a></p>
+<blockquote>
+<p>WARNING: IPv4 forwarding is disabled. Networking will not work.</p>
+</blockquote>
+<p>参考：<a href="https://www.cnblogs.com/aerospace191/p/14062017.html" target="_blank" rel="noopener noreferrer">Docker与Linux ip_forward数据包转发</a></p>
+<p>v2raya 中的 <code>ip 转发</code> 也可开启此选项</p>
+<p>解决方法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 检查宿主机的ip_forward</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cat /proc/sys/net/ipv4/ip_forward
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 编辑或修改/etc/sysctl.conf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">net.ipv4.ip_forward<span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看当前的ip_forward</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo sysctl -p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 重启NetworkManager和docker服务</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo systemctl restart NetworkManager
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo systemctl restart docker
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1713,48 +1508,45 @@
 </span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># edit and save this file to /usr/lib/systemd/system/lock@.service</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>Unit<span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">Description</span><span class="o">=</span>Lock screen on <span class="nb">suspend</span> <span class="k">for</span> %i
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">Before</span><span class="o">=</span>sleep.target suspend.target hibernate.target hybrid-sleep.target
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>Service<span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">User</span><span class="o">=</span>%i
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">Environment</span><span class="o">=</span><span class="nv">DISPLAY</span><span class="o">=</span>:0
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">Type</span><span class="o">=</span>forking
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">ExecStartPre</span><span class="o">=</span> -/usr/bin/pkill -u %u unison
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">ExecStart</span><span class="o">=</span>/home/%i/文件路径
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">ExecStartPost</span><span class="o">=</span>/usr/bin/sleep <span class="m">1</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span>Install<span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">WantedBy</span><span class="o">=</span>sleep.target suspend.target hibernate.target hybrid-sleep.target
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># docker compose版本</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3.7&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 服务列表</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># v2raya后台服务</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">v2raya</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c"># 设置image</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">mzz2017/v2raya:latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">logging</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">options</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">max-size</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;10m&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">max-file</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c"># 将配置文件挂载到容器中</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span>- <span class="l">/lib/modules:/lib/modules:ro</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span>- <span class="l">/etc/resolv.conf:/etc/resolv.conf</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span>- <span class="l">./xray:/usr/bin/xray</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span>- <span class="l">./geoip.dat:/usr/local/share/xray/geoip.dat</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span>- <span class="l">./geosite.dat:/usr/local/share/xray/geosite.dat</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span>- <span class="l">./v2rayafile:/etc/v2raya</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">v2raya</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">V2RAYA_ADDRESS=0.0.0.0:2017</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">TZ=Asia/Shanghai</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">V2RAYA_V2RAY_BIN=/usr/bin/xray</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">V2RAYA_TRANSPARENT_HOOK=/etc/v2raya/tproxy-hook.sh</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">network_mode</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;host&#34;</span><span class="w"> </span><span class="c"># or &#34;host&#34; on Linux</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>自启动</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> lock@%i
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="obs-studio" class="headerLink">
-    <a href="#obs-studio" class="header-mark"></a>7.8 <del>obs-studio</del></h3><p>在arch kde下录制麦克风音频的时候，出现了即使上噪声抑制依旧无法屏蔽笔记本本身的噪音，这里给出解决办法以及来源</p>
+</div><hr>
+<p>个人配置：</p>
+<p>透明代理：与所选端口一致</p>
+<p>IP转发：开启</p>
+<p>端口分享：关闭</p>
+<p>规则端口分流模式：RountingA</p>
+<h3 id="obs-studio" class="headerLink">
+    <a href="#obs-studio" class="header-mark"></a>7.7 <del>obs-studio</del></h3><p>在arch kde下录制麦克风音频的时候，出现了即使上噪声抑制依旧无法屏蔽笔记本本身的噪音，这里给出解决办法以及来源</p>
 <blockquote>
 <p>来源：<a href="https://yuehhua.github.io/2020/09/06/linux-system-noise-cancellation" target="_blank" rel="noopener noreferrer">Linux 系統降噪</a></p>
 </blockquote>
@@ -1784,7 +1576,7 @@
 </div>
 </div><p>如果遇到在obs运行状态下，修改的以上配置文件，还需重启obs即可。</p>
 <h3 id="zsh" class="headerLink">
-    <a href="#zsh" class="header-mark"></a>7.9 zsh</h3><p><a href="https://wiki.archlinux.org/title/zsh" target="_blank" rel="noopener noreferrer">arch-zsh-wiki</a></p>
+    <a href="#zsh" class="header-mark"></a>7.8 zsh</h3><p><a href="https://wiki.archlinux.org/title/zsh" target="_blank" rel="noopener noreferrer">arch-zsh-wiki</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1949,7 +1741,7 @@
 </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.104.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.105.0">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
