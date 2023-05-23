@@ -12,7 +12,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.keunghin.cyou/posts/7_android_error_on_arch/" /><meta property="og:image" content="https://www.keunghin.cyou"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-05-23T19:14:34+08:00" />
-<meta property="article:modified_time" content="2023-05-23T19:23:37+08:00" /><meta property="og:site_name" content="keunghin" />
+<meta property="article:modified_time" content="2023-05-23T19:27:08+08:00" /><meta property="og:site_name" content="keunghin" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.keunghin.cyou"/>
 
@@ -36,7 +36,7 @@
             "@type": "WebPage",
             "@id": "https:\/\/www.keunghin.cyou\/posts\/7_android_error_on_arch\/"
         },"genre": "posts","keywords": "android","wordcount":  64 ,
-        "url": "https:\/\/www.keunghin.cyou\/posts\/7_android_error_on_arch\/","datePublished": "2023-05-23T19:14:34+08:00","dateModified": "2023-05-23T19:23:37+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        "url": "https:\/\/www.keunghin.cyou\/posts\/7_android_error_on_arch\/","datePublished": "2023-05-23T19:14:34+08:00","dateModified": "2023-05-23T19:27:08+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "keunghin"},"author": {
                 "@type": "Person",
@@ -112,22 +112,13 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-            <div class="container"><div class="toc" id="toc-auto">
-        <h2 class="toc-title">Contents</h2>
-        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents"></nav></div>
-    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">android error on arch</h1><div class="post-meta">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">android error on arch</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">keunghin</a>
                 </span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-23">2023-05-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-05-23">2023-05-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;64 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><ul>
+        </div><div class="content" id="content"><ul>
 <li>
 <p><a href="https://mike42.me/blog/how-to-edit-emulator-flags-in-android-studio" target="_blank" rel="noopener noreferrer">How to edit emulator flags in Android Studio</a></p>
 </li>
@@ -135,7 +126,7 @@
 <p><a href="https://wiki.archlinux.org/title/Intel_graphics#DRI3_issues" target="_blank" rel="noopener noreferrer">DRI3 issues</a></p>
 </li>
 </ul>
-<p>安卓模拟器的硬件加速在 DRI3 上不能正常使用，需要禁用DRI3。</p>
+<p>安卓模拟器的硬件加速在 DRI3 上不能正常使用，需要禁用DRI3</p>
 <p>使用 adb 和观察 android studio 的运行日志，看不出任何问题，只有错误</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -153,7 +144,7 @@
 </span></span><span class="line"><span class="cl">  Current serial number in output stream:  <span class="m">48</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>感谢 Mike 博主的提示，通过使用 <code>LIBGL_DEBUG=verbose</code> 才观察到是由于 DRI3 的问题。</p></div>
+</div><p>感谢 Mike 博主的提示，通过使用 <code>LIBGL_DEBUG=verbose</code> 才观察到是由于 DRI3 的问题</p></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
