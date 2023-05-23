@@ -3,42 +3,49 @@
         <title>keunghin</title>
         <link>https://www.keunghin.cyou/</link>
         <description>keunghin 琐碎话</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate>
             <atom:link href="https://www.keunghin.cyou/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>7_android_error_on_arch</title>
+    <link>https://www.keunghin.cyou/posts/7_android_error_on_arch/</link>
+    <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/7_android_error_on_arch/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>git study</title>
-    <link>https://www.keunghin.cyou/posts/6/</link>
+    <link>https://www.keunghin.cyou/posts/6_git_study/</link>
     <pubDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/posts/6/</guid>
+    </author><guid>https://www.keunghin.cyou/posts/6_git_study/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>测速地址</title>
-    <link>https://www.keunghin.cyou/posts/5/</link>
+    <title>test address</title>
+    <link>https://www.keunghin.cyou/posts/5_test_address_for_transparent_tools/</link>
     <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/posts/5/</guid>
+    </author><guid>https://www.keunghin.cyou/posts/5_test_address_for_transparent_tools/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>archLinux i3 配置</title>
-    <link>https://www.keunghin.cyou/posts/3/</link>
+    <title>archLinux i3 configuration</title>
+    <link>https://www.keunghin.cyou/posts/3_arch_i3_configuration/</link>
     <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/posts/3/</guid>
+    </author><guid>https://www.keunghin.cyou/posts/3_arch_i3_configuration/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>摘录</title>
-    <link>https://www.keunghin.cyou/posts/2/</link>
+    <title>extract</title>
+    <link>https://www.keunghin.cyou/posts/2_extract/</link>
     <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/posts/2/</guid>
+    </author><guid>https://www.keunghin.cyou/posts/2_extract/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>建站</title>
-    <link>https://www.keunghin.cyou/posts/1/</link>
+    <title>build site</title>
+    <link>https://www.keunghin.cyou/posts/1_build_site/</link>
     <pubDate>Sun, 13 Feb 2022 16:02:59 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/posts/1/</guid>
+    </author><guid>https://www.keunghin.cyou/posts/1_build_site/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
