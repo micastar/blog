@@ -3,5 +3,47 @@
         <title>All Posts - keunghin</title>
         <link>https://www.keunghin.cyou/posts/</link>
         <description>All Posts | keunghin</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://www.keunghin.cyou/posts/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://www.keunghin.cyou/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>build site</title>
+    <link>https://www.keunghin.cyou/posts/build-site/</link>
+    <pubDate>Sun, 13 Feb 2022 16:02:59 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/build-site/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>extract</title>
+    <link>https://www.keunghin.cyou/posts/extract/</link>
+    <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/extract/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>archLinux i3 configuration</title>
+    <link>https://www.keunghin.cyou/posts/arch-i3-configuration/</link>
+    <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/arch-i3-configuration/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>test address</title>
+    <link>https://www.keunghin.cyou/posts/test-address-for-transparent-tools/</link>
+    <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/test-address-for-transparent-tools/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>git study</title>
+    <link>https://www.keunghin.cyou/posts/git-study/</link>
+    <pubDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/git-study/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>android error on arch</title>
+    <link>https://www.keunghin.cyou/posts/android-error-on-arch/</link>
+    <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/android-error-on-arch/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

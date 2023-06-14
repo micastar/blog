@@ -12,7 +12,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.keunghin.cyou/posts/arch-i3-configuration/" /><meta property="og:image" content="https://www.keunghin.cyou"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-13T16:04:00+08:00" />
-<meta property="article:modified_time" content="2022-02-13T16:04:00+08:00" /><meta property="og:site_name" content="keunghin" />
+<meta property="article:modified_time" content="2023-06-09T09:38:43+08:00" /><meta property="og:site_name" content="keunghin" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.keunghin.cyou"/>
 
@@ -35,8 +35,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.keunghin.cyou\/posts\/arch-i3-configuration\/"
-        },"genre": "posts","keywords": "linux","wordcount":  993 ,
-        "url": "https:\/\/www.keunghin.cyou\/posts\/arch-i3-configuration\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2022-02-13T16:04:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"genre": "posts","keywords": "linux","wordcount":  1061 ,
+        "url": "https:\/\/www.keunghin.cyou\/posts\/arch-i3-configuration\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2023-06-09T09:38:43+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "keunghin"},"author": {
                 "@type": "Person",
@@ -147,14 +147,14 @@
     <li><a href="#i3-networkmanager-dmenu-git-connection-8021x">i3-networkmanager-dmenu-git-connection-802.1x</a></li>
     <li><a href="#触控板">触控板</a></li>
     <li><a href="#linux-windows-双系统时间不一致">Linux Windows 双系统时间不一致</a></li>
+    <li><a href="#取消-vscode-每次启动都需要输入密码">取消 Vscode 每次启动都需要输入密码</a></li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">archLinux i3 configuration</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">keunghin</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;993 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-06-09">2023-06-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1061 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -193,17 +193,10 @@
     <li><a href="#i3-networkmanager-dmenu-git-connection-8021x">i3-networkmanager-dmenu-git-connection-802.1x</a></li>
     <li><a href="#触控板">触控板</a></li>
     <li><a href="#linux-windows-双系统时间不一致">Linux Windows 双系统时间不一致</a></li>
+    <li><a href="#取消-vscode-每次启动都需要输入密码">取消 Vscode 每次启动都需要输入密码</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><div class="details admonition warning open">
-                <div class="details-summary admonition-title">
-                    <i class="icon fas fa-exclamation-triangle fa-fwwarning"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
-                </div>
-                <div class="details-content">
-                    <div class="admonition-content">
-                        This article was last updated on <span class="timeago" datetime="2022-02-13T16:04:00" title="February 13, 2022">2022-02-13</span>, the content may be out of date.</div>
-                </div>
-            </div><h2 id="archlinux安装参考链接" class="headerLink">
+            </div><div class="content" id="content"><h2 id="archlinux安装参考链接" class="headerLink">
     <a href="#archlinux%e5%ae%89%e8%a3%85%e5%8f%82%e8%80%83%e9%93%be%e6%8e%a5" class="header-mark"></a>1 ArchLinux安装参考链接</h2><ul>
 <li>
 <p><a href="https://wiki.archlinux.org/title/installation_guide" target="_blank" rel="noopener noreferrer">ArchLinux Installation guide</a></p>
@@ -1074,15 +1067,51 @@
 </div><p>或者打开「注册表编辑器」，定位到 <code>计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation</code> 目录下，新建一个 <code>DWORD</code> 类型，名称为 <code>RealTimeIsUniversal</code> 的键，并修改键值为 1 即可。</p>
 <blockquote>
 <p>参考链接</p>
-<p><a href="https://wiki.archlinux.org/title/System_time#UTC_in_Microsoft_Windows" target="_blank" rel="noopener noreferrer">UTC in Microsoft Windows </a></p>
+<p><a href="https://wiki.archlinux.org/title/System_time#UTC_in_Microsoft_Windows" target="_blank" rel="noopener noreferrer"> UTC in Microsoft Windows </a></p>
 </blockquote>
-<hr></div>
+<hr>
+<h2 id="取消-vscode-每次启动都需要输入密码" class="headerLink">
+    <a href="#%e5%8f%96%e6%b6%88-vscode-%e6%af%8f%e6%ac%a1%e5%90%af%e5%8a%a8%e9%83%bd%e9%9c%80%e8%a6%81%e8%be%93%e5%85%a5%e5%af%86%e7%a0%81" class="header-mark"></a>13 取消 Vscode 每次启动都需要输入密码</h2><p>Add <code>auth optional pam_gnome_keyring.so</code> at the end of the <code>auth</code> section and <code>session optional pam_gnome_keyring.so auto_start</code> at the end of the <code>session</code> section.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/etc/pam.d/login
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#%PAM-1.0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">auth       required     pam_securetty.so
+</span></span><span class="line"><span class="cl">auth       requisite    pam_nologin.so
+</span></span><span class="line"><span class="cl">auth       include      system-local-login
+</span></span><span class="line"><span class="cl">auth       optional     pam_gnome_keyring.so
+</span></span><span class="line"><span class="cl">account    include      system-local-login
+</span></span><span class="line"><span class="cl">session    include      system-local-login
+</span></span><span class="line"><span class="cl">session    optional     pam_gnome_keyring.so auto_start
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过上述步骤，下次重启 vscode 后，只需要再输入一次，后续就不会再弹出密码输入框了。</p>
+<p>跟随</p>
+<blockquote>
+<p>参考链接</p>
+<p><a href="https://wiki.archlinux.org/title/GNOME/Keyring#PAM_step" target="_blank" rel="noopener noreferrer"> PAM step </a></p>
+</blockquote></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-02-13</span>
+                <span>Updated on 2023-06-09</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -1107,7 +1136,7 @@
 </article></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.112.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.112.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2023</span></div>
             <div class="footer-line"></div>
             <div class="footer-line">
