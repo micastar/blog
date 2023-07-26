@@ -4,11 +4,11 @@
         <link>https://www.keunghin.cyou/tags/</link>
         <description>Tags - Tag - keunghin</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://www.keunghin.cyou/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>android</title>
-    <link>https://www.keunghin.cyou/tags/android/</link>
+    <title>android-emulator</title>
+    <link>https://www.keunghin.cyou/tags/android-emulator/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/tags/android/</guid>
+    </author><guid>https://www.keunghin.cyou/tags/android-emulator/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>git</title>
@@ -18,11 +18,11 @@
     </author><guid>https://www.keunghin.cyou/tags/git/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>test-address</title>
-    <link>https://www.keunghin.cyou/tags/test-address/</link>
+    <title>测试地址</title>
+    <link>https://www.keunghin.cyou/tags/%E6%B5%8B%E8%AF%95%E5%9C%B0%E5%9D%80/</link>
     <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/tags/test-address/</guid>
+    </author><guid>https://www.keunghin.cyou/tags/%E6%B5%8B%E8%AF%95%E5%9C%B0%E5%9D%80/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>linux</title>
@@ -32,11 +32,11 @@
     </author><guid>https://www.keunghin.cyou/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>tattle</title>
-    <link>https://www.keunghin.cyou/tags/tattle/</link>
+    <title>杂言</title>
+    <link>https://www.keunghin.cyou/tags/%E6%9D%82%E8%A8%80/</link>
     <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/tags/tattle/</guid>
+    </author><guid>https://www.keunghin.cyou/tags/%E6%9D%82%E8%A8%80/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
