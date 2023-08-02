@@ -4,42 +4,42 @@
         <link>https://www.keunghin.cyou/posts/</link>
         <description>All Posts | keunghin</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://www.keunghin.cyou/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>诞生记</title>
-    <link>https://www.keunghin.cyou/posts/1/</link>
-    <pubDate>Sun, 13 Feb 2022 16:02:59 &#43;0800</pubDate><author>
-        <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/posts/1/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>摘录</title>
+    <title>extract</title>
     <link>https://www.keunghin.cyou/posts/2/</link>
     <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
         <name>keunghin</name>
     </author><guid>https://www.keunghin.cyou/posts/2/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>arch i3 配置</title>
+    <title>build site</title>
+    <link>https://www.keunghin.cyou/posts/1/</link>
+    <pubDate>Sun, 13 Feb 2022 16:02:59 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://www.keunghin.cyou/posts/1/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>archLinux i3 configuration</title>
     <link>https://www.keunghin.cyou/posts/3/</link>
     <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
         <name>keunghin</name>
     </author><guid>https://www.keunghin.cyou/posts/3/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>URL 测试地址</title>
+    <title>test address</title>
     <link>https://www.keunghin.cyou/posts/4/</link>
     <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
         <name>keunghin</name>
     </author><guid>https://www.keunghin.cyou/posts/4/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>git 笔录</title>
+    <title>git study</title>
     <link>https://www.keunghin.cyou/posts/5/</link>
     <pubDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</pubDate><author>
         <name>keunghin</name>
     </author><guid>https://www.keunghin.cyou/posts/5/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>安卓模拟器在 arch 上的崩溃异常</title>
+    <title>there is an error in the android emulator on Arch when using DRI3</title>
     <link>https://www.keunghin.cyou/posts/6/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
         <name>keunghin</name>
