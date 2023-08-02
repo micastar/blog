@@ -1,42 +1,42 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - keunghin</title>
-        <link>https://www.keunghin.cyou/tags/</link>
+        <link>https://keunghin.cyou/tags/</link>
         <description>Tags - Tag - keunghin</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://www.keunghin.cyou/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://keunghin.cyou/tags/" rel="self" type="application/rss+xml" /><item>
     <title>android-emulator</title>
-    <link>https://www.keunghin.cyou/tags/android-emulator/</link>
+    <link>https://keunghin.cyou/tags/android-emulator/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/tags/android-emulator/</guid>
+    </author><guid>https://keunghin.cyou/tags/android-emulator/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>git</title>
-    <link>https://www.keunghin.cyou/tags/git/</link>
+    <link>https://keunghin.cyou/tags/git/</link>
     <pubDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/tags/git/</guid>
+    </author><guid>https://keunghin.cyou/tags/git/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>test-address</title>
-    <link>https://www.keunghin.cyou/tags/test-address/</link>
+    <link>https://keunghin.cyou/tags/test-address/</link>
     <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/tags/test-address/</guid>
+    </author><guid>https://keunghin.cyou/tags/test-address/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>linux</title>
-    <link>https://www.keunghin.cyou/tags/linux/</link>
+    <link>https://keunghin.cyou/tags/linux/</link>
     <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/tags/linux/</guid>
+    </author><guid>https://keunghin.cyou/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>tattle</title>
-    <link>https://www.keunghin.cyou/tags/tattle/</link>
+    <link>https://keunghin.cyou/tags/tattle/</link>
     <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/tags/tattle/</guid>
+    </author><guid>https://keunghin.cyou/tags/tattle/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
