@@ -7,45 +7,45 @@
             <atom:link href="https://keunghin.cyou/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>在 arch 使用 DRI3 时 android 模拟器</title>
-    <link>https://keunghin.cyou/6/</link>
+    <link>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://keunghin.cyou/6/</guid>
+    </author><guid>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>git 记录</title>
-    <link>https://keunghin.cyou/5/</link>
+    <link>https://keunghin.cyou/git-study/</link>
     <pubDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://keunghin.cyou/5/</guid>
+    </author><guid>https://keunghin.cyou/git-study/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>测速地址</title>
-    <link>https://keunghin.cyou/3/</link>
+    <link>https://keunghin.cyou/test-address/</link>
     <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://keunghin.cyou/3/</guid>
+    </author><guid>https://keunghin.cyou/test-address/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>arch i3 配置</title>
-    <link>https://keunghin.cyou/4/</link>
+    <link>https://keunghin.cyou/arch-i3-configuration/</link>
     <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://keunghin.cyou/4/</guid>
+    </author><guid>https://keunghin.cyou/arch-i3-configuration/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>摘录</title>
-    <link>https://keunghin.cyou/2/</link>
+    <link>https://keunghin.cyou/extract/</link>
     <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://keunghin.cyou/2/</guid>
+    </author><guid>https://keunghin.cyou/extract/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>建站记录</title>
-    <link>https://keunghin.cyou/1/</link>
+    <link>https://keunghin.cyou/build-site/</link>
     <pubDate>Sun, 13 Feb 2022 16:02:59 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://keunghin.cyou/1/</guid>
+    </author><guid>https://keunghin.cyou/build-site/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
