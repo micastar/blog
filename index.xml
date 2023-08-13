@@ -3,9 +3,16 @@
         <title>keunghin</title>
         <link>https://keunghin.cyou/</link>
         <description>keunghin blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 13 Aug 2023 20:08:01 &#43;0800</lastBuildDate>
             <atom:link href="https://keunghin.cyou/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Protobuf Study</title>
+    <link>https://keunghin.cyou/protobuf-study-6a48986403/</link>
+    <pubDate>Sun, 13 Aug 2023 20:08:01 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://keunghin.cyou/protobuf-study-6a48986403/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>在 arch 使用 DRI3 时 android 模拟器</title>
     <link>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
