@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title>arch i3 配置 - keunghin</title><meta name="Description" content="keunghin life"><meta property="og:title" content="arch i3 配置" />
+    <title>arch i3 configuration - keunghin</title><meta name="Description" content="keunghin life"><meta property="og:title" content="arch i3 configuration" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.keunghin.cyou/arch-i3-configuration/" /><meta property="og:image" content="https://www.keunghin.cyou"/><meta property="article:section" content="posts" />
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.keunghin.cyou"/>
 
-<meta name="twitter:title" content="arch i3 配置"/>
+<meta name="twitter:title" content="arch i3 configuration"/>
 <meta name="twitter:description" content=""/>
 <meta name="application-name" content="keunghin">
 <meta name="apple-mobile-web-app-title" content="keunghin">
@@ -30,12 +30,12 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "arch i3 配置",
+        "headline": "arch i3 configuration",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.keunghin.cyou\/arch-i3-configuration\/"
-        },"genre": "posts","keywords": "linux, arch","wordcount":  1061 ,
+        },"genre": "posts","keywords": "linux, arch","wordcount":  1059 ,
         "url": "https:\/\/www.keunghin.cyou\/arch-i3-configuration\/","datePublished": "2022-02-13T16:04:00+08:00","dateModified": "2023-08-13T10:51:03+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "keunghin"},"author": {
@@ -150,11 +150,11 @@
     <li><a href="#取消-vscode-每次启动都需要输入密码">取消 Vscode 每次启动都需要输入密码</a></li>
   </ul>
 </nav></div>
-    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">arch i3 配置</h1><div class="post-meta">
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">arch i3 configuration</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">keunghin</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-13">2023-08-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1061 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-13">2022-02-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-13">2023-08-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1059 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -270,8 +270,7 @@
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo archlinux-java <span class="nb">set</span> java-8-openjdk
 </span></span></code></pre></td></tr></table>
 </div>
-</div><hr>
-<h3 id="go" class="headerLink">
+</div><h3 id="go" class="headerLink">
     <a href="#go" class="header-mark"></a>3.2 Go</h3><ul>
 <li>
 <p><a href="https://blog.triplez.cn/posts/manjaro-quick-start/#go" target="_blank" rel="noopener noreferrer">Go</a></p>
@@ -288,16 +287,8 @@
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo pacman -S go go-tools
 </span></span></code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p>第二种方法是 <code>gcc-go</code>。</p>
-</blockquote>
-<blockquote>
-</blockquote>
-<blockquote>
+</div><p>第二种方法是 <code>gcc-go</code>。</p>
 <p>若开发环境中用到 JetBrains 的 IDE 则必须使用<code>go</code> ，否则 IDE 无法在 /usr/lib/go 下找到 Go SDK。</p>
-</blockquote>
-<blockquote>
-</blockquote>
 <blockquote>
 <p>原文：If you are using a Jetbrains IDE and the Go plugin cannot find your Go SDK path, you might be using an incompatible package. Remove the <code>gcc-go</code> package and replace it with <code>go</code>. If your <code>$GOPATH</code> is set, the IDE should now be able to find your Go SDK at <code>/usr/lib/go</code>.</p>
 </blockquote>
@@ -309,13 +300,9 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">vim ~/.zshrc <span class="c1"># OR ~/.bashrc OR ~/.profile</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span>~/go
 </span></span><span class="line"><span class="cl">
