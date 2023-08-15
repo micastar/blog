@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title>在 arch 使用 DRI3 时 android 模拟器 - keunghin</title><meta name="Description" content="keunghin life"><meta property="og:title" content="在 arch 使用 DRI3 时 android 模拟器" />
+    <title>an error when using android emualtor in arch - keunghin</title><meta name="Description" content="keunghin life"><meta property="og:title" content="an error when using android emualtor in arch" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.keunghin.cyou/an-error-when-using-android-emualtor-in-arch/" /><meta property="og:image" content="https://www.keunghin.cyou"/><meta property="article:section" content="posts" />
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.keunghin.cyou"/>
 
-<meta name="twitter:title" content="在 arch 使用 DRI3 时 android 模拟器"/>
+<meta name="twitter:title" content="an error when using android emualtor in arch"/>
 <meta name="twitter:description" content=""/>
 <meta name="application-name" content="keunghin">
 <meta name="apple-mobile-web-app-title" content="keunghin">
@@ -30,12 +30,12 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "在 arch 使用 DRI3 时 android 模拟器",
+        "headline": "an error when using android emualtor in arch",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.keunghin.cyou\/an-error-when-using-android-emualtor-in-arch\/"
-        },"genre": "posts","keywords": "android-emulator, linux","wordcount":  64 ,
+        },"genre": "posts","keywords": "android-emulator, linux","wordcount":  133 ,
         "url": "https:\/\/www.keunghin.cyou\/an-error-when-using-android-emualtor-in-arch\/","datePublished": "2023-05-23T19:14:34+08:00","dateModified": "2023-08-13T10:51:03+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "keunghin"},"author": {
@@ -112,12 +112,13 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">在 arch 使用 DRI3 时 android 模拟器</h1><div class="post-meta">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">an error when using android emualtor in arch</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">keunghin</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-23">2023-05-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-13">2023-08-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;64 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
-        </div><div class="content" id="content"><ul>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-23">2023-05-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-13">2023-08-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;133 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="content" id="content"><p>Source:</p>
+<ul>
 <li>
 <p><a href="https://mike42.me/blog/how-to-edit-emulator-flags-in-android-studio" target="_blank" rel="noopener noreferrer">How to edit emulator flags in Android Studio</a></p>
 </li>
@@ -125,8 +126,8 @@
 <p><a href="https://wiki.archlinux.org/title/Intel_graphics#DRI3_issues" target="_blank" rel="noopener noreferrer">DRI3 issues</a></p>
 </li>
 </ul>
-<p>安卓模拟器的硬件加速在 DRI3 上不能正常使用，需要禁用DRI3</p>
-<p>使用 adb 和观察 android studio 的运行日志，看不出任何问题，只有错误</p>
+<p>The hardware acceleration of the Android emulator can&rsquo;t run with DRI3 in Linux, so we need to disable DRI3.</p>
+<p>I&rsquo;ve been confused about this problem for a long time. Even though I saw its running log by using ADB and Android Studio, it couldn&rsquo;t show any problems about this. It only shows errors.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -143,7 +144,8 @@
 </span></span><span class="line"><span class="cl">  Current serial number in output stream:  <span class="m">48</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>感谢 Mike 博主的提示，通过使用 <code>LIBGL_DEBUG=verbose</code> 才观察到是由于 DRI3 的问题</p></div>
+</div><p>Thanks to the blogger Mike&rsquo;s hint, we only need to use <code>LIBGL_DEBUG=verbose</code>. This will show the problems, and its errors belong to DRI3.</p>
+<p>Thanks for your reading, have a nice day!</p></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
