@@ -1,21 +1,21 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>linux - Tag - keunghin</title>
-        <link>https://www.keunghin.cyou/tags/linux/</link>
+        <link>https://keunghin.cyou/tags/linux/</link>
         <description>linux - Tag - keunghin</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://www.keunghin.cyou/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://keunghin.cyou/tags/linux/" rel="self" type="application/rss+xml" /><item>
     <title>an error when using android emualtor in arch</title>
-    <link>https://www.keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</link>
+    <link>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</guid>
+    </author><guid>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>arch i3 configuration</title>
-    <link>https://www.keunghin.cyou/arch-i3-configuration/</link>
+    <link>https://keunghin.cyou/arch-i3-configuration/</link>
     <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://www.keunghin.cyou/arch-i3-configuration/</guid>
+    </author><guid>https://keunghin.cyou/arch-i3-configuration/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
