@@ -3,7 +3,14 @@
         <title>Tags - Tag - keunghin</title>
         <link>https://keunghin.cyou/tags/</link>
         <description>Tags - Tag - keunghin</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 13 Aug 2023 20:08:01 &#43;0800</lastBuildDate><atom:link href="https://keunghin.cyou/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Aug 2023 16:19:36 &#43;0800</lastBuildDate><atom:link href="https://keunghin.cyou/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>proust-questionnaire</title>
+    <link>https://keunghin.cyou/tags/proust-questionnaire/</link>
+    <pubDate>Mon, 28 Aug 2023 16:19:36 &#43;0800</pubDate><author>
+        <name>keunghin</name>
+    </author><guid>https://keunghin.cyou/tags/proust-questionnaire/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>protocol-buffers</title>
     <link>https://keunghin.cyou/tags/protocol-buffers/</link>
     <pubDate>Sun, 13 Aug 2023 20:08:01 &#43;0800</pubDate><author>
@@ -32,11 +39,11 @@
     </author><guid>https://keunghin.cyou/tags/git/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>测速地址</title>
-    <link>https://keunghin.cyou/tags/%E6%B5%8B%E9%80%9F%E5%9C%B0%E5%9D%80/</link>
+    <title>test-address</title>
+    <link>https://keunghin.cyou/tags/test-address/</link>
     <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://keunghin.cyou/tags/%E6%B5%8B%E9%80%9F%E5%9C%B0%E5%9D%80/</guid>
+    </author><guid>https://keunghin.cyou/tags/test-address/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>arch</title>
@@ -46,11 +53,11 @@
     </author><guid>https://keunghin.cyou/tags/arch/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>杂谈</title>
-    <link>https://keunghin.cyou/tags/%E6%9D%82%E8%B0%88/</link>
+    <title>thinking-and-non-thinking</title>
+    <link>https://keunghin.cyou/tags/thinking-and-non-thinking/</link>
     <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
         <name>keunghin</name>
-    </author><guid>https://keunghin.cyou/tags/%E6%9D%82%E8%B0%88/</guid>
+    </author><guid>https://keunghin.cyou/tags/thinking-and-non-thinking/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
