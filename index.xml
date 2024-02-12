@@ -1,64 +1,64 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>keunghin</title>
+        <title>micawoo</title>
         <link>https://keunghin.cyou/</link>
-        <description>keunghin life think toward future</description>
+        <description>micawoo life think toward future</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Aug 2023 16:19:36 &#43;0800</lastBuildDate>
             <atom:link href="https://keunghin.cyou/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Proust Questionnaire</title>
     <link>https://keunghin.cyou/proust-questionnaire-b1b1a98b78/</link>
     <pubDate>Mon, 28 Aug 2023 16:19:36 &#43;0800</pubDate><author>
-        <name>keunghin</name>
+        <name>micawoo</name>
     </author><guid>https://keunghin.cyou/proust-questionnaire-b1b1a98b78/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Protobuf Study</title>
     <link>https://keunghin.cyou/protobuf-study-6a48986403/</link>
     <pubDate>Sun, 13 Aug 2023 20:08:01 &#43;0800</pubDate><author>
-        <name>keunghin</name>
+        <name>micawoo</name>
     </author><guid>https://keunghin.cyou/protobuf-study-6a48986403/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>an error when using android emualtor in arch</title>
     <link>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
-        <name>keunghin</name>
+        <name>micawoo</name>
     </author><guid>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Git Study</title>
     <link>https://keunghin.cyou/git-study/</link>
     <pubDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</pubDate><author>
-        <name>keunghin</name>
+        <name>micawoo</name>
     </author><guid>https://keunghin.cyou/git-study/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>test address for proxy</title>
     <link>https://keunghin.cyou/test-address/</link>
     <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
-        <name>keunghin</name>
+        <name>micawoo</name>
     </author><guid>https://keunghin.cyou/test-address/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>arch i3 configuration</title>
     <link>https://keunghin.cyou/arch-i3-configuration/</link>
     <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
-        <name>keunghin</name>
+        <name>micawoo</name>
     </author><guid>https://keunghin.cyou/arch-i3-configuration/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Remembering</title>
     <link>https://keunghin.cyou/extract/</link>
     <pubDate>Sun, 13 Feb 2022 16:03:40 &#43;0800</pubDate><author>
-        <name>keunghin</name>
+        <name>micawoo</name>
     </author><guid>https://keunghin.cyou/extract/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>build site</title>
     <link>https://keunghin.cyou/build-site/</link>
     <pubDate>Sun, 13 Feb 2022 16:02:59 &#43;0800</pubDate><author>
-        <name>keunghin</name>
+        <name>micawoo</name>
     </author><guid>https://keunghin.cyou/build-site/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
