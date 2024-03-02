@@ -1,14 +1,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>android-emulator - Tag - micawoo</title>
+        <title>Android-Emulator - Tag - micawoo</title>
         <link>https://keunghin.cyou/tags/android-emulator/</link>
-        <description>android-emulator - Tag - micawoo</description>
+        <description>Android-Emulator - Tag - micawoo</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://keunghin.cyou/tags/android-emulator/" rel="self" type="application/rss+xml" /><item>
     <title>an error when using android emualtor in arch</title>
     <link>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
         <name>micawoo</name>
     </author><guid>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[Source:
+How to edit emulator flags in Android Studio
+DRI3 issues
+The hardware acceleration of the Android emulator can&rsquo;t run with DRI3 in Linux, so we need to disable DRI3.
+I&rsquo;ve been confused about this problem for a long time. Even though I saw its running log by using ADB and Android Studio, it couldn&rsquo;t show any problems about this. It only shows errors.
+1 2 3 4 5 X Error of failed request: GLXBadContext Major opcode of failed request: 155 (GLX) Minor opcode of failed request: 6 (X_GLXIsDirect) Serial number of failed request: 49 Current serial number in output stream: 48 Thanks to the blogger Mike&rsquo;s hint, we only need to use LIBGL_DEBUG=verbose.]]></description>
 </item></channel>
 </rss>

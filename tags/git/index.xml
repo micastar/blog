@@ -1,14 +1,25 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>git - Tag - micawoo</title>
+        <title>Git - Tag - micawoo</title>
         <link>https://keunghin.cyou/tags/git/</link>
-        <description>git - Tag - micawoo</description>
+        <description>Git - Tag - micawoo</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</lastBuildDate><atom:link href="https://keunghin.cyou/tags/git/" rel="self" type="application/rss+xml" /><item>
     <title>Git Study</title>
     <link>https://keunghin.cyou/git-study/</link>
     <pubDate>Tue, 19 Jul 2022 10:07:14 &#43;0800</pubDate><author>
         <name>micawoo</name>
     </author><guid>https://keunghin.cyou/git-study/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[参考链接
+git-docs
+Git学习笔记
+Become a git guru.
+git-stash
+1 branch 参考链接
+How to Delete a Git Branch Both Locally and Remotely
+在偶尔的情况下，可能会想要保留那些与你的代码没有共同祖先的分支。例如在这些分支上保留生成的文档或者其他一些东西。
+如果需要创建一个不使用当前代码库作为父提交的分支，可以用如下的方法创建一个空分支。
+1.1 方法1执行以下git命令：
+1 2 3 4 5 6 git symbolic-ref HEAD refs/heads/newbranch rm .git/index git clean -fdx &lt;do work&gt; git add your files git commit -m &#39;Initial commit&#39; 1.2 方法2这里以github的操作为例，下面试图创建一个名为gh-pages的空分支：
+1 2 3 4 5 6 7 8 9 $ cd repo $ git checkout --orphan gh-pages # 创建一个orphan的分支，这个分支是独立的 Switched to a new branch &#39;gh-pages&#39; $ git rm -rf .]]></description>
 </item></channel>
 </rss>

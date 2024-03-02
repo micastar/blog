@@ -4,17 +4,17 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.122.0">
+	<meta name="generator" content="Hugo 0.123.7">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
     <title>micawoo</title><meta name="Description" content="micawoo life think toward future"><meta property="og:title" content="micawoo" />
 <meta property="og:description" content="micawoo life think toward future" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://keunghin.cyou/" /><meta property="og:image" content="https://keunghin.cyou" /><meta property="og:site_name" content="micawoo" />
+<meta property="og:url" content="https://keunghin.cyou/" /><meta property="og:image" content="https://keunghin.cyou/" /><meta property="og:site_name" content="micawoo" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://keunghin.cyou" /><meta name="twitter:title" content="micawoo"/>
+<meta name="twitter:image" content="https://keunghin.cyou/" /><meta name="twitter:title" content="micawoo"/>
 <meta name="twitter:description" content="micawoo life think toward future"/>
 <meta name="application-name" content="micawoo">
 <meta name="apple-mobile-web-app-title" content="micawoo">
@@ -107,9 +107,29 @@
         <a href="/build-site/">build site</a>
     </h1><div class="post-meta">
         <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">micawoo</a>
-        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-13">2022-02-13</time></span></div><div class="content"></div><div class="post-footer">
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-13">2022-02-13</time></span></div><div class="content">这是网站的第一篇文章，历时半个多月，参阅了很多大佬的文章，感谢各位大佬的分享的优质资源。
+链接汇总：
+雨临Lewis
+就是这个范儿
+公子
+Hugo部署到Github
+Ahrisy の 碎碎念 回忆中的明天
+南岩666のBlog
+少数派
+Shuzang&rsquo;s Blog
+小林书架
+风月
+hugo博客添加评论系统Valine
+为什么你没授权就能用大大的作品？？—“知识共享”（CC协议）简单介绍
+creativecommons许可协议
+友链添加
+至此，本站终于建站成功！
+关于首页头像点击后会跳转到Posts下，办法是：
+将themes/LoveIt/layouts/partials/home/目录下的profile.html复制到根目录[指：网站根目录]下的对应位置，将文件中的
+1 2 3 4 5 &lt;a href=&#34;{{ $url }}&#34;{{ with .Title | default .Name }} title=&#34;{{ . }}&#34;{{ end }}{{ if (urls.Parse $url).Host }} rel=&#34;noopener noreffer&#34; target=&#34;_blank&#34;{{ end }}&gt; {{- dict &#34;Src&#34; $avatar | partial &#34;plugin/image.html&#34; -}} &lt;/a&gt; 中的代码修改为
+1 2 3 4 5 &lt;a {{ if (urls.</div><div class="post-footer">
         <a href="/build-site/">Read more...</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/thinking-and-non-thinking/">thinking-and-non-thinking</a></div></div>
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/thinking-and-non-thinking/">Thinking-and-Non-Thinking</a></div></div>
 </article>
 <ul class="pagination"><li class="page-item ">
                     <span class="page-link">
@@ -122,7 +142,7 @@
                 </li></ul></div></div>
         </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
-                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.122.0">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.123.7">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span></div>
             <div class="footer-line"></div>
             <div class="footer-line">

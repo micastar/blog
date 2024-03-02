@@ -1,21 +1,35 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>linux - Tag - micawoo</title>
+        <title>Linux - Tag - micawoo</title>
         <link>https://keunghin.cyou/tags/linux/</link>
-        <description>linux - Tag - micawoo</description>
+        <description>Linux - Tag - micawoo</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 May 2023 19:14:34 &#43;0800</lastBuildDate><atom:link href="https://keunghin.cyou/tags/linux/" rel="self" type="application/rss+xml" /><item>
     <title>an error when using android emualtor in arch</title>
     <link>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</link>
     <pubDate>Tue, 23 May 2023 19:14:34 &#43;0800</pubDate><author>
         <name>micawoo</name>
     </author><guid>https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[Source:
+How to edit emulator flags in Android Studio
+DRI3 issues
+The hardware acceleration of the Android emulator can&rsquo;t run with DRI3 in Linux, so we need to disable DRI3.
+I&rsquo;ve been confused about this problem for a long time. Even though I saw its running log by using ADB and Android Studio, it couldn&rsquo;t show any problems about this. It only shows errors.
+1 2 3 4 5 X Error of failed request: GLXBadContext Major opcode of failed request: 155 (GLX) Minor opcode of failed request: 6 (X_GLXIsDirect) Serial number of failed request: 49 Current serial number in output stream: 48 Thanks to the blogger Mike&rsquo;s hint, we only need to use LIBGL_DEBUG=verbose.]]></description>
 </item><item>
     <title>arch i3 configuration</title>
     <link>https://keunghin.cyou/arch-i3-configuration/</link>
     <pubDate>Sun, 13 Feb 2022 16:04:00 &#43;0800</pubDate><author>
         <name>micawoo</name>
     </author><guid>https://keunghin.cyou/arch-i3-configuration/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[1 ArchLinux安装参考链接 ArchLinux Installation guide
+archlinux 简明指南
+篝ノ雾枝的魔法学院
+2 获取镜像列表 此方法写在.zshrc里，用命令行快捷进行替代。
+1 2 3 #注意：在--sort rate中，有些镜像无法进行评分，会在命令行下弹出警号（WARNING） sudo reflector --country China --age 6 --latest 6 --fastest 6 --threads 6 --sort rate --protocol http --save /etc/pacman.d/mirrorlist 镜像下好之后，删除tuna源(好几次下载失败，用的人太多了），用bfsu或opentuna等其他镜像源。
+3 开发环境 3.1 Java Java
+Java-ArchWiki
+1 2 3 sudo pacman -S java-runtime-common java-environment-common sudo pacman -S jdk8 #选择 extra/jdk8-openjdk/extra/jdk11-openjdk 使用 archlinux-java 命令来管理 Java 环境
+列举 Java 环境：
+1 archlinux-java status 选择 Java 环境：]]></description>
 </item></channel>
 </rss>
