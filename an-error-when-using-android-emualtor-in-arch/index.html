@@ -8,12 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
     <title>an error when using android emualtor in arch - micawoo</title><meta name="Description" content="micawoo life think toward future"><meta property="og:title" content="an error when using android emualtor in arch" />
-<meta property="og:description" content="Source:
-How to edit emulator flags in Android Studio
-DRI3 issues
-The hardware acceleration of the Android emulator can&rsquo;t run with DRI3 in Linux, so we need to disable DRI3.
-I&rsquo;ve been confused about this problem for a long time. Even though I saw its running log by using ADB and Android Studio, it couldn&rsquo;t show any problems about this. It only shows errors.
-1 2 3 4 5 X Error of failed request: GLXBadContext Major opcode of failed request: 155 (GLX) Minor opcode of failed request: 6 (X_GLXIsDirect) Serial number of failed request: 49 Current serial number in output stream: 48 Thanks to the blogger Mike&rsquo;s hint, we only need to use LIBGL_DEBUG=verbose." />
+<meta property="og:description" content="a summary for android&rsquo;s emulator in arch" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/" /><meta property="og:image" content="https://keunghin.cyou/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-05-23T19:14:34+08:00" />
@@ -21,12 +16,7 @@ I&rsquo;ve been confused about this problem for a long time. Even though I saw i
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://keunghin.cyou/" /><meta name="twitter:title" content="an error when using android emualtor in arch"/>
-<meta name="twitter:description" content="Source:
-How to edit emulator flags in Android Studio
-DRI3 issues
-The hardware acceleration of the Android emulator can&rsquo;t run with DRI3 in Linux, so we need to disable DRI3.
-I&rsquo;ve been confused about this problem for a long time. Even though I saw its running log by using ADB and Android Studio, it couldn&rsquo;t show any problems about this. It only shows errors.
-1 2 3 4 5 X Error of failed request: GLXBadContext Major opcode of failed request: 155 (GLX) Minor opcode of failed request: 6 (X_GLXIsDirect) Serial number of failed request: 49 Current serial number in output stream: 48 Thanks to the blogger Mike&rsquo;s hint, we only need to use LIBGL_DEBUG=verbose."/>
+<meta name="twitter:description" content="a summary for android&rsquo;s emulator in arch"/>
 <meta name="application-name" content="micawoo">
 <meta name="apple-mobile-web-app-title" content="micawoo">
 
@@ -44,7 +34,7 @@ I&rsquo;ve been confused about this problem for a long time. Even though I saw i
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/"
-        },"genre": "posts","keywords": "android-emulator, linux","wordcount":  133 ,
+        },"genre": "posts","keywords": "android-emulator, linux","wordcount":  140 ,
         "url": "https://keunghin.cyou/an-error-when-using-android-emualtor-in-arch/","datePublished": "2023-05-23T19:14:34+08:00","dateModified": "2023-08-17T16:11:42+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "micawoo"},"author": {
@@ -70,7 +60,7 @@ I&rsquo;ve been confused about this problem for a long time. Even though I saw i
             <a href="/" title="micawoo">micawoo</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> POSTS </a><a class="menu-item" href="/tags/"> TAGS </a><a class="menu-item" href="/me/"> ME </a><a class="menu-item" href="/faq/"> FAQ </a><a class="menu-item" href="/link/"> LINK </a><a class="menu-item" href="https://github.com/micawoo" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> POSTS </a><a class="menu-item" href="/tags/"> TAGS </a><a class="menu-item" href="/me/"> ME </a><a class="menu-item" href="/faq/"> FAQ </a><a class="menu-item" href="/link/"> LINK </a><a class="menu-item" href="https://github.com/micastar" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw"></i>
@@ -110,7 +100,7 @@ I&rsquo;ve been confused about this problem for a long time. Even though I saw i
                     <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">POSTS</a><a class="menu-item" href="/tags/" title="">TAGS</a><a class="menu-item" href="/me/" title="">ME</a><a class="menu-item" href="/faq/" title="">FAQ</a><a class="menu-item" href="/link/" title="">LINK</a><a class="menu-item" href="https://github.com/micawoo" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a></div>
+                </div><a class="menu-item" href="/posts/" title="">POSTS</a><a class="menu-item" href="/tags/" title="">TAGS</a><a class="menu-item" href="/me/" title="">ME</a><a class="menu-item" href="/faq/" title="">FAQ</a><a class="menu-item" href="/link/" title="">LINK</a><a class="menu-item" href="https://github.com/micastar" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a></div>
     </div>
 </header>
 <div class="search-dropdown desktop">
@@ -124,7 +114,7 @@ I&rsquo;ve been confused about this problem for a long time. Even though I saw i
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">micawoo</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-23">2023-05-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-17">2023-08-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;133 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-23">2023-05-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-08-17">2023-08-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;140 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="content" id="content"><div class="details admonition warning open">
                 <div class="details-summary admonition-title">
                     <i class="icon fas fa-exclamation-triangle fa-fwwarning"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -133,7 +123,8 @@ I&rsquo;ve been confused about this problem for a long time. Even though I saw i
                     <div class="admonition-content">
                         This article was last updated on <span class="timeago" datetime="2023-08-17T16:11:42" title="August 17, 2023">2023-08-17</span>, the content may be out of date.</div>
                 </div>
-            </div><p>Source:</p>
+            </div><p>a summary for android&rsquo;s emulator in arch</p>
+<p>Source:</p>
 <ul>
 <li>
 <p><a href="https://mike42.me/blog/how-to-edit-emulator-flags-in-android-studio" target="_blank" rel="noopener noreferrer">How to edit emulator flags in Android Studio</a></p>

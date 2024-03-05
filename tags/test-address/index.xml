@@ -9,25 +9,6 @@
     <pubDate>Mon, 18 Jul 2022 22:26:43 &#43;0800</pubDate><author>
         <name>micawoo</name>
     </author><guid>https://keunghin.cyou/test-address/</guid>
-    <description><![CDATA[http://www.gstatic.com/generate_204
-http://cp.cloudflare.com/generate_204
-http://www.qualcomm.cn/generate_204
-http://clients3.google.com/generate_204
-http://www.gstatic.com/generate_204
-http://connectivitycheck.gstatic.com/generate_204
-http://edge.microsoft.com/captiveportal/generate_204
-http://cp.cloudflare.com/generate_204
-http://www.qualcomm.cn/generate_204
-http://connect.rom.miui.com/generate_204
-http://connectivitycheck.platform.hicloud.com/generate_204
-http://wifi.vivo.com.cn/generate_204
-http://204.ustclug.org
-http://captive.apple.com/
-http://www.msftconnecttest.com/connecttest.txt
-http://detectportal.firefox.com/success.txt
-参考链接
-generate_204 测速地址
-收集几个地址，帮你确认是否连接到互联网
-检测网络联通性&amp;generate_204服务汇总与评测]]></description>
+    <description><![CDATA[<p>some test addresses for proxy&rsquo;s nodes.</p>]]></description>
 </item></channel>
 </rss>

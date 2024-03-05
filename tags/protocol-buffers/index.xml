@@ -9,7 +9,6 @@
     <pubDate>Sun, 13 Aug 2023 20:08:01 &#43;0800</pubDate><author>
         <name>micawoo</name>
     </author><guid>https://keunghin.cyou/protobuf-study-6a48986403/</guid>
-    <description><![CDATA[Source:
-Protocol Buffers Crash Course Working with Proto DataStore Protocol Buffers Documentation 1 IntroductionProtocol buffers are Google’s language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages.]]></description>
+    <description><![CDATA[<p>some exercises for protocol buffers</p>]]></description>
 </item></channel>
 </rss>
